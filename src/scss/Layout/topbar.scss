@@ -1,0 +1,31 @@
+.topbar {
+  box-sizing: border-box;
+  background-color: $color-beige;
+  position: relative;
+
+  img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .topbar-navegacao {
+    // display: flex;
+    gap: 3rem;
+    font-family: 'Open Sans', sans-serif;
+    // justify-content: flex-end;
+
+    a {
+      &.active {
+        color: #5084fc;
+      }
+      text-decoration: none;
+      color: white;
+      font-size: 13px;
+    }
+  }
+}
+
+.header-topbar-web {
+  z-index: 1;
+  position: relative;
+}

@@ -3,10 +3,10 @@ import Logo from '@/shared/assets/Logo.png';
 
 const Topbar = () => {
     return (
-      <div className="topbar">
-        <img className="logo" src={Logo}/>
+      <div className="topbar position-relative">
+        <img className="logo position-absolute" src={Logo}/>
   
-        <nav className="topbar-navegacao">
+        <nav className="topbar-navegacao d-flex">
           <NavLink to="/" title="Home">
             HOME
           </NavLink>
