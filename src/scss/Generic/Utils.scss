@@ -1,0 +1,34 @@
+.clipped-text {
+  display: block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+abbr.abbr-caption[title] {
+  border: none;
+  text-decoration: none;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.border-circle {
+  border-radius: 50%;
+}
+
+.center {
+  display: grid;
+  place-items: center;
+}
+
+span.card-dots {
+  &::after {
+    content: ' ';
+  }
+  &::before {
+    content: '••••';
+    letter-spacing: 2px;
+  }
+}

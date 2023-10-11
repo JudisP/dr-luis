@@ -1,8 +1,19 @@
 // Variáveis
 @import 'settings/variable.scss';
 
+//Configurações
+@import './settings/variable.scss';
+
 // Layout
 @import 'Layout/topbar.scss';
+@import 'Layout/footer.scss';
+
 
 // Genéricos
-// @import 'Generic/Normalize.scss';
+@import 'Generic/Normalize.scss';
+@import 'Generic/Utils.scss';
+
+// Base
+@import 'Base/Responsive.scss';
+@import 'Base/Typography.scss';
+@import 'Base/Tipografia.scss';

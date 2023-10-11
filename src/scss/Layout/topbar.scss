@@ -1,22 +1,53 @@
 .topbar {
-  box-sizing: border-box;
-  background-color: $color-beige;
-  position: relative;
+  display: flex;
 
-  img {
-    width: 80px;
-    height: 80px;
+  top: 46px;
+  box-sizing: border-box;
+  background: linear-gradient(90deg, #f7d3a8 25%, #f7d3a880 75%, #f7d3a800 100%);
+  position: relative;
+  height: 4.76rem;
+
+  align-content: center;
+  justify-content: space-between;
+
+
+  
+
+  .logo {
+    display: flex;
+    align-items: center;
+    // z-index: 999;
+    
+    margin-left: 80px;
+
+    img {
+      width: 82px;
+      height: 115px;
+
+      border-radius: 15px;
+    }
+
+    .logo-escrita {
+      .logo-tipografia {
+        color: $color-white;
+      }
+  
+      .logo-tipografia-sub {
+        color: $color-white;
+      }
+    }
   }
 
   .topbar-navegacao {
-    // display: flex;
+    display: flex;
     gap: 3rem;
     font-family: 'Open Sans', sans-serif;
-    // justify-content: flex-end;
+    justify-content: flex-end;
+    align-items: center;
 
     a {
       &.active {
-        color: #5084fc;
+        background-color: $color-gold;
       }
       text-decoration: none;
       color: white;
