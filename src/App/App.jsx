@@ -5,14 +5,15 @@ import 'bootstrap/dist/css/bootstrap.css';
 import '@/scss/app.scss';
 
 import Topbar from "@/Layout/Topbar/Topbar"
+import { Footer } from "@/Layout/footer/Footer";
 
 function App() {
 
   return (
     <BrowserRouter>
       <Topbar />
-
       <Router />
+      <Footer />
     </BrowserRouter>
   )
 }
