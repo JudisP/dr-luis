@@ -8,7 +8,9 @@ const Topbar = () => {
         <img className="logo-img" src={Logo} />
         <div className="logo-escrita">
           <span className="logo-tipografia">Vascular.</span>
-          <span className="logo-tipografia-sub">Estética vascular integrada</span>
+          <span className="logo-tipografia-sub">
+            Estética vascular integrada
+          </span>
         </div>
       </div>
 
@@ -19,10 +21,9 @@ const Topbar = () => {
           </NavLink>
         </div>
         <div className="contorno-navlink">
-        <NavLink to="/drluis" title="DR.Luis Fernando Bastos">
-          DR.LUIS FERNANDO BASTOS
-        </NavLink>
-
+          <NavLink to="/drluis" title="DR.Luis Fernando Bastos">
+            DR.LUIS FERNANDO BASTOS
+          </NavLink>
         </div>
 
         <div className="contorno-navlink">

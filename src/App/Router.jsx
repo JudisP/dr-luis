@@ -7,7 +7,6 @@ const Router = () => {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="*" element={<div>Página não encontrada</div>} />
-
     </Routes>
   )
 };

@@ -1,21 +1,24 @@
-import { BrowserRouter} from "react-router-dom"
-import Router from "./Router"
+import { BrowserRouter } from "react-router-dom";
+import Router from "./Router";
 
-import 'bootstrap/dist/css/bootstrap.css';
-import '@/scss/app.scss';
+import "bootstrap/dist/css/bootstrap.css";
+import "@/scss/app.scss";
 
-import Topbar from "@/Layout/Topbar/Topbar"
-import { Footer } from "@/Layout/footer/Footer";
+import Topbar from "@/Layout/Topbar/Topbar";
+import Footer from "@/Layout/footer/Footer";
 
 function App() {
-
   return (
     <BrowserRouter>
       <Topbar />
-      <Router />
-      <Footer />
+      <body>
+        <Router />
+      </body>
+      <footer>
+        <Footer />
+      </footer>
     </BrowserRouter>
-  )
+  );
 }
 
-export default App
+export default App;
