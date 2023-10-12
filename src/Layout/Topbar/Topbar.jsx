@@ -21,11 +21,10 @@ const Topbar = () => {
           </NavLink>
         </div>
         <div className="contorno-navlink">
-          <NavLink to="/drluis" title="DR.Luis Fernando Bastos">
+          <NavLink to="/dr-luis" title="DR.Luis Fernando Bastos">
             DR.LUIS FERNANDO BASTOS
           </NavLink>
         </div>
-
         <div className="contorno-navlink">
           <NavLink to="/procedimentos" title="Procedimentos">
             PROCEDIMENTOS

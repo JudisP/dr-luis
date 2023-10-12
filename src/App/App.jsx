@@ -5,7 +5,7 @@ import "bootstrap/dist/css/bootstrap.css";
 import "@/scss/app.scss";
 
 import Topbar from "@/Layout/Topbar/Topbar";
-import Footer from "@/Layout/footer/Footer";
+import Footer from "@/Layout/Footer/Footer";
 
 function App() {
   return (
