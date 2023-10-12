@@ -3,7 +3,7 @@ import Logo from "@/shared/assets/Logo.png";
 
 const Topbar = () => {
   return (
-    <div className="topbar">
+    <topbar className="topbar">
       <div className="logo">
         <img className="logo-img" src={Logo} />
         <div className="logo-escrita">
@@ -41,7 +41,7 @@ const Topbar = () => {
           </NavLink>
         </div>
       </nav>
-    </div>
+    </topbar>
   );
 };
 
