@@ -16,7 +16,15 @@
 // Base
 @import 'Base/Responsive.scss';
 @import 'Base/Typography.scss';
-@import 'Base/Tipografia.scss';
 
 // Componentes
 @import 'Components/slide.scss';
+@import 'Components/button.scss';
+
+// Pages
+@import 'Pages/home.scss';
+
+// Tipografias
+@import 'Tipografia/home.scss';
+@import 'Tipografia/footer.scss';
+@import 'Tipografia/topbar.scss';

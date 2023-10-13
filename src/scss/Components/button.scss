@@ -1,0 +1,62 @@
+.button {
+  display: flex;
+  width: 141px;
+  height: 40px;
+  padding: 12px 19px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border: none;
+
+  border-top-left-radius: 0px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 0px;
+}
+
+.button-slide {
+    display: flex;
+    width: 141px;
+    height: 40px;
+    padding: 12px 19px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border: none;
+}
+
+@each $name, $value in $colors {
+  .button--#{$name} {
+    background-color: $value;
+    &,
+    &:hover:not(:disabled) {
+      background-color: $color-white;
+      color: $value;
+    }
+    &,
+    &::before {
+      background-color: $value;
+      color: $color-white;
+    }
+  }
+}
+
+@each $name, $value in $colors {
+    .button--conteudo--#{$name} {
+        background-color: $value;
+        &,
+        &:hover:not(:disabled) {
+          background-color: $value;
+          color: scale-color($color-text,
+            $lightness: 10%,
+            $alpha: -10%,
+            $saturation: 20%
+          );
+        }
+        &,
+        &::before {
+          background-color: $value;
+          color: $color-gold;
+        }
+    }
+  }
