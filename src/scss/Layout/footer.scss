@@ -3,17 +3,77 @@
     background-size: cover;
     display: flex;
     flex-direction: column;
-    
-    .footer-links {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        justify-content: center;
-        align-items: center;
-        height: 260px;
 
-    .link {
-        text-decoration: none; 
-        color: #000;
+        .footer-container {
+            height: 260px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;                
+            
+            .footer-links {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                justify-content: center;
+                align-items:flex-start;
+                
+                
+                p {
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    font-size: 16px;
+                    padding-bottom: 16px;
+                }
+                
+                .link {
+                    font-weight: bold;
+                    text-decoration: none; 
+                    color: #000;
+                    font-size: 16px;
+                    
+                    display: flex;
+                    flex-direction: column;
+                    transition: .2s;
+                    
+                }
+                
+                .email {
+                text-decoration: underline;
+                }
+
+                .link:hover{
+                    color: $color-gray-footer;
+                 }
+                
+                .links {
+                    display: flex;
+                    align-items: flex-start;
+                    flex-direction: column;
+                    word-wrap: break-word;                    
+                }
+
+                .navegacao,
+                .contatos,
+                .localizacao {
+                    margin: 180px;
+                }
+            }
     }
-}
+
+    .footer-info {
+        height: 122px;
+        width: 100%;
+        border-top: 1px solid $color-gray-footer;
+        
+        .container-info{
+            font-weight: bold;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            margin: 35px;
+            color: $color-gray-footer;
+        }
+
+    }
+            
 } 

@@ -11,6 +11,7 @@ $color-text: #000000;
 $color-gray: #A9A9A9;
 $color-gray-secundary: #908D8D;
 $color-gray-help: #EFEFEF;
+$color-gray-footer: #3d3d3d;
 
 
 $colors: (
@@ -21,7 +22,11 @@ $colors: (
   muted-secundary: $color-gray-secundary,
   muted-help: $color-gray-help,
   text: $color-text,
+<<<<<<< Updated upstream
   text-white: $color-white
+=======
+  footer: $color-gray-footer
+>>>>>>> Stashed changes
 );
 
 /** Bootstrap Breakpoints 
