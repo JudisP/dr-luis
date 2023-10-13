@@ -1,0 +1,19 @@
+.footer {
+    background-image: url('/src/shared/assets/background-footer.jpg');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    
+    .footer-links {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+        height: 260px;
+
+    .link {
+        text-decoration: none; 
+        color: #000;
+    }
+}
+} 
