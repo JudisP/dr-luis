@@ -19,16 +19,16 @@ const Slide = () => {
       className="slide"
     >
       <SwiperSlide>
-        <img src="https://via.placeholder.com/1300x500.png" />
+        <img src="https://via.placeholder.com/1300x580.png" />
       </SwiperSlide>
       <SwiperSlide>
-        <img src="https://via.placeholder.com/1300x500.png" />
+        <img src="https://via.placeholder.com/1300x580.png" />
       </SwiperSlide>
       <SwiperSlide>
-        <img src="https://via.placeholder.com/1300x500.png" />
+        <img src="https://via.placeholder.com/1300x580.png" />
       </SwiperSlide>
       <SwiperSlide>
-        <img src="https://via.placeholder.com/1300x500.png" />
+        <img src="https://via.placeholder.com/1300x580.png" />
       </SwiperSlide>
     </Swiper>
   );
