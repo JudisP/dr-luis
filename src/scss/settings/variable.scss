@@ -1,0 +1,40 @@
+$color-white: #ffffff;
+
+$color-green: #32D951;
+
+$color-gold: #C5A04E;
+
+$color-beige: #F7D3A8;
+
+$color-text: #000000;
+
+$color-gray: #A9A9A9;
+$color-gray-secundary: #908D8D;
+$color-gray-help: #EFEFEF;
+
+
+$colors: (
+  primary: $color-gold,
+  secondary: $color-beige,
+  success: $color-green,
+  muted: $color-gray,
+  muted-secundary: $color-gray-secundary,
+  muted-help: $color-gray-help,
+  text: $color-text,
+  text-white: $color-white
+);
+
+/** Bootstrap Breakpoints 
+ * https://getbootstrap.com/docs/5.2/layout/breakpoints/#available-breakpoints 
+ *
+ * Use with "min-width"
+ */
+$screen-xs: 0;
+$screen-sm: 576px;
+$screen-md: 768px;
+$screen-lg: 992px;
+$screen-xl: 1200px;
+$screen-xxl: 1400px;
+
+/* Estrutura */
+$header-size: 70px;

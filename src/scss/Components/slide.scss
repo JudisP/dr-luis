@@ -1,0 +1,20 @@
+.slide {
+  box-sizing: content-box;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+
+  .swiper-slide {
+    img {
+      width: 100%;
+    }
+  }
+
+}
+
+.imagem-estatica {
+  img {
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    width: 100%;
+  }
+}
