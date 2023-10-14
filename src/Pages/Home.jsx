@@ -10,7 +10,7 @@ const Home = () => {
 
       <div className="slide-conteudo">
       <h1 className="slide-text">Estética</h1>
-        <Button className="button-slide button--conteudo--text-white">Saiba Mais</Button>
+        <Button className="button-slide button--primary">Saiba Mais</Button>
       </div>
 
       </div>
