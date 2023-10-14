@@ -11,12 +11,8 @@ function App() {
   return (
     <BrowserRouter>
       <Topbar />
-      <body>
         <Router />
-      </body>
-      <footer>
         <Footer />
-      </footer>
     </BrowserRouter>
   );
 }
