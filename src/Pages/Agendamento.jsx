@@ -25,7 +25,7 @@ const Agendamento = () => {
       <Container className="container-agendamento">
         <Row className="row-agendamento">
           <Col className="atendimento">
-            <h1>Atendimento Cascular</h1>
+            <h2>Atendimento Vascular</h2>
 
             <p>
               Você não precisa mais esperar para cuidar da saúde das suas
@@ -38,7 +38,7 @@ const Agendamento = () => {
               <a>Agendar uma consulta < AiOutlineArrowRight/></a>
             </button>
 
-            <Col>
+            <Col className="redes">
               <a href=""><BsFacebook /></a>
               <a href=""><BsInstagram /></a>
               <a href=""><BsAsterisk /></a>
@@ -46,12 +46,13 @@ const Agendamento = () => {
 
             <Row className="afirmacoes">
               <span className="row-check"><AiOutlineCheck /> Clínica de Varizes DF</span>
-              <span className="row-check"><AiOutlineCheck /> Clínica de Varizes DF</span>
-              <span className="row-check"><AiOutlineCheck /> Clínica de Varizes DF</span>
+              <span className="row-check"><AiOutlineCheck /> Angiologista DF</span>
+              <span className="row-check"><AiOutlineCheck /> Médico de Varizes</span>
             </Row>
           </Col>
+
           <Col className="agendamento">
-            <h1>Agendamento e Informações</h1>
+            <h2>Agendamento e Informações</h2>
             <Row className="informacoes">
               <div className="informacao">
                 <BsWhatsapp /><span>(61)99999-9999</span>
@@ -65,8 +66,9 @@ const Agendamento = () => {
               <div className="informacao">
                 <AiOutlineClockCircle /><span>Segunda a Sexta - 08:00 às 18:00</span>
               </div>
-              <div className="informacao">
-                <TfiLocationPin /><span>710/910 Sul, Ed. Via Brasil - Sala 222 Asa Sul, Brasília/DF</span>
+              <div className="informacao endereco">
+                <TfiLocationPin /><a>710/910 Sul, Ed. Via Brasil - Sala 222 Asa Sul, Brasília/DF</a>
+                  
               </div>
               <div className="informacao">
                 <MdOutlineAttachMoney /><span>Atendimento Particular ou Convênio</span>

@@ -1,6 +1,49 @@
 .container-agendamento {
+
+  margin-top: 5.5rem;
+  margin-bottom: 5.5rem;
   .row-agendamento {
     .atendimento {
+      display: flex;
+      flex-direction: column;
+      gap: 3.125rem;
+
+      p {
+        max-width: 28.125rem;
+      }
+
+      .redes {
+        display: flex;
+        gap: 2rem;
+
+        margin-top: 40px;
+
+        max-height: 100px;
+        a {
+          svg {
+            color: $color-gold;
+
+            width: 32px;
+            height: 32px;
+          }
+        }
+      }
+
+      .afirmacoes {
+        display: flex;
+
+        gap: 1rem;
+        span {
+          svg {
+            width: 30px;
+            width: 30px;
+          }
+        }
+      }
+
+      button {
+        max-width: 20rem;
+      }
       .afirmacoes {
         span {
           white-space: nowrap;
@@ -19,17 +62,44 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+
+      gap: 3.125rem;
       
       .informacoes {
         display: flex;
+        justify-content: center;
+        
         gap: 1rem;
+        
         .informacao {
+          max-width: 400px;
           background-color: $color-gold;
-          white-space: nowrap;
           display: flex;
           align-items: center;
-          padding: 10px;
-          box-sizing: content-box;
+          padding-top: 30px;
+          padding-bottom: 30px;
+          padding-left: 30px;
+          box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+          position: relative;
+
+          gap: 1rem;
+
+          svg {
+            width: 25px;
+            height: 25px;
+          }
+        }
+
+        .informacao.endereco {
+          padding-top: 19px;
+          padding-bottom: 19px;
+          padding-left: 30px;
+
+          svg {
+            width: 35px;
+            height: 35px;
+          }
         }
       }
     }
