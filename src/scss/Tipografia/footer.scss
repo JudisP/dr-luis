@@ -1,4 +1,5 @@
 .footer-tipografia {
+  
   .footer-container {
     .footer-links {
       p {
@@ -7,24 +8,24 @@
         font-size: 16px;
         padding-bottom: 16px;
       }
-
+      
       a {
         font-weight: bold;
         text-decoration: none;
         color: #000;
         font-size: 16px;
       }
-
+      
       .email {
         text-decoration: underline;
       }
-
+      
       .link:hover {
         color: $color-gray-footer;
       }
     }
   }
-
+  
   .footer-info {
     .container-info {
       font-weight: bold;

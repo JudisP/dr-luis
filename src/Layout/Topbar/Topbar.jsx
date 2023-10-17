@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom";
 import Logo from "@/shared/assets/Logo.png";
 
+
 const Topbar = () => {
   return (
     <topbar className="topbar">
@@ -15,6 +16,14 @@ const Topbar = () => {
       </div>
 
       <nav className="topbar-navegacao">
+
+        <label class="burger" for="burger">
+          <input type="checkbox" id="burger"/>
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+
         <div className="contorno-navlink">
           <NavLink to="/" title="Home">
             HOME

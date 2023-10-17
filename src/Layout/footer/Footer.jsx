@@ -1,5 +1,4 @@
 import { NavLink } from "react-router-dom";
-
 import { BsTelephone } from 'react-icons/bs';
 import { BsWhatsapp } from 'react-icons/bs';
 import { LuMail } from 'react-icons/lu';
