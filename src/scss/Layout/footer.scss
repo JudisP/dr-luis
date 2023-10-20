@@ -2,10 +2,6 @@ footer {
   background-image: url("/src/shared/assets/background-footer.jpg");
   box-shadow: crimson;
   background-size: cover;
-  display: flex !important;
-  flex-direction: column;
-  position: relative;
-
   filter: saturate(150%);
 
   .coloracao {
@@ -19,17 +15,15 @@ footer {
   }
 
   .footer-container {
+    //É interessante colocar uma altura padrão? Talvez sim até certa lagura
     height: 260px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-
+    width: 100%;
+    
+    
     .footer-links {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      justify-content: center;
-
-      gap: 9rem;
+      display: flex;
+      justify-content: space-around;
+      gap: 1rem;    
 
       p {
         font-weight: bold;
@@ -38,44 +32,49 @@ footer {
         padding-bottom: 16px;
       }
 
-      a {
+  //     a {
+  //       display: flex;
+  //       gap: 3px;
+  //       align-items: center;
+  //     }
+
+  //     .email {
+  //       text-decoration: underline;
+  //     }
+
+  //     .link:hover {
+  //       color: $color-gray-footer;
+  //     }
+
+      .navegacao {
         display: flex;
-        gap: 3px;
         align-items: center;
-      }
-
-      .email {
-        text-decoration: underline;
-      }
-
-      .link:hover {
-        color: $color-gray-footer;
-      }
-
-      .links {
-        display: flex;
-        align-items: flex-start;
         flex-direction: column;
         word-wrap: break-word;
       }
+      
+      .links {
+        display: flex;
+        flex-direction: column;
+      }
 
-      .links.contacts {
-          gap: 5px;
+  //     .links.contacts {
+  //         gap: 5px;
       }
     }
   }
 
-  .footer-info {
-    height: 122px;
-    width: 100%;
-    border-top: 1px solid $color-gray-footer;
+  // .footer-info {
+  //   height: 122px;
+  //   width: 100%;
+  //   border-top: 1px solid $color-gray-footer;
 
-    .container-info {
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-      justify-content: center;
-      margin: 35px;
-    }
-  }
-}
+  //   .container-info {
+  //     display: flex;
+  //     flex-direction: column;
+  //     text-align: center;
+  //     justify-content: center;
+  //     margin: 35px;
+  //   }
+  // }
+// }
