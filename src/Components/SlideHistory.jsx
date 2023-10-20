@@ -13,7 +13,7 @@ import { Row } from "reactstrap";
 const SlideHistory = () => {
   return (
     <Swiper
-      slidesPerView={1}
+      slidesPerView={34}
       spaceBetween={10}
       pagination={{
         clickable: true,
@@ -24,12 +24,12 @@ const SlideHistory = () => {
           spaceBetween: 20,
         },
         768: {
-          slidesPerView: 4,
+          slidesPerView: 2,
           spaceBetween: 40,
         },
         1024: {
-          slidesPerView: 5,
-          spaceBetween: 50,
+          slidesPerView: 2,
+          spaceBetween: 10,
         },
       }}
       modules={[Pagination]}
@@ -43,13 +43,14 @@ const SlideHistory = () => {
           <BsStarFill />
           <BsStarFill />
         </Row>
-        <span>
+        {/* <span>
           Já era muito satisfeita com a Vascular Clínica, sou atendida pelo Dr.
           Luis Fernando há bastante tempo. E hoje fiquei mais satisfeita ainda
           com as novas instalações e equipamentos novos.
         </span>
-        <span className="paciente">HULDA MARIA</span>
+        <span className="paciente">HULDA MARIA</span> */}
       </SwiperSlide>
+      <SwiperSlide>Slide 1</SwiperSlide>
       <SwiperSlide>Slide 2</SwiperSlide>
       <SwiperSlide>Slide 3</SwiperSlide>
       <SwiperSlide>Slide 4</SwiperSlide>

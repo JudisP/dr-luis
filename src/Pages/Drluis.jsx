@@ -5,6 +5,7 @@ import { BsStarFill, BsTelephone, BsWhatsapp } from "react-icons/bs";
 import { RxDoubleArrowRight } from "react-icons/rx";
 import SlideHistory from "@/Components/SlideHistory";
 import { LuMail } from "react-icons/lu";
+import SlideHis from "@/Components/SlideHis";
 
 const Drluis = () => {
   return (
@@ -13,9 +14,9 @@ const Drluis = () => {
         <img src="https://via.placeholder.com/1300x500.png" />
       </div>
 
-      <Container className="container-drluis">
+      <Container className="container-drluis position-relative">
         <Row className="apresentacao-drluis">
-          <Row>
+          <Row className="background-doctor">
             <FaUserMd />
           </Row>
           <Row className="estrelas-drluis">
@@ -26,31 +27,89 @@ const Drluis = () => {
             <BsStarFill />
           </Row>
           <Row className="nome-drluis">
-            <h3>Dr. Luis Fernando de Carvalho Bastos</h3>
+            <h3> Nome {/*Dr. Luis Fernando de Carvalho Bastos*/}</h3>
           </Row>
           <Row className="crm-drluis">
             <span>Cirurgião Vascular - CRM/DF 11.886</span>
           </Row>
         </Row>
 
-        <Row>
-          <div>
+        <Row className="backdrop-formacao">
+          <div className="formacao-titulos-cargos">
             <h3>FORMAÇÃO, TÍTULOS E CARGOS</h3>
             <div className="informacoes">
               <div className="informacao">
-                <span>
+                <span className="background-arrow">
                   <RxDoubleArrowRight />
                 </span>
-                <span>
+                <span className="informacao-texto">
                   Formado em medicina pela Escola de Ciências Médicas de
                   Alagoas.
+                </span>
+              </div>
+
+              <div className="informacao">
+                <span className="background-arrow">
+                  <RxDoubleArrowRight />
+                </span>
+                <span className="informacao-texto">
+                  Título de especialista em Cirurgia Geral – Ministério da
+                  Educação (MEC).
+                </span>
+              </div>
+
+              <div className="informacao">
+                <span className="background-arrow">
+                  <RxDoubleArrowRight />
+                </span>
+                <span className="informacao-texto">
+                  Título de especialista em Cirurgia Vascular – Ministério da
+                  Educação (MEC).
+                </span>
+              </div>
+
+              <div className="informacao">
+                <span className="background-arrow">
+                  <RxDoubleArrowRight />
+                </span>
+                <span className="informacao-texto">
+                  Título de especialista em Cirurgia Vascular AMB – SBACV
+                </span>
+              </div>
+
+              <div className="informacao">
+                <span className="background-arrow">
+                  <RxDoubleArrowRight />
+                </span>
+                <span className="informacao-texto">
+                  Membro da Sociedade Brasileira de Angiologia e Cirurgia
+                  Vascular.
+                </span>
+              </div>
+
+              <div className="informacao">
+                <span className="background-arrow">
+                  <RxDoubleArrowRight />
+                </span>
+                <span className="informacao-texto">
+                  Certificado de área de atuação Ecografia Vascular com Doppler
+                  CBR- AMB – SBACV
+                </span>
+              </div>
+
+              <div className="informacao">
+                <span className="background-arrow">
+                  <RxDoubleArrowRight />
+                </span>
+                <span className="informacao-texto">
+                  Membro do Colégio Brasileiro de Radiologia.
                 </span>
               </div>
             </div>
           </div>
         </Row>
 
-        <Row>
+        <Row className="feedbacks">
           <div className="titulo-subtitulo">
             <h3>HISTÓRIAS FELIZES</h3>
             <span>
@@ -59,21 +118,24 @@ const Drluis = () => {
             </span>
           </div>
 
-          <Row>
-            <SlideHistory />
+          <Row className="container-slide">
+            {/* <SlideHistory /> */}
+            <SlideHis />
           </Row>
+        </Row>
 
-          <div className="agendamento">
+        <Row>
+          <div className="agendamento ">
             <h3>AGENDE AGORA SUA CONSULTA</h3>
             <div className="contatos">
               <button className="button button--primary">
                 <a>
-                  <BsWhatsapp /> Whatsapp 
+                  <BsWhatsapp /> Whatsapp
                 </a>
               </button>
               <button className="button button--primary">
                 <a>
-                  <BsTelephone /> Telefone 
+                  <BsTelephone /> Telefone
                 </a>
               </button>
               <button className="button button--primary">
