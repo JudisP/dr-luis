@@ -45,16 +45,15 @@
         &,
         &:hover:not(:disabled) {
           background-color: $value;
-          color: scale-color($color-text,
-            $lightness: 10%,
-            $alpha: -10%,
-            $saturation: 20%
-          );
+          
+          border-color: $color-white;
+          color: $color-text;
         }
         &,
         &::before {
           background-color: $value;
           color: $color-gold;
+          border-color: $color-white;
         }
     }
   }

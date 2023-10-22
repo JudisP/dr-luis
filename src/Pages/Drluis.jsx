@@ -1,11 +1,10 @@
 import { Container, Row } from "reactstrap";
 import { FaUserMd } from "react-icons/fa";
 import { BsStarFill, BsTelephone, BsWhatsapp } from "react-icons/bs";
+import SlideHistory from "@/Components/SlideHistory";
 
 import { RxDoubleArrowRight } from "react-icons/rx";
-import SlideHistory from "@/Components/SlideHistory";
 import { LuMail } from "react-icons/lu";
-import SlideHis from "@/Components/SlideHis";
 
 const Drluis = () => {
   return (
@@ -27,91 +26,94 @@ const Drluis = () => {
             <BsStarFill />
           </Row>
           <Row className="nome-drluis">
-            <h3> Nome {/*Dr. Luis Fernando de Carvalho Bastos*/}</h3>
+            <h3>Dr. Luis Fernando de Carvalho Bastos</h3>
           </Row>
           <Row className="crm-drluis">
             <span>Cirurgião Vascular - CRM/DF 11.886</span>
           </Row>
         </Row>
 
-        <Row className="backdrop-formacao">
-          <div className="formacao-titulos-cargos">
-            <h3>FORMAÇÃO, TÍTULOS E CARGOS</h3>
-            <div className="informacoes">
-              <div className="informacao">
-                <span className="background-arrow">
-                  <RxDoubleArrowRight />
-                </span>
-                <span className="informacao-texto">
-                  Formado em medicina pela Escola de Ciências Médicas de
-                  Alagoas.
-                </span>
-              </div>
+        <div className="position-relative">
+          <Row className="backdrop-formacao">
+            <div className="formacao-titulos-cargos">
+              <h3>FORMAÇÃO, TÍTULOS E CARGOS</h3>
+              <div className="informacoes">
+                <div className="informacao">
+                  <span className="background-arrow">
+                    <RxDoubleArrowRight />
+                  </span>
+                  <span className="informacao-texto">
+                    Formado em medicina pela Escola de Ciências Médicas de
+                    Alagoas.
+                  </span>
+                </div>
 
-              <div className="informacao">
-                <span className="background-arrow">
-                  <RxDoubleArrowRight />
-                </span>
-                <span className="informacao-texto">
-                  Título de especialista em Cirurgia Geral – Ministério da
-                  Educação (MEC).
-                </span>
-              </div>
+                <div className="informacao">
+                  <span className="background-arrow">
+                    <RxDoubleArrowRight />
+                  </span>
+                  <span className="informacao-texto">
+                    Título de especialista em Cirurgia Geral – Ministério da
+                    Educação (MEC).
+                  </span>
+                </div>
 
-              <div className="informacao">
-                <span className="background-arrow">
-                  <RxDoubleArrowRight />
-                </span>
-                <span className="informacao-texto">
-                  Título de especialista em Cirurgia Vascular – Ministério da
-                  Educação (MEC).
-                </span>
-              </div>
+                <div className="informacao">
+                  <span className="background-arrow">
+                    <RxDoubleArrowRight />
+                  </span>
+                  <span className="informacao-texto">
+                    Título de especialista em Cirurgia Vascular – Ministério da
+                    Educação (MEC).
+                  </span>
+                </div>
 
-              <div className="informacao">
-                <span className="background-arrow">
-                  <RxDoubleArrowRight />
-                </span>
-                <span className="informacao-texto">
-                  Título de especialista em Cirurgia Vascular AMB – SBACV
-                </span>
-              </div>
+                <div className="informacao">
+                  <span className="background-arrow">
+                    <RxDoubleArrowRight />
+                  </span>
+                  <span className="informacao-texto">
+                    Título de especialista em Cirurgia Vascular AMB – SBACV
+                  </span>
+                </div>
 
-              <div className="informacao">
-                <span className="background-arrow">
-                  <RxDoubleArrowRight />
-                </span>
-                <span className="informacao-texto">
-                  Membro da Sociedade Brasileira de Angiologia e Cirurgia
-                  Vascular.
-                </span>
-              </div>
+                <div className="informacao">
+                  <span className="background-arrow">
+                    <RxDoubleArrowRight />
+                  </span>
+                  <span className="informacao-texto">
+                    Membro da Sociedade Brasileira de Angiologia e Cirurgia
+                    Vascular.
+                  </span>
+                </div>
 
-              <div className="informacao">
-                <span className="background-arrow">
-                  <RxDoubleArrowRight />
-                </span>
-                <span className="informacao-texto">
-                  Certificado de área de atuação Ecografia Vascular com Doppler
-                  CBR- AMB – SBACV
-                </span>
-              </div>
+                <div className="informacao">
+                  <span className="background-arrow">
+                    <RxDoubleArrowRight />
+                  </span>
+                  <span className="informacao-texto">
+                    Certificado de área de atuação Ecografia Vascular com
+                    Doppler CBR- AMB – SBACV
+                  </span>
+                </div>
 
-              <div className="informacao">
-                <span className="background-arrow">
-                  <RxDoubleArrowRight />
-                </span>
-                <span className="informacao-texto">
-                  Membro do Colégio Brasileiro de Radiologia.
-                </span>
+                <div className="informacao">
+                  <span className="background-arrow">
+                    <RxDoubleArrowRight />
+                  </span>
+                  <span className="informacao-texto">
+                    Membro do Colégio Brasileiro de Radiologia.
+                  </span>
+                </div>
               </div>
             </div>
-          </div>
-        </Row>
+          </Row>
+        </div>
 
         <Row className="feedbacks">
           <div className="titulo-subtitulo">
             <h3>HISTÓRIAS FELIZES</h3>
+            <div className="linha"></div>
             <span>
               Confira alguns depoimentos de pacientes atendidos pelo Dr. Luís
               Fernando Bastos
@@ -119,33 +121,30 @@ const Drluis = () => {
           </div>
 
           <Row className="container-slide">
-            {/* <SlideHistory /> */}
-            <SlideHis />
+            <SlideHistory />
           </Row>
         </Row>
 
-        <Row>
-          <div className="agendamento ">
-            <h3>AGENDE AGORA SUA CONSULTA</h3>
-            <div className="contatos">
-              <button className="button button--primary">
-                <a>
-                  <BsWhatsapp /> Whatsapp
-                </a>
-              </button>
-              <button className="button button--primary">
-                <a>
-                  <BsTelephone /> Telefone
-                </a>
-              </button>
-              <button className="button button--primary">
-                <a>
-                  <LuMail /> E-mail
-                </a>
-              </button>
-            </div>
+        <div className="agendamento">
+          <h3>AGENDE AGORA SUA CONSULTA</h3>
+          <div className="contatos">
+            <button className="button button--conteudo--text-white">
+              <a>
+                <BsWhatsapp /> Whatsapp
+              </a>
+            </button>
+            <button className="button button--conteudo--text-white">
+              <a>
+                <BsTelephone /> Telefone
+              </a>
+            </button>
+            <button className="button button--conteudo--text-white">
+              <a>
+                <LuMail /> E-mail
+              </a>
+            </button>
           </div>
-        </Row>
+        </div>
       </Container>
     </div>
   );

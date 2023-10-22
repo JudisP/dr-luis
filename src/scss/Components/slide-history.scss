@@ -1,5 +1,7 @@
 .slide-history {
     width: 100%;
+
+    padding-right: 27px;
   .conteudo-slide {
     display: flex;
     flex-direction: column;
@@ -36,17 +38,37 @@
     .paciente {
       display: flex;
       justify-content: flex-start;
+      color: $color-gold;
+      text-transform: uppercase;
     }
   }
 
   .swiper-button-prev {
     display: none;
-
+  
     
+  }
+
+  .swiper-button-next {
+    color: $color-gold;
+    &::after {
+        font-size: 30px;
+    }
+  }
+
+  .swiper-button-next, .swiper-rtl .swiper-button-prev {
+    right: var(--swiper-navigation-sides-offset, -2px);
+    left: auto;
   }
 
   .swiper-pagination {
     display: flex;
     justify-content: flex-end;
+
+    padding-right: 1.375rem;
+    .swiper-pagination-bullet.swiper-pagination-bullet-active {
+      background-color: $color-gold;
+    }
   }
 }
+
