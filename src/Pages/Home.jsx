@@ -57,7 +57,7 @@ const Home = () => {
           </Col>
           <Col
             className="imagens"
-            style={{ display:"none", width: "100%", height: "100%", position: "relative" }}
+            style={{ width: "100%", height: "100%", position: "relative" }}
           >
             <div style={{ width: "100%", height: 500 }}>
               <div className="imagens-sobrepostas">

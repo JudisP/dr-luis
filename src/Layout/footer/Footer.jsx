@@ -13,7 +13,7 @@ const Footer = () => {
             <div className="coloracao "></div>
             <div className="footer-container">
                 <div className="footer-links">
-                    <div className="cont navegacao">
+                    <div className="navegacao">
                         <p>Navegação</p>
                         <nav className="links naveg">
                             <NavLink className="link" to="/" title="Home">Home</NavLink>
@@ -24,7 +24,7 @@ const Footer = () => {
                         </nav>
                     </div>
 
-                    <div className="cont contatos">
+                    <div className="contatos">
                         <p>Contato</p>
                         <nav className="links contacts">
                             <a to="/" title="number-one"><BsTelephone />(61)99999-9999</a>
@@ -34,7 +34,7 @@ const Footer = () => {
                         </nav>
                     </div>
 
-                    <div className="cont localizacao">
+                    <div className="localizacao">
                         <p>Localização</p>
                         <div>
                             <span>
