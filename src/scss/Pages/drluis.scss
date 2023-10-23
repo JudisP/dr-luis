@@ -134,11 +134,11 @@
     align-items: flex-start;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: flex-end;
+    justify-content: space-evenly;
 
     gap: 16px;
 
-    margin-right: 50px;
+    margin: 0;
 
     width: 100vw;
 
