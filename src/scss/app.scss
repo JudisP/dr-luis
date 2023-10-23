@@ -5,8 +5,11 @@
 @import './settings/variable.scss';
 
 // Layout
+@import 'Layout/principal.scss';
 @import 'Layout/topbar.scss';
+@import 'Layout/reponsive/topbar.scss';
 @import 'Layout/footer.scss';
+
 
 
 // Genéricos
@@ -19,12 +22,19 @@
 
 // Componentes
 @import 'Components/slide.scss';
+@import 'Components/slide-history.scss';
 @import 'Components/button.scss';
 
 // Pages
 @import 'Pages/home.scss';
+@import 'Pages/agendamento.scss';
+@import 'Pages/procedimentos.scss';
+@import 'Pages/drluis.scss';
 
 // Tipografias
 @import 'Tipografia/home.scss';
 @import 'Tipografia/footer.scss';
 @import 'Tipografia/topbar.scss';
+@import 'Tipografia/agendamento.scss';
+@import 'Tipografia/procedimentos.scss';
+@import 'Tipografia/drluis.scss';

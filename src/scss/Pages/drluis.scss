@@ -1,0 +1,193 @@
+.container-drluis {
+  margin-top: 80px;
+  margin-bottom: 80px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 100px;
+
+  .apresentacao-drluis {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 0.5rem;
+
+    .background-doctor {
+      background-color: $color-gold;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+
+      width: 80px;
+      height: 80px;
+
+      border-radius: 999px;
+      svg {
+        width: 60px;
+        height: 40px;
+
+        color: $color-white;
+      }
+    }
+
+    .estrelas-drluis {
+      display: flex;
+      justify-content: center;
+
+      svg {
+        width: 40px;
+        height: 25px;
+
+        color: $color-gold;
+
+        padding: 0;
+      }
+    }
+
+    .nome-drluis {
+      text-align: center;
+    }
+
+    .crm-drluis {
+      text-align: center;
+    }
+  }
+
+  .backdrop-formacao {
+    background: linear-gradient(
+      180deg,
+      rgba(197, 160, 78, 0.8) 0%,
+      rgba(197, 160, 78, 0) 100%
+    );
+    backdrop-filter: blur(2px);
+
+    width: 100vw;
+    height: 25rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    .formacao-titulos-cargos {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      position: absolute;
+      top: -40px;
+
+      gap: 40px;
+
+      background: linear-gradient(
+        180deg,
+        #c5a04e 64.06%,
+        rgba(197, 160, 78, 0) 100%
+      );
+
+      width: 70vw;
+
+      h3 {
+        margin-top: 30px;
+      }
+
+      .informacoes {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        gap: 15px;
+
+        margin-bottom: 50px;
+        .informacao {
+          display: flex;
+          align-items: center;
+
+          gap: 10px;
+          .background-arrow {
+            display: flex;
+            width: 22px;
+            height: 22px;
+            justify-content: center;
+            align-items: center;
+
+            background-color: $color-white;
+
+            border-radius: 999px;
+
+            svg {
+              color: $color-gold;
+            }
+          }
+
+          .informacao-texto {
+          }
+        }
+      }
+    }
+  }
+
+  .feedbacks {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+
+    gap: 16px;
+
+    margin: 0;
+
+    width: 100vw;
+
+    .titulo-subtitulo {
+      width: 25%;
+
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+
+      span {
+        width: 100%;
+        margin-left: 8px;
+        margin-top: 10px;
+      }
+    }
+
+    .linha {
+      content: "";
+      height: 2px;
+      width: 160px;
+      background-color: $color-gold;
+      margin-left: 8px;
+    }
+
+    .container-slide {
+      width: 900px;
+      height: 350px;
+    }
+  }
+
+  .agendamento {
+    background-color: $color-gold;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 40px;
+    gap: 30px;
+
+    .contatos {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      gap: 20px;
+      margin-bottom: 10px;
+    }
+  }
+}

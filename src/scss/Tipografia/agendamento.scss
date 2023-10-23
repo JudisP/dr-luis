@@ -1,0 +1,24 @@
+.container-agendamento {
+  font-family: "Inter", sans-serif;
+
+  .row-agendamento {
+    .col {
+      h2 {
+        font-weight: 700;
+      }
+    }
+  }
+
+  .agendamento {
+    .informacoes{
+      font-weight: 700;
+      color: $color-white;
+    }
+  }
+}
+
+div {
+  .row-check {
+    font-weight: 700;
+  }
+}

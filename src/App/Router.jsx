@@ -8,6 +8,7 @@ import Agendamento from '@/Pages/Agendamento';
 
 const Router = () => {
   return (
+    <>
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/dr-luis" element={<Drluis />} />
@@ -16,6 +17,7 @@ const Router = () => {
       <Route path="/agendamento" element={<Agendamento />} />
       <Route path="*" element={<div>Página não encontrada</div>} />
     </Routes>
+    </>
   )
 };
 

@@ -1,79 +1,80 @@
-.footer {
-    background-image: url('/src/shared/assets/background-footer.jpg');
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
+footer {
+  background-image: url("/src/shared/assets/background-footer.jpg");
+  box-shadow: crimson;
+  background-size: cover;
+  filter: saturate(150%);
 
-        .footer-container {
-            height: 260px;
-            margin: 0 auto;
-            display: flex;
-            align-items: center;                
-            
-            .footer-links {
-                display: grid;
-                grid-template-columns: 1fr 1fr 1fr;
-                justify-content: center;
-                align-items:flex-start;
-                
-                
-                p {
-                    font-weight: bold;
-                    text-transform: uppercase;
-                    font-size: 16px;
-                    padding-bottom: 16px;
-                }
-                
-                .link {
-                    font-weight: bold;
-                    text-decoration: none; 
-                    color: #000;
-                    font-size: 16px;
-                    
-                    display: flex;
-                    flex-direction: column;
-                    transition: .2s;
-                    
-                }
-                
-                .email {
-                text-decoration: underline;
-                }
+  .coloracao {
+    background-color: #E2DCCE;
+    width: 100%;
+    height: 100%;
+    position: absolute;
 
-                .link:hover{
-                    color: $color-gray-footer;
-                 }
-                
-                .links {
-                    display: flex;
-                    align-items: flex-start;
-                    flex-direction: column;
-                    word-wrap: break-word;                    
-                }
+    opacity: 40%;
+    z-index: -1;
+  }
 
-                .navegacao,
-                .contatos,
-                .localizacao {
-                    margin: 180px;
-                }
-            }
+  .footer-container {
+    //É interessante colocar uma altura padrão? Talvez sim até certa lagura
+    height: 260px;
+    width: 100%;
+    
+    
+    .footer-links {
+      display: flex;
+      justify-content: space-around;
+      gap: 1rem;    
+
+      p {
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 16px;
+        padding-bottom: 16px;
+      }
+
+  //     a {
+  //       display: flex;
+  //       gap: 3px;
+  //       align-items: center;
+  //     }
+
+  //     .email {
+  //       text-decoration: underline;
+  //     }
+
+  //     .link:hover {
+  //       color: $color-gray-footer;
+  //     }
+
+      .navegacao {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        word-wrap: break-word;
+      }
+      
+      .links {
+        display: flex;
+        flex-direction: column;
+      }
+
+  //     .links.contacts {
+  //         gap: 5px;
+      }
     }
+  }
 
-    .footer-info {
-        height: 122px;
-        width: 100%;
-        border-top: 1px solid $color-gray-footer;
-        
-        .container-info{
-            font-weight: bold;
-            display: flex;
-            flex-direction: column;
-            text-align: center;
-            justify-content: center;
-            margin: 35px;
-            color: $color-gray-footer;
-        }
+  // .footer-info {
+  //   height: 122px;
+  //   width: 100%;
+  //   border-top: 1px solid $color-gray-footer;
 
-    }
-            
-} 
+  //   .container-info {
+  //     display: flex;
+  //     flex-direction: column;
+  //     text-align: center;
+  //     justify-content: center;
+  //     margin: 35px;
+  //   }
+  // }
+// }
