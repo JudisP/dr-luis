@@ -18,63 +18,53 @@ footer {
     //É interessante colocar uma altura padrão? Talvez sim até certa lagura
     height: 260px;
     width: 100%;
+    display: grid;
+    align-items: center;
     
     
     .footer-links {
       display: flex;
       justify-content: space-around;
-      gap: 1rem;    
-
+        
+      
       p {
         font-weight: bold;
         text-transform: uppercase;
         font-size: 16px;
         padding-bottom: 16px;
       }
-
-  //     a {
-  //       display: flex;
-  //       gap: 3px;
-  //       align-items: center;
-  //     }
-
-  //     .email {
-  //       text-decoration: underline;
-  //     }
-
-  //     .link:hover {
-  //       color: $color-gray-footer;
-  //     }
-
-      .navegacao {
+    
+      
+      .cont {
         display: flex;
         align-items: center;
         flex-direction: column;
         word-wrap: break-word;
+        flex-shrink: 1;
+        padding: 10px;
+        margin: 20px;
+        text-align: center;
       }
       
       .links {
         display: flex;
         flex-direction: column;
       }
-
-  //     .links.contacts {
-  //         gap: 5px;
       }
     }
   }
 
-  // .footer-info {
-  //   height: 122px;
-  //   width: 100%;
-  //   border-top: 1px solid $color-gray-footer;
+  .footer-info {
+    height: 122px;
+    width: 100%;
+    border-top: 1px solid $color-gray-footer;
 
-  //   .container-info {
-  //     display: flex;
-  //     flex-direction: column;
-  //     text-align: center;
-  //     justify-content: center;
-  //     margin: 35px;
-  //   }
-  // }
-// }
+    .container-info {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+      margin: 35px;
+    }
+  }
+
