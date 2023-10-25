@@ -1,0 +1,77 @@
+.modal-convenio {
+  .modal-content {
+    // max-width: 800px;
+    .modal-header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      border-color: white;
+
+      position: relative;
+      height: 100px;
+
+      .modal-title {
+        h3 {
+          font-weight: 700;
+          color: $color-gold;
+        }
+        .linha {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 25%;
+          width: 50%;
+          border-bottom: 2px solid $color-gold;
+          z-index: 1;
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        }
+
+        .close-button {
+          position: absolute;
+          top: 10px;
+          right: 10px;
+
+          /* Tipografia */
+
+          //   border-radius: 999px;
+          border-color: $color-gold;
+          line-height: 1.5;
+
+          width: 30px;
+          height: 30px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    }
+
+    .modal-body {
+      display: flex;
+      flex-direction: row;
+      gap: 40px;
+      padding-left: 70px;
+      padding-bottom: 50px;
+      padding-top: 50px;
+
+      .col {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        span {
+          white-space: nowrap;
+
+          color: $color-gold;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
+
+.modal {
+  --bs-modal-width: 900px;
+  height: 1000px;
+}

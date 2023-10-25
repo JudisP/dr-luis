@@ -3,6 +3,8 @@ import {
   Button,
   Col,
   Container,
+  ModalBody,
+  ModalHeader,
   Row,
 } from "reactstrap";
 
@@ -13,9 +15,17 @@ import { BsTelephone, BsWhatsapp } from "react-icons/bs";
 import { LuMail } from "react-icons/lu";
 
 import setaDireita from "@/shared/icons/seta-direita.svg";
+import ModalConvenio from "@/Components/Modal";
+import { useState } from "react";
 import BallBackgroundBig from "@/Components/BallBackgroundBig";
 
 const Home = () => {
+  const [showModalConvenio, setShowModalConvenio] = useState(false);
+
+  const toggle = () => {
+    setShowModalConvenio((prev) => !prev);
+  };
+
   return (
     <div className="pagina-home position-relative">
       <div className="hero-slide">
@@ -68,7 +78,7 @@ const Home = () => {
           </Col>
           <Col
             className="imagens"
-            style={{ display:"none", width: "100%", height: "100%", position: "relative" }}
+            style={{ width: "100%", height: "100%", position: "relative" }}
           >
             <div style={{ width: "100%", height: 500 }}>
               <div className="imagens-sobrepostas">
@@ -416,6 +426,78 @@ const Home = () => {
 
       <Container className="nossos-convenios">
         <div className="img-convenios">Convenio</div>
+        <button
+          className="button button--primary"
+          onClick={() => {
+            setShowModalConvenio(true);
+          }}
+          type="button"
+        >
+          CONSULTE NOSSOS CONVÊNIOS
+        </button>
+        <ModalConvenio
+          setShowModalConvenio={setShowModalConvenio}
+          toggle={toggle}
+          showModalConvenio={showModalConvenio}
+        >
+          <ModalHeader>
+            <h3>CONVÊNIOS CLÍNICA VASCULAR</h3>
+            <button
+              className="close-button button button--primary"
+              onClick={() => setShowModalConvenio(false)}
+              type="button"
+            >
+              X
+            </button>
+            <div className="linha"></div>
+          </ModalHeader>
+          <ModalBody>
+            <Col>
+              <span>UNAFISCO</span>
+              <span>AMIL</span>
+              <span>CAMED</span>
+              <span>CASEMBRAPA</span>
+              <span>CASEC (CODEVASC)</span>
+              <span>E-VIDA (ELETRONORTE)</span>
+              <span>GDF SAÚDE</span>
+              <span>CASSI</span>
+              <span>AFFEGO</span>
+              <span>BACEN</span>
+              <span>ASETE</span>
+              <span>CONAB</span>
+              <span>TST SAÚDE</span>
+            </Col>
+            <Col>
+              <span>TRT SAÚDE</span>
+              <span>FACEB</span>
+              <span>BRB SAÚDE</span>
+              <span>FASCAL</span>
+              <span>GAMA SAÚDE</span>
+              <span>PETROBRÁS - PETRÓLEO</span>
+              <span>PLAN ASSISTE - MPF</span>
+              <span>PLAN ASSISTE - MPU</span>
+              <span>PLAN ASSISTE - MPT</span>
+              <span>TRE SAÚDE</span>
+              <span>PLAS/JMU - (MPT)</span>
+              <span>NOTRE DAME</span>
+              <span>GEAP</span>
+            </Col>
+            <Col>
+              <span>POSTAL SAÚDE</span>
+              <span>PRÓ - SAÚDE (TJDFT)</span>
+              <span>PRÓ - SOCIAL (TRF)</span>
+              <span>SAÚDE CAIXA</span>
+              <span>SERPRO</span>
+              <span>BRADESCO SAÚDE</span>
+              <span>UNIMED CENTRAL NACIONAL</span>
+              <span>SIS (SENADO)</span>
+              <span>STF - MED</span>
+              <span>SULAMERICA </span>
+              <span>OMINT SAÚDE</span>
+              <span>LIFE EMPRESARIAL</span>
+            </Col>
+          </ModalBody>
+        </ModalConvenio>
       </Container>
     </div>
   );
