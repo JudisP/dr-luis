@@ -1,0 +1,32 @@
+/*--- 4. SCREEN LARGE (992px) ---*/
+/* Telas LARGE ou maiores */
+@media (max-width: $screen-lg) {
+    .container-agendamento {
+        .row-agendamento {
+            gap: 2rem;
+        }
+
+        .atendimento{
+            align-items: center;
+            margin: .8rem;
+        }
+    }
+}
+
+
+/*--- 3. SCREEN MEDIUM (768px) ---*/
+/* Telas MEDIUM ou maiores */
+@media (max-width: $screen-md) {
+    .agendamento {
+        align-items: center;
+
+        .informacoes {
+
+            .informacao {
+                flex-shrink: 0;
+                width: 350px;
+                margin: 0 20px;
+            }
+        }
+    }
+}
