@@ -64,4 +64,244 @@
       }
     }
   }
+
+  .container-apresentacao {
+    width: 100vw;
+
+    display: flex;
+
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    .background-elemento {
+      background-color: $color-gold;
+      width: 100%;
+
+      .coluna-img {
+      }
+      .coluna-texto {
+        .titulo {
+        }
+        .linha {
+          content: "";
+          height: 2px;
+          width: 160px;
+          background-color: $color-text;
+          margin-left: 8px;
+        }
+        .descricao {
+        }
+      }
+    }
+  }
+
+  .container-servicos {
+    .titulo {
+      .titulos {
+        .titulo-clinica {
+        }
+        .titulo-servico {
+        }
+      }
+
+      .linha {
+        content: "";
+        height: 2px;
+        width: 160px;
+        background-color: $color-gold;
+        margin-left: 8px;
+      }
+
+      .texto {
+      }
+    }
+
+    .background-banner {
+      background-color: $color-gold;
+      display: flex;
+
+      border-bottom-right-radius: 100px;
+
+      margin-top: 50px;
+      margin-bottom: 50px;
+
+      .elemento {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+
+        img {
+        }
+
+        .conteudo {
+          position: absolute;
+        }
+      }
+
+      span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+
+  .container-perguntas-frequentes {
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 70px;
+
+    .titulo {
+      display: flex;
+      align-items: center;
+
+      h3 {
+      }
+
+      .linha {
+        content: "";
+        height: 2px;
+        width: 160px;
+        background-color: $color-text;
+        margin-left: 8px;
+      }
+    }
+
+    .perguntas {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+
+      .pergunta-resposta {
+        // .pergunta .pergunta:hover img {
+        //   display: none;
+        // } Probelmas em trocar a imagem
+      }
+
+      .pergunta-resposta {
+        width: 30.625rem;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        .pergunta {
+          background-color: $color-gold;
+          padding-left: 10px;
+          border-bottom-left-radius: 10px;
+          border-top-right-radius: 10px;
+
+          height: 60px;
+
+          cursor: pointer;
+
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          gap: 5px;
+        }
+
+        // .pergunta:hover:not(:disabled) {
+        //   content: url(../../shared/icons/seta-direita.svg);
+        //   font-size: 20px;
+        //   font-weight: bold;
+        //   margin: 0 5px;
+        //   padding: 0;
+        //   width: 20px;
+        //   text-align: center;
+        // }&,
+        // &:hover {
+        //   content: url(../../shared/icons/seta-baixo.svg);
+        // }
+
+        .resposta {
+          max-height: 0;
+          opacity: 0;
+          animation: none;
+
+          overflow: hidden;
+
+          padding: 10px;
+
+          animation-fill-mode: none;
+        }
+
+        .pergunta:hover + .resposta {
+          animation: hideAndShow 2s;
+          max-height: 500px;
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  .container-banner-beleza {
+    margin: 0;
+    padding: 0;
+    .background-banner {
+      display: flex;
+      align-items: center;
+      /* align-content: center; */
+      justify-content: center;
+      width: 100vw;
+
+      img {
+        width: 100vw;
+      }
+      .conteudo {
+        position: absolute;
+      }
+    }
+  }
+
+  .container-podemos-ajudar {
+    span {
+    }
+
+    h3 {
+    }
+  }
+
+  .agendamento {
+    background-color: $color-gold;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 40px;
+    gap: 30px;
+
+    .contatos {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      gap: 20px;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+@keyframes hideAndShow {
+  from {
+    max-height: 0;
+    opacity: 0;
+    display: none;
+  }
+  to {
+    max-height: 500px;
+    opacity: 1;
+  }
 }
