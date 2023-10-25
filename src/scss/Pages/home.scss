@@ -274,6 +274,8 @@
 
   .agendamento {
     background-color: $color-gold;
+    
+    
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -283,6 +285,9 @@
     padding: 40px;
     gap: 30px;
 
+    margin-top: 50px;
+    margin-bottom: 100px;
+
     .contatos {
       display: flex;
       flex-direction: column;
@@ -290,6 +295,28 @@
 
       gap: 20px;
       margin-bottom: 10px;
+    }
+  }
+
+  .nossos-convenios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+
+    margin-top: 70px;
+    margin-bottom: 50px;
+
+    .img-convenios {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 115px;
+
+      img {
+        max-width: 100px;
+        max-height: 100px;
+      }
     }
   }
 }
