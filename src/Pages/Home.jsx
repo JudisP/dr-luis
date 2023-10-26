@@ -14,6 +14,8 @@ import BallBackground from "@/Components/BallBackground";
 import { BsTelephone, BsWhatsapp } from "react-icons/bs";
 import { LuMail } from "react-icons/lu";
 
+import { TfiLocationPin } from "react-icons/tfi";
+
 import setaDireita from "@/shared/icons/seta-direita.svg";
 import ModalConvenio from "@/Components/Modal";
 import { useState } from "react";
@@ -387,8 +389,11 @@ const Home = () => {
           <img src="https://via.placeholder.com/1500x600" />
 
           <div className="conteudo">
-            <h3>Titulo</h3>
-            <span>texto</span>
+            <h3>EXALTE A BELEZA DAS SUAS PERNAS</h3>
+            <h5>VENHA PARA CLÍNICA VASCULAR</h5>
+            <button className="button button--primary">
+              <a>AGENDAR CONSULTA</a>
+            </button>
           </div>
         </div>
       </Container>
@@ -398,12 +403,12 @@ const Home = () => {
         <h3>Como podemos te ajudar hoje?</h3>
         <button className="button button--primary">
           <a>
-            Agendar uma consulta <AiOutlineArrowRight />
+            <TfiLocationPin /> Ver no Google Maps
           </a>
         </button>
       </Container>
 
-      <div className="agendamento">
+      <Container className="agendamento">
         <div className="linha"></div>
         <h3>AGENDE AGORA SUA CONSULTA</h3>
         <div className="contatos">
@@ -424,7 +429,7 @@ const Home = () => {
           </button>
         </div>
         <div className="linha"></div>
-      </div>
+      </Container>
 
       <div className="nossos-convenios">
         <div className="img-convenios">
