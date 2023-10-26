@@ -144,24 +144,36 @@ const Home = () => {
 
         <div className="background-banner">
           <div className="elemento">
-            <img src="https://via.placeholder.com/300x400" />
+            <img src="https://via.placeholder.com/400x400" />
             <div className="conteudo">
-              <h3>Titulo</h3>
-              <span>texto</span>
+              <h3>ESTÉTICA VASCULAR</h3>
+              <span>
+                O tratamento ocorre por meio de uma energia eletromagnética,
+                produzindo um feixe de luz com muita precisão e alta
+                intensidade.
+              </span>
             </div>
           </div>
           <div className="elemento">
-            <img src="https://via.placeholder.com/300x400" />
+            <img src="https://via.placeholder.com/400x400" />
             <div className="conteudo">
-              <h3>Titulo</h3>
-              <span>texto</span>
+              <h3>ECO-DOPPLER</h3>
+              <span>
+                Vários fatores podem acelerar a evolução de doenças vasculares
+                como: histórico na família, tabagismo, diabetes, hipertensão.
+                Não ignore seus sintomas!
+              </span>
             </div>
           </div>
           <div className="elemento">
-            <img src="https://via.placeholder.com/300x400" />
+            <img src="https://via.placeholder.com/390x400" />
             <div className="conteudo">
-              <h3>Titulo</h3>
-              <span>texto</span>
+              <h3>CHECK-UP</h3>
+              <span>
+                Fazer um check-up vascular é a melhor maneira de compreender
+                como está o seu sistema circulatório, incluindo a identificação
+                de problemas pós-Covid.
+              </span>
             </div>
           </div>
           <span>(61) 99999-9999</span>

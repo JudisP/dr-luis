@@ -101,6 +101,11 @@
   }
 
   .container-servicos {
+    margin-left: 50px;
+    margin-right: 50px;
+
+    width: 100vw;
+
     .titulo {
       .titulos {
         .titulo-clinica {
@@ -125,6 +130,8 @@
       background-color: $color-gold;
       display: flex;
 
+      width: 93vw;
+
       border-bottom-right-radius: 100px;
 
       margin-top: 50px;
@@ -141,6 +148,10 @@
 
         .conteudo {
           position: absolute;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
         }
       }
 
@@ -148,6 +159,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        max-width: 80px;
       }
     }
   }
