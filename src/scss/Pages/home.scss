@@ -101,28 +101,48 @@
   }
 
   .container-servicos {
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-top: 100px;
+    margin-bottom: 100px;
 
     width: 100vw;
 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
     .titulo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      max-width: 75%;
+
+      gap: 15px;
+
       .titulos {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 15px;
         .titulo-clinica {
+          font-weight: 700;
         }
         .titulo-servico {
+          font-weight: 700;
         }
       }
 
       .linha {
         content: "";
         height: 2px;
-        width: 160px;
+        width: 78vw;
         background-color: $color-gold;
         margin-left: 8px;
       }
 
       .texto {
+        text-align: center;
       }
     }
 
@@ -130,7 +150,7 @@
       background-color: $color-gold;
       display: flex;
 
-      width: 93vw;
+      width: 92vw;
 
       border-bottom-right-radius: 100px;
 
@@ -144,9 +164,13 @@
         height: 100%;
 
         img {
+          max-width: 310px;
+          max-height: 400px;
         }
 
         .conteudo {
+          font-weight: 700;
+          color: $color-white;
           position: absolute;
           display: flex;
           align-items: center;
@@ -159,7 +183,23 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        max-width: 80px;
+        max-width: 250px;
+      }
+
+      .numero {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+
+        font-weight: 700;
+        color: $color-white;
+
+        .agende {
+          display: flex;
+          gap: 3px;
+        }
       }
     }
   }

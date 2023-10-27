@@ -127,7 +127,7 @@ const Home = () => {
         </div>
         <BallBackground className="bolinhas-small" />
       </Container>
-      <Container className="container-servicos">
+      <div className="container-servicos">
         <div className="titulo">
           <div className="titulos">
             <h3 className="titulo-clinica">CLÍNICA VASCULAR BRASÍLIA</h3>
@@ -135,7 +135,7 @@ const Home = () => {
           </div>
           <div className="linha"></div>
           <span className="texto">
-            Trabalho com um equipamento inovador, o VeinViewer. Através dele uma
+            Trabalho com um equipamento inovador, o <strong>VeinViewer.</strong>F Através dele uma
             luz infravermelha, juntamente com tecnologias avançadas, é utilizada
             para exibir uma imagem periférica das veias diretamente na
             superfície da pele.
@@ -144,7 +144,7 @@ const Home = () => {
 
         <div className="background-banner">
           <div className="elemento">
-            <img src="https://via.placeholder.com/400x400" />
+            <img src="https://via.placeholder.com/295x400" />
             <div className="conteudo">
               <h3>ESTÉTICA VASCULAR</h3>
               <span>
@@ -155,7 +155,7 @@ const Home = () => {
             </div>
           </div>
           <div className="elemento">
-            <img src="https://via.placeholder.com/400x400" />
+            <img src="https://via.placeholder.com/295x400" />
             <div className="conteudo">
               <h3>ECO-DOPPLER</h3>
               <span>
@@ -166,7 +166,7 @@ const Home = () => {
             </div>
           </div>
           <div className="elemento">
-            <img src="https://via.placeholder.com/390x400" />
+            <img src="https://via.placeholder.com/295x400" />
             <div className="conteudo">
               <h3>CHECK-UP</h3>
               <span>
@@ -176,9 +176,12 @@ const Home = () => {
               </span>
             </div>
           </div>
-          <span>(61) 99999-9999</span>
+          <div className="numero">
+            <span className="agende"><BsTelephone />AGENDE AGORA</span>
+            <span>(61) 99999-9999</span>
+          </div>
         </div>
-      </Container>
+      </div>
 
       <Container className="container-perguntas-frequentes">
         <div className="titulo">
