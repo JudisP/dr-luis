@@ -8,7 +8,10 @@ import {
   Row,
 } from "reactstrap";
 
-import { AiOutlineArrowRight } from "react-icons/ai";
+import { AiOutlineArrowRight, AiOutlineClockCircle } from "react-icons/ai";
+import { FaLocationDot } from "react-icons/fa6";
+
+
 import BallBackground from "@/Components/BallBackground";
 
 import { BsTelephone, BsWhatsapp } from "react-icons/bs";
@@ -20,6 +23,7 @@ import setaDireita from "@/shared/icons/seta-direita.svg";
 import ModalConvenio from "@/Components/Modal";
 import { useState } from "react";
 import BallBackgroundBig from "@/Components/BallBackgroundBig";
+import { FaUserMd } from "react-icons/fa";
 
 const Home = () => {
   const [showModalConvenio, setShowModalConvenio] = useState(false);
@@ -43,40 +47,44 @@ const Home = () => {
         <Row className="row-boas-vindas">
           <Col className="apresentacao">
             <div className="titulo">
-              <h3>Bem vindo a</h3>
-              <h3>Clínica Vascular</h3>
+              <h2>Bem vindo a</h2>
+              <h2>Clínica Vascular</h2>
             </div>
             <div className="linha"></div>
-            <span>
+            <span className="texto">
               Atendimento seguro e inovação que proporcionam os melhores
               serviços na área de Cirurgia de varizes. O Melhor em recursos da
               tecnologia aplicada aos tratamentos de doenças das artérias, veias
               e vasos linfáticos.
             </span>
-            <Row>
-              <div>
-                <div>
-                  <h5>Dr. Luis Fernando de Carvalho Bastos</h5>
+            <Row className="dr-horario">
+              <div className="row">
+                <div className="background-icon">
+                  <FaUserMd />
+                </div>
+                <div className="texto">
+                  <h4>Dr. Luis Fernando de Carvalho Bastos</h4>
                   <span>Cirurgião Vascular - CRM/DF 11.886</span>
                 </div>
               </div>
-              <div>
-                <div>
-                  <h5>Horário de Funcionamento</h5>
+              <div className="row">
+                <div className="background-icon clock">
+                  <AiOutlineClockCircle className="clock"/>
+                </div>
+                <div className="texto">
+                  <h4>Horário de Funcionamento</h4>
                   <span>Segunda a Sexta - 8hrs às 18hrs</span>
                 </div>
               </div>
             </Row>
             <button className="button button--primary">
               <a>
-                Agendar uma consulta <AiOutlineArrowRight />
+                Procedimentos <AiOutlineArrowRight />
               </a>
             </button>
-            <button className="button button--primary">
-              <a>
-                Agendar uma consulta <AiOutlineArrowRight />
-              </a>
-            </button>
+            <div className="ver-maps">
+              <FaLocationDot /> Ver no Google Maps
+            </div>
           </Col>
           <Col
             className="imagens"
@@ -98,35 +106,38 @@ const Home = () => {
           </Col>
         </Row>
       </Container>
-      <Container className="container-apresentacao">
+      <div className="container-apresentacao">
         <div className="background-elemento">
           <Col className="coluna-img">
-            <img src="https://via.placeholder.com/700x900" />
+            <img src="https://via.placeholder.com/600x700" />
           </Col>
           <Col className="coluna-texto">
             <div className="titulo">
-              <h3>Dr. Luis Fernando Bastos</h3>
-              <h3>Angiologista</h3>
+              <h2>Dr. Luis Fernando Bastos</h2>
+              <h2>Angiologista</h2>
+              {/* <h3>TExto</h3> */}
+              <div className="linha"></div>
             </div>
-            <div className="linha"></div>
             <div className="descricao">
-              <p>
+              <h3>
                 Dr. Luís Fernando de Carvalho Bastos é cirurgião na nossa
                 Clínica vascular, formado em medicina pela Escola de Ciências
                 Médicas de Alagoas. É membro da Sociedade Brasileira de
                 Angiologia e Cirurgia de Varizes e membro do serviço de cirurgia
                 vascular do Hospital de Base do Distrito Federal.
-              </p>
-              <button className="button button--conteudo--text-white">
-                <a>
-                  Agendar uma consulta <AiOutlineArrowRight />
-                </a>
-              </button>
+              </h3>
             </div>
+            <button className="button button--conteudo--text-white">
+              <a>
+                Saiba mais <AiOutlineArrowRight />
+              </a>
+            </button>
           </Col>
         </div>
-        <BallBackground className="bolinhas-small" />
-      </Container>
+        <div className="container-bolinhas-small">
+          <BallBackground className="bolinhas-small" />
+        </div>
+      </div>
       <div className="container-servicos">
         <div className="titulo">
           <div className="titulos">
@@ -135,10 +146,10 @@ const Home = () => {
           </div>
           <div className="linha"></div>
           <span className="texto">
-            Trabalho com um equipamento inovador, o <strong>VeinViewer.</strong>F Através dele uma
-            luz infravermelha, juntamente com tecnologias avançadas, é utilizada
-            para exibir uma imagem periférica das veias diretamente na
-            superfície da pele.
+            Trabalho com um equipamento inovador, o <strong>VeinViewer.</strong>
+            F Através dele uma luz infravermelha, juntamente com tecnologias
+            avançadas, é utilizada para exibir uma imagem periférica das veias
+            diretamente na superfície da pele.
           </span>
         </div>
 
@@ -177,7 +188,10 @@ const Home = () => {
             </div>
           </div>
           <div className="numero">
-            <span className="agende"><BsTelephone />AGENDE AGORA</span>
+            <span className="agende">
+              <BsTelephone />
+              AGENDE AGORA
+            </span>
             <span>(61) 99999-9999</span>
           </div>
         </div>
