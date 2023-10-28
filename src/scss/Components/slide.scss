@@ -10,6 +10,24 @@
     }
   }
 
+  .swiper-button-next {
+    color: $color-white;
+    &::after {
+        font-size: 30px;
+    }
+  }
+  .swiper-button-prev {
+    color: $color-white;
+    &::after {
+        font-size: 30px;
+    }
+  }
+
+  .swiper-pagination {
+    .swiper-pagination-bullet.swiper-pagination-bullet-active {
+      background-color: $color-gold;
+    }
+  }
 }
 
 .imagem-estatica {

@@ -115,7 +115,6 @@ const Home = () => {
             <div className="titulo">
               <h2>Dr. Luis Fernando Bastos</h2>
               <h2>Angiologista</h2>
-              {/* <h3>TExto</h3> */}
               <div className="linha"></div>
             </div>
             <div className="descricao">
