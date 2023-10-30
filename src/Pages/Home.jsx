@@ -11,7 +11,6 @@ import {
 import { AiOutlineArrowRight, AiOutlineClockCircle } from "react-icons/ai";
 import { FaLocationDot } from "react-icons/fa6";
 
-
 import BallBackground from "@/Components/BallBackground";
 
 import { BsTelephone, BsWhatsapp } from "react-icons/bs";
@@ -24,6 +23,7 @@ import ModalConvenio from "@/Components/Modal";
 import { useState } from "react";
 import BallBackgroundBig from "@/Components/BallBackgroundBig";
 import { FaUserMd } from "react-icons/fa";
+import Maps from "@/Components/Maps";
 
 const Home = () => {
   const [showModalConvenio, setShowModalConvenio] = useState(false);
@@ -69,7 +69,7 @@ const Home = () => {
               </div>
               <div className="row">
                 <div className="background-icon clock">
-                  <AiOutlineClockCircle className="clock"/>
+                  <AiOutlineClockCircle className="clock" />
                 </div>
                 <div className="texto">
                   <h4>Horário de Funcionamento</h4>
@@ -540,6 +540,12 @@ const Home = () => {
             </Col>
           </ModalBody>
         </ModalConvenio>
+      </div>
+
+      <div className="container-div-loc">
+        <Container className="container-localizacao position-relative">
+          <Maps />
+        </Container>
       </div>
     </div>
   );
