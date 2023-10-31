@@ -106,7 +106,7 @@ const Home = () => {
           </Col>
         </Row>
       </Container>
-      
+
       <div className="container-apresentacao">
         <div className="background-elemento">
           <Col className="coluna-img col">
@@ -138,6 +138,8 @@ const Home = () => {
           <BallBackground className="bolinhas-small" />
         </div>
       </div>
+
+
       <div className="container-servicos" >
         <div className="titulo">
           <div className="titulos">
@@ -153,7 +155,7 @@ const Home = () => {
           </span>
         </div>
 
-        <div className="background-banner">
+        <div className="background-banner resp">
           <div className="elemento">
             <img src="https://via.placeholder.com/295x400" />
             <div className="conteudo">

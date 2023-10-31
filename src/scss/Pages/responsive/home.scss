@@ -1,55 +1,72 @@
 @media (max-width: $screen-xl) {
 
+    .pagina-home {
+        .conteiner-boas-vindas {
+            .row-boas-vindas {
 
-    .conteiner-boas-vindas {
-        .row-boas-vindas {
+                .apresentacao {
 
-            .apresentacao {
-                
-                text-align: justify;
+                    text-align: justify;
+                }
+
+                .row {
+                    display: flex;
+                    justify-content: start;
+
+                }
+
+                .imagens,
+                .images-container {
+                    display: none;
+                }
+
+            }
+        }
+
+        .container-apresentacao {
+
+            .coluna-texto {
+                padding: 40px;
+
+
+                .titulo {
+                    h2 {
+                        font-size: 1.5rem;
+                    }
+                }
+
+                .descricao {
+                    h3 {
+                        margin: 20px 0;
+                        font-size: 1.1rem;
+                    }
+                }
             }
 
-            .row {
-                display: flex;
-                justify-content: start;
-
+            .coluna-img img {
+                width: 100%;
+                min-height: 5rem;
             }
 
-            .imagens,
-            .images-container {
+            .container-bolinhas-small {
                 display: none;
             }
-
         }
-    }
 
-    .container-apresentacao {
+        .container-servicos {
+            .background-banner.resp {
+                flex-direction: column;
+                width:  auto;
+                border-bottom-right-radius: 30px;
 
-        .coluna-texto {
-            padding: 40px;
-            
-
-            .titulo {
-                h2 {
-                    font-size: 1.5rem;
+                .numero {
+                    padding: 15px;
                 }
+                
             }
-            
-            .descricao {
-                h3 {
-                    margin: 20px 0;
-                    font-size: 1.1rem;
-                }
-              }
-        }    
 
-        .coluna-img img {
-            width: 100%;
-            min-height: 5rem;
         }
 
-        .container-bolinhas-small {
-            display: none;
-        }
+        
     }
 }
