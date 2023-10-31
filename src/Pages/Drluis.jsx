@@ -5,6 +5,7 @@ import SlideHistory from "@/Components/SlideHistory";
 
 import { RxDoubleArrowRight } from "react-icons/rx";
 import { LuMail } from "react-icons/lu";
+import Maps from "@/Components/Maps";
 
 const Drluis = () => {
   return (
@@ -146,6 +147,11 @@ const Drluis = () => {
           </div>
         </div>
       </Container>
+      <div className="container-div-loc">
+        <Container className="container-localizacao position-relative">
+          <Maps />
+        </Container>
+      </div>
     </div>
   );
 };
