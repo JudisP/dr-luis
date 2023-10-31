@@ -86,11 +86,11 @@ const Home = () => {
               <FaLocationDot /> Ver no Google Maps
             </div>
           </Col>
-          <Col
+          <Col 
             className="imagens"
             style={{ width: "100%", height: "100%", position: "relative" }}
           >
-            <div style={{ width: "100%", height: 500 }}>
+            <div  className="images-container" style={{ width: "100%", height: 500 }}>
               <div className="imagens-sobrepostas">
                 <img
                   className="img-comprida"
@@ -106,9 +106,10 @@ const Home = () => {
           </Col>
         </Row>
       </Container>
+      
       <div className="container-apresentacao">
         <div className="background-elemento">
-          <Col className="coluna-img">
+          <Col className="coluna-img col">
             <img src="https://via.placeholder.com/600x700" />
           </Col>
           <Col className="coluna-texto">
@@ -137,7 +138,7 @@ const Home = () => {
           <BallBackground className="bolinhas-small" />
         </div>
       </div>
-      <div className="container-servicos">
+      <div className="container-servicos" >
         <div className="titulo">
           <div className="titulos">
             <h3 className="titulo-clinica">CLÍNICA VASCULAR BRASÍLIA</h3>

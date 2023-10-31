@@ -43,6 +43,7 @@
             font-weight: 700;
           }
         }
+
         .linha {
           content: "";
           height: 2px;
@@ -78,6 +79,7 @@
               height: 60px;
 
               border-radius: 999px;
+
               svg {
                 width: 33px;
                 height: 33px;
@@ -105,6 +107,7 @@
 
         .ver-maps {
           font-weight: 700;
+
           svg {
             width: 22px;
             height: 22px;
@@ -114,7 +117,8 @@
 
       .imagens {
         .imagens-sobrepostas {
-          width: 700px;
+          background-color: #c5a04e;
+          width: auto;
           height: 478px;
           position: absolute;
           left: 0;
@@ -164,16 +168,20 @@
       display: flex;
       flex-direction: row;
 
-      .coluna-img {
+      .coluna-img.col  {
+        margin: auto;
       }
+
       .coluna-texto {
-        padding: 90px;
+        padding: 10px;
+        margin: 50px;
 
         .titulo {
           h2 {
             font-weight: 700;
           }
         }
+
         .linha {
           content: "";
           height: 2px;
@@ -181,8 +189,10 @@
           background-color: $color-text;
           margin-top: 30px;
         }
+
         .descricao {
           color: $color-white;
+          margin: 20px 0;
         }
 
         button {
@@ -217,9 +227,11 @@
         align-items: center;
         flex-direction: column;
         gap: 15px;
+
         .titulo-clinica {
           font-weight: 700;
         }
+
         .titulo-servico {
           font-weight: 700;
         }
@@ -384,7 +396,7 @@
           animation-fill-mode: none;
         }
 
-        .pergunta:hover + .resposta {
+        .pergunta:hover+.resposta {
           animation: hideAndShow 2s;
           max-height: 500px;
           opacity: 1;
@@ -396,6 +408,7 @@
   .container-banner-beleza {
     margin: 0;
     padding: 0;
+
     .background-banner {
       display: flex;
       align-items: center;
@@ -405,6 +418,7 @@
       img {
         width: 100vw;
       }
+
       .conteudo {
         position: absolute;
 
@@ -513,11 +527,12 @@
 
   .container-div-loc {
     border-top: 1px solid #a9a9a9;
+
     .container-localizacao {
 
       // width: 500px;
       height: 350px;
-      
+
       margin-top: 100px;
       margin-bottom: 100px;
 
@@ -536,6 +551,7 @@
     opacity: 0;
     display: none;
   }
+
   to {
     max-height: 500px;
     opacity: 1;

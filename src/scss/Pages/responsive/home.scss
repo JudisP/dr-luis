@@ -1,0 +1,55 @@
+@media (max-width: $screen-xl) {
+
+
+    .conteiner-boas-vindas {
+        .row-boas-vindas {
+
+            .apresentacao {
+                
+                text-align: justify;
+            }
+
+            .row {
+                display: flex;
+                justify-content: start;
+
+            }
+
+            .imagens,
+            .images-container {
+                display: none;
+            }
+
+        }
+    }
+
+    .container-apresentacao {
+
+        .coluna-texto {
+            padding: 40px;
+            
+
+            .titulo {
+                h2 {
+                    font-size: 1.5rem;
+                }
+            }
+            
+            .descricao {
+                h3 {
+                    margin: 20px 0;
+                    font-size: 1.1rem;
+                }
+              }
+        }    
+
+        .coluna-img img {
+            width: 100%;
+            min-height: 5rem;
+        }
+
+        .container-bolinhas-small {
+            display: none;
+        }
+    }
+}
