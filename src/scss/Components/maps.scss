@@ -1,0 +1,18 @@
+.container-div-loc {
+    border-top: 1px solid #a9a9a9;
+
+    .container-localizacao {
+
+      // width: 500px;
+      height: 350px;
+
+      margin-top: 100px;
+      margin-bottom: 100px;
+
+      .mapa {
+        div {
+          border-radius: 40px;
+        }
+      }
+    }
+  }
