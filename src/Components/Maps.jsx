@@ -43,4 +43,3 @@ Maps.propTypes = {
 export default GoogleApiWrapper({
   apiKey: import.meta.env.VITE_MAPS_KEY,
 })(Maps);
-
