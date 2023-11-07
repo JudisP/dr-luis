@@ -51,7 +51,7 @@ const Home = () => {
               <h2>Clínica Vascular</h2>
             </div>
             <div className="linha"></div>
-            <span className="texto">
+            <span className="texto descricao">
               Atendimento seguro e inovação que proporcionam os melhores
               serviços na área de Cirurgia de varizes. O Melhor em recursos da
               tecnologia aplicada aos tratamentos de doenças das artérias, veias
@@ -62,7 +62,7 @@ const Home = () => {
                 <div className="background-icon">
                   <FaUserMd />
                 </div>
-                <div className="texto">
+                <div className="texto ">
                   <h4>Dr. Luis Fernando de Carvalho Bastos</h4>
                   <span>Cirurgião Vascular - CRM/DF 11.886</span>
                 </div>
@@ -311,7 +311,7 @@ const Home = () => {
               </div>
             </div>
           </Col>
-          <Col>
+          <Col >
             <div className="pergunta-resposta">
               <div className="pergunta">
                 <img className="img" src={setaDireita} /> Existe idade para ter

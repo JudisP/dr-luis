@@ -56,17 +56,133 @@
         .container-servicos {
             .background-banner.resp {
                 flex-direction: column;
-                width:  auto;
+                width: auto;
                 border-bottom-right-radius: 30px;
 
                 .numero {
                     padding: 15px;
                 }
-                
+
             }
 
         }
 
-        
+        .container-perguntas-frequentes {
+            .titulo {
+                
+                h3 {
+                    font-size: 1rem;                    
+                }
+            }
+          
+
+            .perguntas {
+                display: grid;
+                grid-template-columns: 1fr;
+            }
+
+        }
+
+
     }
 }
+
+@media (max-width: $screen-md) {
+    .pagina-home {
+        .container-perguntas-frequentes {
+            .perguntas {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+
+        .container-apresentacao {
+            .coluna-texto {
+                width: 100%;
+                padding: 20px;
+
+
+                .titulo {
+                    h2 {
+                        font-size: 1.4rem;
+                    }
+                }
+
+                .descricao {
+                    h3 {
+                        margin: 20px 0;
+                        font-size: 1rem;
+                    }
+                }
+            }
+
+            .coluna-img.col {
+                display: none;
+
+                img {
+                    display: none;
+                    
+                }
+            }
+            
+        }
+    }   
+}
+
+@media (max-width: $screen-sm) {
+    .pagina-home{
+        .conteiner-boas-vindas{
+
+            .apresentacao {
+                margin: 20px;
+                align-items: center;
+                
+                
+                
+                .texto.descricao {
+                    width: 100% !important;
+                }         
+
+                h4 {
+                    font-size: .9rem;
+                }
+
+                .background-icon {
+                    width: 50px !important;
+                    height: 50px !important;
+                }
+            }
+        }
+            
+        .container-servicos {
+            h3 {
+                font-size: 1.1rem;
+            }
+        }
+        
+        .container-perguntas-frequentes {
+            .linha {
+                display: none;
+            }
+        }
+
+        .container-perguntas-frequentes {
+            .titulo {
+                
+                h3 {
+                    font-size: .9rem;                    
+                }
+            }
+          
+
+            .perguntas {
+                display: grid;
+                grid-template-columns: 1fr;
+                width: 350px;
+            }
+
+        }
+
+    }
+}
+

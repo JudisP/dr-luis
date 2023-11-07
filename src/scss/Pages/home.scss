@@ -156,7 +156,7 @@
     box-shadow: 0px 4px 4px 0px #00000040;
     border-radius: 10px;
     display: flex;
-
+    
     margin-top: 50px;
     margin-bottom: 50px;
 
@@ -246,7 +246,7 @@
       }
 
       .texto {
-        text-align: center;
+        text-align: justify;
       }
     }
 
@@ -325,30 +325,31 @@
 
       h3 {
         font-weight: 700;
+        text-align: center;
       }
 
       .linha {
         content: "";
         height: 2px;
-        width: 270px;
+        width: 220px;
         background-color: $color-gold;
         margin-left: 8px;
       }
     }
 
     .perguntas {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
+      display: flex;
+      justify-content: space-around;
       gap: 20px;
 
-      .pergunta-resposta {
+      // .pergunta-resposta {
         // .pergunta .pergunta:hover img {
         //   display: none;
         // } Probelmas em trocar a imagem
-      }
+      // }
 
       .pergunta-resposta {
-        width: 30.625rem;
+        
         display: flex;
         flex-direction: column;
 
@@ -416,7 +417,7 @@
       width: 100vw;
 
       img {
-        width: 100vw;
+        width: 100%;
       }
 
       .conteudo {
@@ -514,9 +515,13 @@
 
     .img-convenios {
       display: flex;
+      flex-wrap: wrap;
       align-items: center;
       justify-content: center;
-      gap: 115px;
+
+      gap: 80px;
+
+      padding: 10px;
 
       img {
         max-width: 100px;
