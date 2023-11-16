@@ -1,0 +1,43 @@
+@media (max-width: $screen-lg) {
+  .pagina-procedimentos {
+    .procedimento {
+      display: flex;
+      flex-direction: column;
+
+      .coluna-img img {
+        padding: 0 0 20px 0px;
+      }
+      .conteudo-coluna {
+        .conteudo-texto p {
+          margin-left: 0px !important;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $screen-md) {
+  .container-procedimentos {
+    .coluna-procedimentos {
+      .procedimento {
+        .coluna-img {
+          display: flex;
+          justify-content: center;
+
+          img {
+            width: 320px;
+            height: 300px;
+
+            max-width: 450px;
+            max-height: 400px;
+          }
+        }
+        .conteudo-texto {
+            p {
+                font-size: .9rem;
+            }
+        }
+      }
+    }
+  }
+}
