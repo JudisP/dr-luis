@@ -160,7 +160,7 @@ const Home = () => {
             <img src="https://via.placeholder.com/295x400" />
             <div className="conteudo">
               <h3>ESTÉTICA VASCULAR</h3>
-              <span>
+              <span> 
                 O tratamento ocorre por meio de uma energia eletromagnética,
                 produzindo um feixe de luz com muita precisão e alta
                 intensidade.

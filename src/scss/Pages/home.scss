@@ -142,8 +142,7 @@
             left: 0px;
             top: 260px;
 
-            border-top-left-radius: 10px;
-            border-top-right-radius: 10px;
+            border-radius: 10px 10px 0 0;
           }
         }
       }
@@ -151,7 +150,7 @@
   }
 
   .container-apresentacao {
-    width: 90%;
+    width: 87.6rem;
 
     box-shadow: 0px 4px 4px 0px #00000040;
     border-radius: 10px;
