@@ -1,0 +1,22 @@
+@media (max-width: $screen-xl) {
+  .container-drluis {
+    gap: 280px;
+
+    .feedbacks {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      .titulo-subtitulo {
+        span {
+          width: 400%;
+        }
+      }
+
+      .swiper-button-next {
+        display: none;
+      }
+    }
+  }
+}

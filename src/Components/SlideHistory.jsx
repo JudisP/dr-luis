@@ -10,30 +10,23 @@ import { Row } from "reactstrap";
 const SlideHistory = () => {
   return (
     <Swiper
-      slidesPerView={2}
-      spaceBetween={30}
-      loop={true}
-      pagination={{
-        clickable: true,
-      }}
-      // breakpoints={{
-      //   640: {
-      //     slidesPerView: 2,
-      //     spaceBetween: 20,
-      //   },
-      //   768: {
-      //     slidesPerView: 2,
-      //     spaceBetween: 40,
-      //   },
-      //   1024: {
-      //     slidesPerView: 2,
-      //     spaceBetween: 10,
-      //   },
-      // }}
-      navigation={true}
-      modules={[Pagination, Navigation]}
-      className="slide-history"
+    slidesPerView={1}
+    spaceBetween={30}
+    loop={true}
+    pagination={{
+      clickable: true,
+    }}
+    breakpoints={{
+      768: {
+        slidesPerView: 2, 
+      },
+    }}
+    navigation={true}
+    modules={[Pagination, Navigation]}
+    className="slide-history"
     >
+
+
       <SwiperSlide className="conteudo-slide">
         <Row className="estrelas">
           <BsStarFill />
@@ -57,6 +50,7 @@ const SlideHistory = () => {
           <BsStarFill />
           <BsStarFill />
         </Row>
+
         <span className="conteudo-texto">
           Dr. Luis Fernamdo é um excelente profissional, muito educado e
           prestativo com suas informações tentando ajudar quem o procura para um

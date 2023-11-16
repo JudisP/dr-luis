@@ -11,9 +11,6 @@
 @import 'Layout/footer.scss';
 @import 'Layout/reponsive/footer.scss';
 
-// pages responsivo
-@import 'Pages/responsive/home.scss';
-@import 'Pages/responsive/agendamento.scss';
 
 
 
@@ -46,3 +43,8 @@
 @import 'Tipografia/agendamento.scss';
 @import 'Tipografia/procedimentos.scss';
 @import 'Tipografia/drluis.scss';
+
+// pages responsivo
+@import 'Pages/responsive/home.scss';
+@import 'Pages/responsive/drluis.scss';
+@import 'Pages/responsive/agendamento.scss';

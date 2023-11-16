@@ -1,6 +1,7 @@
 const BallBackgroundBig = () => {
     return (
-      <div style={{width: 277, height: 178, position: 'relative'}}>
+      <div style={{width: 277, height: 178, position: 'relative', top: '50px', zIndex: '-1', left: '40px' }}>
+
       <div style={{width: 5.65, height: 7, left: 34.73, top: 137, position: 'absolute', background: 'rgba(218, 172, 76, 0.40)', borderRadius: 9999}} />
       <div style={{width: 5.65, height: 7, left: 74.30, top: 137, position: 'absolute', background: 'rgba(218, 172, 76, 0.40)', borderRadius: 9999}} />
       <div style={{width: 5.65, height: 7, left: 113.87, top: 137, position: 'absolute', background: 'rgba(218, 172, 76, 0.40)', borderRadius: 9999}} />

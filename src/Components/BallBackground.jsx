@@ -1,6 +1,6 @@
 const BallBackground = () => {
     return (
-        <div style={{width: '100%', height: '100%', position: 'relative'}}>
+        <div style={{width: '100%', height: '100%', position: 'relative', top: '400px' }}>
         <div style={{width: 7, height: 7, left: 103.54, top: 248.29, position: 'absolute', transform: 'rotate(-89.27deg)', transformOrigin: '0 0', background: 'rgba(218, 172, 76, 0.40)', borderRadius: 9999}} />
         <div style={{width: 7, height: 7, left: 104.16, top: 203.29, position: 'absolute', transform: 'rotate(-89.27deg)', transformOrigin: '0 0', background: 'rgba(218, 172, 76, 0.40)', borderRadius: 9999}} />
         <div style={{width: 7, height: 7, left: 104.78, top: 154.30, position: 'absolute', transform: 'rotate(-89.27deg)', transformOrigin: '0 0', background: 'rgba(218, 172, 76, 0.40)', borderRadius: 9999}} />
