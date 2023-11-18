@@ -29,7 +29,7 @@ import {
   listaPerguntasColuna1,
   listaPerguntasColuna2,
 } from "@/utils/questions";
-import { abreEmail, abreNumeroTelefone, abreWhatsapp } from "@/utils/helpers";
+import { abreEmail, abreGoogleMaps, abreNumeroTelefone, abreWhatsapp } from "@/utils/helpers";
 
 const Home = () => {
   const [showModalConvenio, setShowModalConvenio] = useState(false);
@@ -88,7 +88,7 @@ const Home = () => {
                 Procedimentos <AiOutlineArrowRight />
               </a>
             </button>
-            <div className="ver-maps">
+            <div className="ver-maps" onClick={abreGoogleMaps}>
               <FaLocationDot /> Ver no Google Maps
             </div>
           </Col>
@@ -252,10 +252,8 @@ const Home = () => {
       <Container className="container-podemos-ajudar">
         <span>FALE CONOSCO</span>
         <h3>Como podemos te ajudar hoje?</h3>
-        <button className="button button--primary">
-          <a>
+        <button className="button button--primary" onClick={abreGoogleMaps}>
             <TfiLocationPin /> Ver no Google Maps
-          </a>
         </button>
       </Container>
 
