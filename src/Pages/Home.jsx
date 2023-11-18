@@ -25,7 +25,11 @@ import BallBackgroundBig from "@/Components/BallBackgroundBig";
 import { FaUserMd } from "react-icons/fa";
 import Maps from "@/Components/Maps";
 import ListaPerguntas from "@/Components/ListaPerguntas";
-import { listaPerguntasColuna1, listaPerguntasColuna2 } from "@/utils/questions";
+import {
+  listaPerguntasColuna1,
+  listaPerguntasColuna2,
+} from "@/utils/questions";
+import { abreEmail, abreNumeroTelefone, abreWhatsapp } from "@/utils/helpers";
 
 const Home = () => {
   const [showModalConvenio, setShowModalConvenio] = useState(false);
@@ -88,11 +92,14 @@ const Home = () => {
               <FaLocationDot /> Ver no Google Maps
             </div>
           </Col>
-          <Col 
+          <Col
             className="imagens"
             style={{ width: "100%", height: "100%", position: "relative" }}
           >
-            <div  className="images-container" style={{ width: "100%", height: 500 }}>
+            <div
+              className="images-container"
+              style={{ width: "100%", height: 500 }}
+            >
               <div className="imagens-sobrepostas">
                 <img
                   className="img-comprida"
@@ -141,8 +148,7 @@ const Home = () => {
         </div>
       </div>
 
-
-      <div className="container-servicos" >
+      <div className="container-servicos">
         <div className="titulo">
           <div className="titulos">
             <h3 className="titulo-clinica">CLÍNICA VASCULAR BRASÍLIA</h3>
@@ -162,7 +168,7 @@ const Home = () => {
             <img src="https://via.placeholder.com/295x400" />
             <div className="conteudo">
               <h3>ESTÉTICA VASCULAR</h3>
-              <span> 
+              <span>
                 O tratamento ocorre por meio de uma energia eletromagnética,
                 produzindo um feixe de luz com muita precisão e alta
                 intensidade.
@@ -209,7 +215,7 @@ const Home = () => {
         </div>
         <div className="perguntas">
           <Col>
-          {listaPerguntasColuna1.map((item, index) => (
+            {listaPerguntasColuna1.map((item, index) => (
               <ListaPerguntas
                 key={index}
                 pergunta={item.pergunta}
@@ -217,8 +223,8 @@ const Home = () => {
               />
             ))}
           </Col>
-          <Col >
-          {listaPerguntasColuna2.map((item, index) => (
+          <Col>
+            {listaPerguntasColuna2.map((item, index) => (
               <ListaPerguntas
                 key={index}
                 pergunta={item.pergunta}
@@ -257,20 +263,23 @@ const Home = () => {
         <div className="linha"></div>
         <h3>AGENDE AGORA SUA CONSULTA</h3>
         <div className="contatos">
-          <button className="button button--conteudo--text-white">
-            <a>
-              <BsWhatsapp /> Whatsapp
-            </a>
+          <button
+            className="button button--conteudo--text-white"
+            onClick={abreWhatsapp}
+          >
+            <BsWhatsapp /> Whatsapp
           </button>
-          <button className="button button--conteudo--text-white">
-            <a>
-              <BsTelephone /> Telefone
-            </a>
+          <button
+            className="button button--conteudo--text-white"
+            onClick={abreNumeroTelefone}
+          >
+            <BsTelephone /> Telefone
           </button>
-          <button className="button button--conteudo--text-white">
-            <a>
-              <LuMail /> E-mail
-            </a>
+          <button
+            className="button button--conteudo--text-white"
+            onClick={abreEmail}
+          >
+            <LuMail /> E-mail
           </button>
         </div>
         <div className="linha"></div>
