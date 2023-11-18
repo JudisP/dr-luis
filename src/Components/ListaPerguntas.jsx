@@ -15,9 +15,7 @@ const ListaPerguntas = ({ pergunta, resposta }) => {
         <img src={setaDireita} /> {pergunta}
       </div>
       <div className={`resposta ${isExpanded ? "expanded" : ""}`}>
-        <div className="linha"></div>
-        {resposta}
-        <div className="linha"></div>
+        <div className="resposta-wrapper">{resposta}</div>
       </div>
     </div>
   );
