@@ -347,60 +347,10 @@
         // } Probelmas em trocar a imagem
       // }
 
-      .pergunta-resposta {
-        
+      .col {
         display: flex;
         flex-direction: column;
-
-        .pergunta {
-          background-color: $color-gold;
-          padding-left: 10px;
-          border-bottom-left-radius: 10px;
-          border-top-right-radius: 10px;
-
-          height: 60px;
-
-          cursor: pointer;
-
-          color: $color-white;
-          font-weight: 700;
-
-          display: flex;
-          flex-direction: row;
-          align-items: center;
-          gap: 5px;
-        }
-
-        // .pergunta:hover:not(:disabled) {
-        //   content: url(../../shared/icons/seta-direita.svg);
-        //   font-size: 20px;
-        //   font-weight: bold;
-        //   margin: 0 5px;
-        //   padding: 0;
-        //   width: 20px;
-        //   text-align: center;
-        // }&,
-        // &:hover {
-        //   content: url(../../shared/icons/seta-baixo.svg);
-        // }
-
-        .resposta {
-          max-height: 0;
-          opacity: 0;
-          animation: none;
-
-          overflow: hidden;
-
-          padding: 10px;
-
-          animation-fill-mode: none;
-        }
-
-        .pergunta:hover+.resposta {
-          animation: hideAndShow 2s;
-          max-height: 500px;
-          opacity: 1;
-        }
+        gap: 10px;
       }
     }
   }
