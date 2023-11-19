@@ -36,7 +36,7 @@ const Agendamento = () => {
               atendimento é individual, sigiloso, on-line ou presencial.
             </p>
 
-            <button className="button button--primary" onClick={abreWhatsapp}>
+            <button className="button button--primary" onClick={abreWhatsapp} style={{ "display": "none",}}>
               Agendar uma consulta < AiOutlineArrowRight/>
             </button>
 
