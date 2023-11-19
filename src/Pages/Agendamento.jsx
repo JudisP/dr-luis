@@ -13,6 +13,7 @@ import { AiOutlineClockCircle } from 'react-icons/ai';
 import { TfiLocationPin } from 'react-icons/tfi';
 import { MdOutlineAttachMoney } from 'react-icons/md';
 import Maps from "@/Components/Maps";
+import { abreEmail, abreGoogleMaps, abreNumeroTelefone, abreWhatsapp } from "@/utils/helpers";
 
 
 
@@ -35,8 +36,8 @@ const Agendamento = () => {
               atendimento é individual, sigiloso, on-line ou presencial.
             </p>
 
-            <button className="button button--primary">
-              <a>Agendar uma consulta < AiOutlineArrowRight/></a>
+            <button className="button button--primary" onClick={abreWhatsapp}>
+              Agendar uma consulta < AiOutlineArrowRight/>
             </button>
 
             <Col className="redes">
@@ -55,19 +56,19 @@ const Agendamento = () => {
           <Col className="agendamento">
             <h2>Agendamento e Informações</h2>
             <Row className="informacoes">
-              <div className="informacao">
+              <div className="informacao cursor" onClick={abreWhatsapp}>
                 <BsWhatsapp /><span>(61)99999-9999</span>
               </div>
-              <div className="informacao">
+              <div className="informacao cursor" onClick={abreNumeroTelefone}>
                 <BsTelephone /><span>(61)99999-9999</span>
               </div>
-              <div className="informacao">
+              <div className="informacao cursor" onClick={abreEmail}>
                 <LuMail /><span>luisfernando@vascularclinica.com.br</span>
               </div>
               <div className="informacao">
                 <AiOutlineClockCircle /><span>Segunda a Sexta - 08:00 às 18:00</span>
               </div>
-              <div className="informacao endereco">
+              <div className="informacao endereco cursor" onClick={abreGoogleMaps}>
                 <TfiLocationPin /><a>710/910 Sul, Ed. Via Brasil - Sala 222 Asa Sul, Brasília/DF</a>
                   
               </div>
