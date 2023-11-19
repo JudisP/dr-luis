@@ -136,11 +136,11 @@ const Home = () => {
                 vascular do Hospital de Base do Distrito Federal.
               </h3>
             </div>
-            <button className="button button--conteudo--text-white">
-              <a>
+            <Link to="/dr-luis" onClick={() => scrollTop(0, 0)}>
+              <button className="button button--conteudo--text-white">
                 Saiba mais <AiOutlineArrowRight />
-              </a>
-            </button>
+              </button>
+            </Link>
           </Col>
         </div>
         <div className="container-bolinhas-small">
@@ -242,7 +242,7 @@ const Home = () => {
           <div className="conteudo">
             <h3>EXALTE A BELEZA DAS SUAS PERNAS</h3>
             <h5>VENHA PARA CLÍNICA VASCULAR</h5>
-            <button className="button button--primary">
+            <button className="button button--primary" onClick={abreWhatsapp}>
               <a>AGENDAR CONSULTA</a>
             </button>
           </div>
