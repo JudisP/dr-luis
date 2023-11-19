@@ -242,16 +242,17 @@
       margin-top: 50px;
       margin-bottom: 50px;
 
+      .elemento:hover img {
+        cursor: pointer;
+        opacity: 85%;
+      }
+
       .elemento {
         display: flex;
         justify-content: center;
         align-items: center;
         height: 100%;
 
-        img:hover {
-          cursor: pointer;
-          opacity: 85%;
-        }
 
         img {
           max-width: 310px;
