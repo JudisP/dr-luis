@@ -4,6 +4,7 @@ import { Col, Container, Row } from "reactstrap";
 import { RxDoubleArrowRight } from "react-icons/rx";
 import { AiOutlineCheck } from "react-icons/ai";
 import { AiOutlineArrowRight } from "react-icons/ai";
+import { abreWhatsapp } from "@/utils/helpers";
 
 const Procedimentos = () => {
   const checkupRef = useRef();
@@ -13,7 +14,7 @@ const Procedimentos = () => {
     if (hash) {
       const element = document.querySelector(hash);
       if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
+        element.scrollIntoView({ behavior: "smooth" });
       }
     }
   }, [history]);
@@ -59,10 +60,8 @@ const Procedimentos = () => {
                   logo após sair da sessão.
                 </p>
               </Row>
-              <button className="button button--primary">
-                <a>
-                  Agendar uma consulta <AiOutlineArrowRight />
-                </a>
+              <button className="button button--primary" onClick={abreWhatsapp}>
+                Agendar uma consulta <AiOutlineArrowRight />
               </button>
             </Col>
           </Row>
@@ -98,10 +97,8 @@ const Procedimentos = () => {
                   mais sobre os fatores de risco e opções de tratamento.
                 </p>
               </Row>
-              <button className="button button--primary">
-                <a>
-                  Agendar uma consulta <AiOutlineArrowRight />
-                </a>
+              <button className="button button--primary" onClick={abreWhatsapp}>
+                Agendar uma consulta <AiOutlineArrowRight />
               </button>
             </Col>
           </Row>
@@ -139,10 +136,8 @@ const Procedimentos = () => {
                   aguda, embolia pulmonar, entre diversos outros.
                 </p>
               </Row>
-              <button className="button button--primary">
-                <a>
-                  Agendar uma consulta <AiOutlineArrowRight />
-                </a>
+              <button className="button button--primary" onClick={abreWhatsapp}>
+                Agendar uma consulta <AiOutlineArrowRight />
               </button>
             </Col>
           </Row>
@@ -165,10 +160,8 @@ const Procedimentos = () => {
                   podem ser venosos ou arteriais.
                 </p>
               </Row>
-              <button className="button button--primary">
-                <a>
-                  Agendar uma consulta <AiOutlineArrowRight />
-                </a>
+              <button className="button button--primary" onClick={abreWhatsapp}>
+                Agendar uma consulta <AiOutlineArrowRight />
               </button>
             </Col>
           </Row>
