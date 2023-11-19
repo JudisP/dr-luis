@@ -4,6 +4,7 @@ import { BsWhatsapp } from 'react-icons/bs';
 import { LuMail } from 'react-icons/lu';
 import { FaRegBuilding } from 'react-icons/fa';
 import { TfiLocationPin } from 'react-icons/tfi';
+import { scrollTop } from "@/utils/helpers";
 
 
 
@@ -16,11 +17,11 @@ const Footer = () => {
                     <div className="cont navegacao">
                         <p>Navegação</p>
                         <nav className="links naveg">
-                            <NavLink className="link" to="/" title="Home">Home</NavLink>
-                            <NavLink className="link" to="/" title="Dr. Luiz Fernando">Dr. Luis Fernando</NavLink>
-                            <NavLink className="link" to="/" title="Procedimentos">Procedimentos</NavLink>
-                            <NavLink className="link" to="/" title="Blog">Blog</NavLink>
-                            <NavLink className="link" to="/" title="Agendamento">Agendamento</NavLink>
+                            <NavLink className="link" to="/" onClick={() => scrollTop(0, 0)} title="Home">Home</NavLink>
+                            <NavLink className="link" to="/dr-luis" onClick={() => scrollTop(0, 0)} title="Dr. Luiz Fernando">Dr. Luis Fernando</NavLink>
+                            <NavLink className="link" to="/procedimentos" onClick={() => scrollTop(0, 0)} title="Procedimentos">Procedimentos</NavLink>
+                            <NavLink className="link" to="/blog" onClick={() => scrollTop(0, 0)} title="Blog">Blog</NavLink>
+                            <NavLink className="link" to="/agendamento" onClick={() => scrollTop(0, 0)} title="Agendamento">Agendamento</NavLink>
                         </nav>
                     </div>
 
