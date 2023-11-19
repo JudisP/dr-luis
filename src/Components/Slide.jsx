@@ -4,11 +4,18 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Pagination, Navigation, Autoplay } from "swiper/modules";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { scrollTop } from "@/utils/helpers";
 import { Button } from "reactstrap";
+import React, { useCallback } from "react";
 
 const Slide = () => {
+  const navigate = useNavigate();
+
+  const redirecionaPagina = useCallback(() => {
+    navigate('/procedimentos#checkup');
+  }, [navigate]);
+
   return (
     <div className="hero-slide">
       <Swiper
@@ -28,20 +35,12 @@ const Slide = () => {
       >
         <SwiperSlide>
           <img src="https://via.placeholder.com/1300x580.png" />
-          {/* <div className="slide-conteudo">
-            <h1 className="slide-text">Estética</h1>
-            <Link to="/procedimentos" onClick={() => scrollTop(0, 600)}>
-              <Button className="button-slide button--primary">
-                Saiba Mais
-              </Button>
-            </Link>
-          </div> */}
         </SwiperSlide>
         <SwiperSlide>
           <img src="https://via.placeholder.com/1300x580.png" />
           <div className="slide-conteudo">
             <h1 className="slide-text">ESTÉTICA</h1>
-            <Link to="/procedimentos" onClick={() => scrollTop(0, 600)}>
+            <Link to="/procedimentos#estetica">
               <Button className="button-slide button--primary">
                 Saiba Mais
               </Button>
@@ -52,7 +51,7 @@ const Slide = () => {
           <img src="https://via.placeholder.com/1300x580.png" />
           <div className="slide-conteudo">
             <h1 className="slide-text">EXAMES</h1>
-            <Link to="/procedimentos" onClick={() => scrollTop(0, 1100)}>
+            <Link to="/procedimentos#exames" >
               <Button className="button-slide button--primary">
                 Saiba Mais
               </Button>
@@ -63,11 +62,11 @@ const Slide = () => {
           <img src="https://via.placeholder.com/1300x580.png" />
           <div className="slide-conteudo">
             <h1 className="slide-text">CHECK-UP</h1>
-            <Link to="/procedimentos" onClick={() => scrollTop(0, 1650)}>
+            <a onClick={redirecionaPagina} >
               <Button className="button-slide button--primary">
                 Saiba Mais
               </Button>
-            </Link>
+            </a>
           </div>
         </SwiperSlide>
       </Swiper>

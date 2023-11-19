@@ -1,3 +1,4 @@
+import React, { useRef, useEffect } from "react";
 import { Col, Container, Row } from "reactstrap";
 
 import { RxDoubleArrowRight } from "react-icons/rx";
@@ -5,6 +6,18 @@ import { AiOutlineCheck } from "react-icons/ai";
 import { AiOutlineArrowRight } from "react-icons/ai";
 
 const Procedimentos = () => {
+  const checkupRef = useRef();
+
+  useEffect(() => {
+    const hash = window.location.hash;
+    if (hash) {
+      const element = document.querySelector(hash);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  }, [history]);
+
   return (
     <div className="pagina-procedimentos">
       <div className="imagem-estatica">
@@ -13,7 +26,7 @@ const Procedimentos = () => {
 
       <Container className="container-procedimentos">
         <Col className="coluna-procedimentos">
-          <Row className="procedimento">
+          <Row className="procedimento" id="estetica">
             <Col className="coluna-img">
               <img src="https://via.placeholder.com/400x350.png" />
             </Col>
@@ -54,7 +67,7 @@ const Procedimentos = () => {
             </Col>
           </Row>
 
-          <Row className="procedimento">
+          <Row className="procedimento" id="exames">
             <Col className="coluna-img">
               <img src="https://via.placeholder.com/400x350.png" />
             </Col>
@@ -93,7 +106,7 @@ const Procedimentos = () => {
             </Col>
           </Row>
 
-          <Row className="procedimento">
+          <Row className="procedimento" ref={checkupRef} id="checkup">
             <Col className="coluna-img">
               <img src="https://via.placeholder.com/400x350.png" />
             </Col>
