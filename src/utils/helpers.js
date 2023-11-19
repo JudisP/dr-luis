@@ -3,7 +3,7 @@ export const abreNumeroTelefone = () => {
 }
 
 export const abreWhatsapp = () => {
-  window.location.href="https://api.whatsapp.com/send?phone=5561998719320&text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20os%20serviços%20do%20Dr.%20Luis%20Fernando!";
+  window.open("https://api.whatsapp.com/send?phone=5561998719320&text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20os%20serviços%20do%20Dr.%20Luis%20Fernando!", "_blank");
 }
 
 export const abreEmail = () => {
