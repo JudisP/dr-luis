@@ -6,6 +6,7 @@ import SlideHistory from "@/Components/SlideHistory";
 import { RxDoubleArrowRight } from "react-icons/rx";
 import { LuMail } from "react-icons/lu";
 import Maps from "@/Components/Maps";
+import { abreEmail, abreNumeroTelefone, abreWhatsapp } from "@/utils/helpers";
 
 const Drluis = () => {
   return (
@@ -129,20 +130,14 @@ const Drluis = () => {
         <div className="agendamento">
           <h3>AGENDE AGORA SUA CONSULTA</h3>
           <div className="contatos">
-            <button className="button button--conteudo--text-white">
-              <a>
-                <BsWhatsapp /> Whatsapp
-              </a>
+            <button className="button button--conteudo--text-white" onClick={abreWhatsapp}>
+              <BsWhatsapp /> Whatsapp
             </button>
-            <button className="button button--conteudo--text-white">
-              <a>
-                <BsTelephone /> Telefone
-              </a>
+            <button className="button button--conteudo--text-white" onClick={abreNumeroTelefone}>
+              <BsTelephone /> Telefone
             </button>
-            <button className="button button--conteudo--text-white">
-              <a>
-                <LuMail /> E-mail
-              </a>
+            <button className="button button--conteudo--text-white" onClick={abreEmail}>
+              <LuMail /> E-mail
             </button>
           </div>
         </div>
