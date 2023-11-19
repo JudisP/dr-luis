@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import { Pagination, Navigation } from "swiper/modules";
+import { Pagination, Navigation, Autoplay } from "swiper/modules";
 import { BsStarFill } from "react-icons/bs";
 import { Row } from "reactstrap";
 
@@ -13,6 +13,10 @@ const SlideHistory = () => {
     slidesPerView={1}
     spaceBetween={30}
     loop={true}
+    autoplay={{
+      delay: 3000,
+      disableOnInteraction: false,
+    }}
     pagination={{
       clickable: true,
     }}
@@ -22,7 +26,7 @@ const SlideHistory = () => {
       },
     }}
     navigation={true}
-    modules={[Pagination, Navigation]}
+    modules={[Pagination, Navigation, Autoplay]}
     className="slide-history"
     >
 

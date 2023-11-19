@@ -29,7 +29,14 @@ import {
   listaPerguntasColuna1,
   listaPerguntasColuna2,
 } from "@/utils/questions";
-import { abreEmail, abreGoogleMaps, abreNumeroTelefone, abreWhatsapp } from "@/utils/helpers";
+import {
+  abreEmail,
+  abreGoogleMaps,
+  abreNumeroTelefone,
+  abreWhatsapp,
+  scrollTop,
+} from "@/utils/helpers";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   const [showModalConvenio, setShowModalConvenio] = useState(false);
@@ -40,14 +47,7 @@ const Home = () => {
 
   return (
     <div className="pagina-home position-relative">
-      <div className="hero-slide">
-        <Slide />
-
-        <div className="slide-conteudo">
-          <h1 className="slide-text">Estética</h1>
-          <Button className="button-slide button--primary">Saiba Mais</Button>
-        </div>
-      </div>
+      <Slide />
 
       <Container className="conteiner-boas-vindas">
         <Row className="row-boas-vindas">
@@ -83,11 +83,11 @@ const Home = () => {
                 </div>
               </div>
             </Row>
-            <button className="button button--primary">
-              <a>
+            <Link to="/procedimentos" onClick={() => scrollTop(0, 0)}>
+              <button className="button button--primary">
                 Procedimentos <AiOutlineArrowRight />
-              </a>
-            </button>
+              </button>
+            </Link>
             <div className="ver-maps" onClick={abreGoogleMaps}>
               <FaLocationDot /> Ver no Google Maps
             </div>
@@ -253,7 +253,7 @@ const Home = () => {
         <span>FALE CONOSCO</span>
         <h3>Como podemos te ajudar hoje?</h3>
         <button className="button button--primary" onClick={abreGoogleMaps}>
-            <TfiLocationPin /> Ver no Google Maps
+          <TfiLocationPin /> Ver no Google Maps
         </button>
       </Container>
 

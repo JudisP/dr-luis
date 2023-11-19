@@ -1,32 +1,65 @@
-.slide {
-  box-sizing: content-box;
-  border-radius: 0 0 100px 100px;
+.hero-slide {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  .slide {
+    box-sizing: content-box;
+    border-radius: 0 0 100px 100px;
+    position: relative;
+    
   
+    .swiper-slide {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
 
-  .swiper-slide {
-    img {
-      width: 100vw;
+      img {
+        width: 100vw;
+      }
+
+      .slide-conteudo {
+        position: absolute;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+        a {
+          text-decoration: none;
+        }
+    
+        .slide-text {
+          font-weight: 700;
+          color: $color-white !important;
+    
+        }
+      }
+    }
+  
+    .swiper-button-next {
+      color: $color-white;
+      &::after {
+          font-size: 30px;
+      }
+    }
+    .swiper-button-prev {
+      color: $color-white;
+      &::after {
+          font-size: 30px;
+      }
+    }
+  
+    .swiper-pagination {
+      .swiper-pagination-bullet.swiper-pagination-bullet-active {
+        background-color: $color-gold;
+      }
     }
   }
 
-  .swiper-button-next {
-    color: $color-white;
-    &::after {
-        font-size: 30px;
-    }
-  }
-  .swiper-button-prev {
-    color: $color-white;
-    &::after {
-        font-size: 30px;
-    }
-  }
-
-  .swiper-pagination {
-    .swiper-pagination-bullet.swiper-pagination-bullet-active {
-      background-color: $color-gold;
-    }
-  }
+  
 }
 
 .imagem-estatica {
