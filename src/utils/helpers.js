@@ -13,3 +13,7 @@ export const abreEmail = () => {
 export const abreGoogleMaps = () => {
   window.open("https://maps.app.goo.gl/9rnj6FQ2UuB2rLQFA", "_blank");
 }
+
+export const scrollTop = (lateral, cimaBaixo) => {
+  window.scrollTo(lateral, cimaBaixo);
+}
