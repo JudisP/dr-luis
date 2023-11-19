@@ -1,3 +1,5 @@
+import { Container } from "reactstrap";
+
 const Blog = () => {
   return (
     <div className="pagina-blog">
@@ -5,7 +7,10 @@ const Blog = () => {
         <img src="https://via.placeholder.com/1300x500.png" />
       </div>
 
-      <h1>Blog</h1>
+      <Container className="container-blog">
+        <div className="linha"></div>
+        <h1>BLOG EM CONSTRUÇÃO</h1>
+      </Container>
     </div>
   );
 };
