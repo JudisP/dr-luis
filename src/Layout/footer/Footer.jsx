@@ -4,7 +4,7 @@ import { BsWhatsapp } from 'react-icons/bs';
 import { LuMail } from 'react-icons/lu';
 import { FaRegBuilding } from 'react-icons/fa';
 import { TfiLocationPin } from 'react-icons/tfi';
-import { scrollTop } from "@/utils/helpers";
+import { abreEmail, abreNumeroTelefone, abreWhatsapp, scrollTop } from "@/utils/helpers";
 
 
 
@@ -28,10 +28,10 @@ const Footer = () => {
                     <div className="cont contatos">
                         <p>Contato</p>
                         <nav className="links contacts">
-                            <a to="/" title="number-one"><BsTelephone />(61)99999-9999</a>
-                            <a to="/" title="number-two"><BsWhatsapp />(61)99999-9999</a>
-                            <a className="email" to="/" title="email"><LuMail />luisfernando@vascularclinica.com.br</a>
-                            <a to="/" title="cnpj"><FaRegBuilding />CNPJ:25.1234.359/0001-48</a>
+                            <a to="/" title="Telefone" onClick={abreNumeroTelefone}><BsTelephone />(61)99999-9999</a>
+                            <a to="/" title="Whatsapp" onClick={abreWhatsapp}><BsWhatsapp />(61)99999-9999</a>
+                            <a className="email" to="/" title="Email" onClick={abreEmail}><LuMail />luisfernando@vascularclinica.com.br</a>
+                            <a to="/" title="Cnpj"><FaRegBuilding />CNPJ:25.1234.359/0001-48</a>
                         </nav>
                     </div>
 
@@ -39,8 +39,8 @@ const Footer = () => {
                         <p>Localização</p>
                         <div>
                             <span>
-                                <a src="#"><TfiLocationPin />710/910 Sul, Ed. Via Brasil - Sala 222</a>
-                                <a className="ms-3">Asa Sul, Brasília/DF</a>
+                                <a title="Endereço" src="#"><TfiLocationPin />710/910 Sul, Ed. Via Brasil - Sala 222</a>
+                                <a title="Endereço" className="ms-3">Asa Sul, Brasília/DF</a>
                             </span>
                         </div>
                     </div>
