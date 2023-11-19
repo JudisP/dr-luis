@@ -5,7 +5,7 @@ footer {
   filter: saturate(150%);
 
   .coloracao {
-    background-color: #E2DCCE;
+    background-color: #e2dcce;
     width: 100%;
     height: 100%;
     position: absolute;
@@ -20,21 +20,18 @@ footer {
     width: 100%;
     display: grid;
     align-items: center;
-    
-    
+
     .footer-links {
       display: flex;
       justify-content: space-around;
-        
-      
+
       p {
         font-weight: bold;
         text-transform: uppercase;
         font-size: 16px;
         padding-bottom: 16px;
       }
-    
-      
+
       .cont {
         display: flex;
         align-items: center;
@@ -52,28 +49,34 @@ footer {
             display: flex !important;
             flex-direction: column !important;
           }
+          span:hover {
+            a {
+              color: $color-gray-footer;
+            }
+
+            cursor: pointer;
+          }
         }
       }
-      
+
       .links {
         display: flex;
         flex-direction: column;
       }
-      }
     }
   }
+}
 
-  .footer-info {
-    height: 122px;
-    width: 100%;
-    border-top: 1px solid $color-gray-footer;
+.footer-info {
+  height: 122px;
+  width: 100%;
+  border-top: 1px solid $color-gray-footer;
 
-    .container-info {
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-      justify-content: center;
-      margin: 35px;
-    }
+  .container-info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin: 35px;
   }
-
+}

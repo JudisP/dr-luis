@@ -4,7 +4,7 @@ import { BsWhatsapp } from 'react-icons/bs';
 import { LuMail } from 'react-icons/lu';
 import { FaRegBuilding } from 'react-icons/fa';
 import { TfiLocationPin } from 'react-icons/tfi';
-import { abreEmail, abreNumeroTelefone, abreWhatsapp, scrollTop } from "@/utils/helpers";
+import { abreEmail, abreGoogleMaps, abreNumeroTelefone, abreWhatsapp, scrollTop } from "@/utils/helpers";
 
 
 
@@ -28,17 +28,17 @@ const Footer = () => {
                     <div className="cont contatos">
                         <p>Contato</p>
                         <nav className="links contacts">
-                            <a to="/" title="Telefone" onClick={abreNumeroTelefone}><BsTelephone />(61)99999-9999</a>
-                            <a to="/" title="Whatsapp" onClick={abreWhatsapp}><BsWhatsapp />(61)99999-9999</a>
-                            <a className="email" to="/" title="Email" onClick={abreEmail}><LuMail />luisfernando@vascularclinica.com.br</a>
-                            <a to="/" title="Cnpj"><FaRegBuilding />CNPJ:25.1234.359/0001-48</a>
+                            <a className="link" title="Telefone" onClick={abreNumeroTelefone}><BsTelephone />(61)99999-9999</a>
+                            <a className="link" title="Whatsapp" onClick={abreWhatsapp}><BsWhatsapp />(61)99999-9999</a>
+                            <a className="email link" title="Email" onClick={abreEmail}><LuMail />luisfernando@vascularclinica.com.br</a>
+                            <a title="Cnpj"><FaRegBuilding />CNPJ:25.1234.359/0001-48</a>
                         </nav>
                     </div>
 
                     <div className="cont localizacao">
                         <p>Localização</p>
                         <div>
-                            <span>
+                            <span onClick={abreGoogleMaps}>
                                 <a title="Endereço" src="#"><TfiLocationPin />710/910 Sul, Ed. Via Brasil - Sala 222</a>
                                 <a title="Endereço" className="ms-3">Asa Sul, Brasília/DF</a>
                             </span>
