@@ -45,6 +45,15 @@ footer {
         margin: 20px;
         text-align: center;
       }
+
+      .cont.localizacao {
+        div {
+          span {
+            display: flex !important;
+            flex-direction: column !important;
+          }
+        }
+      }
       
       .links {
         display: flex;
