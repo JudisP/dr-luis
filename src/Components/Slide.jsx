@@ -5,9 +5,9 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Pagination, Navigation, Autoplay } from "swiper/modules";
 import { Link, useNavigate } from "react-router-dom";
-import { scrollTop } from "@/utils/helpers";
+//import { scrollTop } from "@/utils/helpers";
 import { Button } from "reactstrap";
-import React, { useCallback } from "react";
+import  { useCallback } from "react";
 
 const Slide = () => {
   const navigate = useNavigate();
@@ -34,10 +34,10 @@ const Slide = () => {
         className="slide"
       >
         <SwiperSlide>
-          <img src="https://via.placeholder.com/1300x580.png" />
+          <img src="https://drive.google.com/uc?export=view&id=1ktSWiqrbz96rqW8bs0QtExlwMolAL7oS" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://via.placeholder.com/1300x580.png" />
+          <img src="https://drive.google.com/uc?export=view&id=1pUz-lNQ7we4tRquBRM_lV0T3IPQyrhwb" />
           <div className="slide-conteudo">
             <h1 className="slide-text">ESTÉTICA</h1>
             <Link to="/procedimentos#estetica">
@@ -48,7 +48,7 @@ const Slide = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://via.placeholder.com/1300x580.png" />
+          <img src="https://drive.google.com/uc?export=view&id=" />
           <div className="slide-conteudo">
             <h1 className="slide-text">EXAMES</h1>
             <Link to="/procedimentos#exames" >

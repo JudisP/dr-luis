@@ -1,8 +1,18 @@
+import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import Logo from "@/shared/assets/Logo.png";
+import BurgerIcon from "@/Components/burgerIcon";
 
 
 const Topbar = () => {
+
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
+  
   return (
     <topbar className="topbar">
       <div className="logo">
@@ -16,13 +26,7 @@ const Topbar = () => {
       </div>
 
       <nav className="topbar-navegacao">
-
-        <label class="burger" for="burger">
-          <input type="checkbox" id="burger"/>
-          <span></span>
-          <span></span>
-          <span></span>
-        </label>
+        <BurgerIcon isOpen={isOpen} toggleMenu={toggleMenu}/>
 
         <div className="contorno-navlink">
           <NavLink to="/" title="Home">
