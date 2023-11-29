@@ -1,16 +1,21 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import Logo from "@/shared/assets/Logo.png";
-import MobileNav from "@/Components/MobileNav";
-
+import MobileNav from "./MobileNav";
+import BurgerIcon from "@/Components/BurgerIcon";
+import { FaHamburger } from "react-icons/fa";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { useContext } from "react";
+import { MenuContext } from "@/context/MenuContext";
 
 const Topbar = () => {
+  const { toggle, open } = useContext(MenuContext);
+  // const { open } = useContext(MenuContext);
+  // const [isOpen, setIsOpen] = useState(false);
 
-  const [isOpen, setIsOpen] = useState(false);
-
-  const closeMenu = () => {
-    setIsOpen(!isOpen);
-  };
+  // const closeMenu = () => {
+  //   setIsOpen(!isOpen);
+  // };
 
   
   return (
@@ -26,7 +31,8 @@ const Topbar = () => {
       </div>
 
       <nav className="topbar-navegacao">
-        <MobileNav isOpen={isOpen} closeMenu={closeMenu}/>
+        <MobileNav />
+        <div onClick={toggle}>{open ? <GiHamburgerMenu /> : <FaHamburger />}</div>
 
         <div className="contorno-navlink">
           <NavLink to="/" title="Home">

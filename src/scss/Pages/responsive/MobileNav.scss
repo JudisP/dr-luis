@@ -1,5 +1,19 @@
 .mobile-nav {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: flex-start;
+    overflow: hidden;
+    transition: 0.2s;
+
+    margin-right: 60px;
+
+    background-color: $color-gold;
+}
+
+.mobile-nav.open {
+    width: 300px;
+}
+
+.mobile-nav.close {
+    width: 0;
 }

@@ -6,14 +6,17 @@ import "@/scss/app.scss";
 
 import Topbar from "@/Layout/Topbar/Topbar";
 import Footer from "@/Layout/Footer/Footer";
+import MenuContextProvider from "@/context/MenuContext";
 
 function App() {
   return (
-    <BrowserRouter>
-      <Topbar />
+    <MenuContextProvider>
+      <BrowserRouter>
+        <Topbar />
         <Router />
         <Footer />
-    </BrowserRouter>
+      </BrowserRouter>
+    </MenuContextProvider>
   );
 }
 
