@@ -103,11 +103,11 @@ const Home = () => {
               <div className="imagens-sobrepostas">
                 <img
                   className="img-comprida"
-                  src="https://via.placeholder.com/222x378"
+                  src="https://drive.google.com/uc?export=view&id=1UmBMifzbFqA2z7Nh2KO-Uo81hrxrpebw"
                 />
                 <img
                   className="img-quadrada"
-                  src="https://via.placeholder.com/299x183"
+                  src="https://drive.google.com/uc?export=view&id=1f4idcX3jpIU1F4bqMJ9GZ0z-Lm8xQmI7"
                 />
               </div>
               <BallBackgroundBig />
@@ -119,7 +119,7 @@ const Home = () => {
       <div className="container-apresentacao">
         <div className="background-elemento">
           <Col className="coluna-img col">
-            <img src="https://via.placeholder.com/600x700" />
+            <img src="https://drive.google.com/uc?export=view&id=1fik2-3DJ_4j-cu2RqdMt7EEGhpTMoxV9" />
           </Col>
           <Col className="coluna-texto">
             <div className="titulo">
@@ -165,7 +165,7 @@ const Home = () => {
 
         <div className="background-banner resp">
           <div className="elemento">
-            <img src="https://via.placeholder.com/295x400" />
+            <img src="https://drive.google.com/uc?export=view&id=1LSttYQ1OReYa1eeqCQ2PUPly95m7JE8H" />
             <div className="conteudo">
               <h3>ESTÉTICA VASCULAR</h3>
               <span>
@@ -176,7 +176,7 @@ const Home = () => {
             </div>
           </div>
           <div className="elemento">
-            <img src="https://via.placeholder.com/295x400" />
+            <img src="https://drive.google.com/uc?export=view&id=1pWdustBp3eSQ9P-hovUbSix9NXJ-XLf_" />
             <div className="conteudo">
               <h3>ECO-DOPPLER</h3>
               <span>
@@ -187,7 +187,7 @@ const Home = () => {
             </div>
           </div>
           <div className="elemento">
-            <img src="https://via.placeholder.com/295x400" />
+            <img src="https://drive.google.com/uc?export=view&id=1dTYBjQyb9YpVIFm4UOCWvGjS1EUm6E6e" />
             <div className="conteudo">
               <h3>CHECK-UP</h3>
               <span>
@@ -237,7 +237,7 @@ const Home = () => {
 
       <Container className="container-banner-beleza">
         <div className="background-banner">
-          <img src="https://via.placeholder.com/1500x600" />
+          <img src="https://drive.google.com/uc?export=view&id=1PPhIz_avqATxIF3sbadRzJYs593OfHgs" />
 
           <div className="conteudo">
             <h3>EXALTE A BELEZA DAS SUAS PERNAS</h3>

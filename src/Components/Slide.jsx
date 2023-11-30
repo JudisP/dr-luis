@@ -21,10 +21,10 @@ const Slide = () => {
       <Swiper
         slidesPerView={1}
         spaceBetween={30}
-        autoplay={{
-          delay: 2000,
-          disableOnInteraction: false,
-        }}
+        // autoplay={{
+        //   delay: 2000,
+        //   disableOnInteraction: false,
+        // }}
         loop={true}
         pagination={{
           clickable: true,
@@ -34,10 +34,10 @@ const Slide = () => {
         className="slide"
       >
         <SwiperSlide>
-          <img src="https://drive.google.com/uc?export=view&id=1ktSWiqrbz96rqW8bs0QtExlwMolAL7oS" />
+          <img src="https://drive.google.com/uc?export=view&id=1N0xkSbV4KUTj1kTzqF9Cn-EnODle-xSF"/>
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://drive.google.com/uc?export=view&id=1pUz-lNQ7we4tRquBRM_lV0T3IPQyrhwb" />
+          <img src="https://drive.google.com/uc?export=view&id=1uaYaOXDG30lb18Lv-YE-U6AjoQ77qtWX" />
           <div className="slide-conteudo">
             <h1 className="slide-text">ESTÉTICA</h1>
             <Link to="/procedimentos#estetica">
@@ -48,7 +48,7 @@ const Slide = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://drive.google.com/uc?export=view&id=" />
+          <img src="https://drive.google.com/uc?export=view&id=1PNN_JJ41bj8dIK07NAy6NSMKT5uQXLhv" />
           <div className="slide-conteudo">
             <h1 className="slide-text">EXAMES</h1>
             <Link to="/procedimentos#exames" >
@@ -59,7 +59,7 @@ const Slide = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://via.placeholder.com/1300x580.png" />
+          <img src="https://drive.google.com/uc?export=view&id=1QRkRVozwLDIHuoWJ9aJhQjJjoj6MquwS" />
           <div className="slide-conteudo">
             <h1 className="slide-text">CHECK-UP</h1>
             <a onClick={redirecionaPagina} >
