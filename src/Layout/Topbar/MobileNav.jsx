@@ -10,8 +10,9 @@ const MobileNav = () => {
 
   return (
     <div>
-
+      
       <div className={`mobile-nav ${open ? "open" : "close"}`}>
+
         <NavLink to="/" onClick={toggle}>
           HOME
         </NavLink>

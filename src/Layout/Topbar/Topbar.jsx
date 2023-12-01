@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 import Logo from "@/shared/assets/Logo.png";
 import MobileNav from "./MobileNav";
-import { FaHamburger } from "react-icons/fa";
+import { IoMdClose } from "react-icons/io";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { useContext } from "react";
 import { MenuContext } from "@/context/MenuContext";
@@ -15,7 +15,6 @@ const Topbar = () => {
   //   setIsOpen(!isOpen);
   // };
 
-  
   return (
     <topbar className="topbar">
       <div className="logo">
@@ -30,7 +29,9 @@ const Topbar = () => {
 
       <nav className="topbar-navegacao">
         <MobileNav />
-        <div onClick={toggle}>{open ? <GiHamburgerMenu /> : <FaHamburger />}</div>
+        <div onClick={toggle} className="nav_mb">
+          {open ? <IoMdClose /> : <GiHamburgerMenu />}
+        </div>
 
         <div className="contorno-navlink">
           <NavLink to="/" title="Home">

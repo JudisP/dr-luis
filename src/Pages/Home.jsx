@@ -143,9 +143,9 @@ const Home = () => {
             </Link>
           </Col>
         </div>
-        <div className="container-bolinhas-small">
+        {/* <div className="container-bolinhas-small" style="display: none">
           <BallBackground className="bolinhas-small" />
-        </div>
+        </div> */}
       </div>
 
       <div className="container-servicos">

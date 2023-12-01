@@ -4,7 +4,7 @@ export const MenuContext = createContext();
 
 // eslint-disable-next-line react/prop-types
 const MenuContextProvider = ({ children }) => {
-    const [open, setOpen] = useState(true);
+    const [open, setOpen] = useState(false);
 
     const toggle = () => {
         setOpen((prev) => !prev);
