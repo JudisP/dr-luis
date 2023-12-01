@@ -1,14 +1,12 @@
-"use client";
 import { createContext, useState } from "react";
 
 export const MenuContext = createContext();
 
+// eslint-disable-next-line react/prop-types
 const MenuContextProvider = ({ children }) => {
     const [open, setOpen] = useState(true);
 
     const toggle = () => {
-        console.log({open})
-        console.log();
         setOpen((prev) => !prev);
     };
 

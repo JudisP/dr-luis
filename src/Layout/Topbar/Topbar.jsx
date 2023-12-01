@@ -1,8 +1,6 @@
-import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import Logo from "@/shared/assets/Logo.png";
 import MobileNav from "./MobileNav";
-import BurgerIcon from "@/Components/BurgerIcon";
 import { FaHamburger } from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { useContext } from "react";
