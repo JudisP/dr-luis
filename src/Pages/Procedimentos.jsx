@@ -22,14 +22,14 @@ const Procedimentos = () => {
   return (
     <div className="pagina-procedimentos">
       <div className="imagem-estatica">
-        <img src="https://via.placeholder.com/1300x500.png" />
+        <img src="https://drive.google.com/uc?export=view&id=10MD-cpGc1gEeEZCVOlnuQiaBjm3WmW2F" />
       </div>
 
       <Container className="container-procedimentos">
         <Col className="coluna-procedimentos">
           <Row className="procedimento" id="estetica">
             <Col className="coluna-img">
-              <img src="https://via.placeholder.com/400x350.png" />
+              <img src="https://drive.google.com/uc?export=view&id=1Xmq2gK3okAUaWbkDCkGs6PptPrmlkOXG" />
             </Col>
             <Col className="conteudo-coluna">
               <Row className="conteudo-titulo">
@@ -68,7 +68,7 @@ const Procedimentos = () => {
 
           <Row className="procedimento" id="exames">
             <Col className="coluna-img">
-              <img src="https://via.placeholder.com/400x350.png" />
+              <img src="https://drive.google.com/uc?export=view&id=10CS8-wpWMCTfnlxweBMf4o_NCI4r08YA" />
             </Col>
             <Col className="conteudo-coluna">
               <Row className="conteudo-titulo">
@@ -105,7 +105,7 @@ const Procedimentos = () => {
 
           <Row className="procedimento" ref={checkupRef} id="checkup">
             <Col className="coluna-img">
-              <img src="https://via.placeholder.com/400x350.png" />
+              <img src="https://drive.google.com/uc?export=view&id=141Lb4_Go7lxzCBPThryRm-PQMdfCaM8B" />
             </Col>
             <Col className="conteudo-coluna">
               <Row className="conteudo-titulo">
@@ -144,7 +144,7 @@ const Procedimentos = () => {
 
           <Row className="procedimento">
             <Col className="coluna-img">
-              <img src="https://via.placeholder.com/400x350.png" />
+              <img src="https://drive.google.com/uc?export=view&id=1xuQuujUZUuEn0AxEJJE4lwEOPmZKlOLh" />
             </Col>
             <Col className="conteudo-coluna">
               <Row className="conteudo-titulo">

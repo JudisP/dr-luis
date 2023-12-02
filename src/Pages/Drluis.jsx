@@ -12,7 +12,7 @@ const Drluis = () => {
   return (
     <div className="pagina-drluis">
       <div className="imagem-estatica">
-        <img src="https://via.placeholder.com/1300x500.png" />
+        <img src="https://drive.google.com/uc?export=view&id=1Wo8ovVwyFe_SRSAO65IfRUIX06r7UDUc" />
       </div>
 
       <Container className="container-drluis position-relative">

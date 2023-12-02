@@ -4,7 +4,7 @@ const Blog = () => {
   return (
     <div className="pagina-blog">
       <div className="imagem-estatica">
-        <img src="https://via.placeholder.com/1300x500.png" />
+        <img src="https://drive.google.com/uc?export=view&id=18pbLTshjPpe7ImoKg6wPUedB302jXozJ" />
       </div>
 
       <Container className="container-blog">

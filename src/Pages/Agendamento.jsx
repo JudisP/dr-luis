@@ -21,7 +21,7 @@ const Agendamento = () => {
   return (
     <div className="pagina-agendamento">
       <div className="imagem-estatica">
-        <img src="https://via.placeholder.com/1300x500.png" />
+        <img src="https://drive.google.com/uc?export=view&id=1cfJbfJLpDbMcs99lfzemRlykV0I-jS7B" />
       </div>
 
       <Container className="container-agendamento">
