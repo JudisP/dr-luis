@@ -56,14 +56,14 @@ const Agendamento = () => {
           <Col className="agendamento">
             <h2>Agendamento e Informações</h2>
             <Row className="informacoes">
-              <div className="informacao cursor" onClick={abreWhatsapp}>
-                <BsWhatsapp /><span>(61)99999-9999</span>
-              </div>
               <div className="informacao cursor" onClick={abreNumeroTelefone}>
-                <BsTelephone /><span>(61)99999-9999</span>
+                <BsTelephone /><span>(61)2099-2889</span>
+              </div>
+              <div className="informacao cursor" onClick={abreWhatsapp}>
+                <BsWhatsapp /><span>(61)99935-5005</span>
               </div>
               <div className="informacao cursor" onClick={abreEmail}>
-                <LuMail /><span>luisfernando@vascularclinica.com.br</span>
+                <LuMail /><span>cirurgia.vascularclinica@gmail.com</span>
               </div>
               <div className="informacao">
                 <AiOutlineClockCircle /><span>Segunda a Sexta - 08:00 às 18:00</span>
