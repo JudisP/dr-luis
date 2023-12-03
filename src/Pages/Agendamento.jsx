@@ -12,8 +12,8 @@ import { LuMail } from 'react-icons/lu';
 import { AiOutlineClockCircle } from 'react-icons/ai';
 import { TfiLocationPin } from 'react-icons/tfi';
 import { MdOutlineAttachMoney } from 'react-icons/md';
-import Maps from "@/Components/Maps";
 import { abreEmail, abreGoogleMaps, abreNumeroTelefone, abreWhatsapp } from "@/utils/helpers";
+import MapsImg from "@/Components/MapsImg";
 
 
 
@@ -82,7 +82,7 @@ const Agendamento = () => {
 
       <div className="container-div-loc">
         <Container className="container-localizacao position-relative">
-          <Maps />
+          <MapsImg />
         </Container>
       </div>
     </div>
