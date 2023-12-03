@@ -1,18 +1,72 @@
 .container-div-loc {
-    border-top: 1px solid #a9a9a9;
+  border-top: 1px solid #a9a9a9;
 
-    .container-localizacao {
+  .container-localizacao {
+    // width: 500px;
+    height: 350px;
 
-      // width: 500px;
-      height: 350px;
+    margin-top: 100px;
+    margin-bottom: 100px;
 
-      margin-top: 100px;
-      margin-bottom: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-      .mapa {
-        div {
-          border-radius: 40px;
-        }
+    .mapa {
+      div {
+        border-radius: 40px;
       }
     }
   }
+}
+
+.container-maps {
+  position: relative;
+  display: inline-block;
+
+  overflow: hidden;
+
+  max-width: 750px;
+  max-height: 320px;
+
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+
+  img {
+    cursor: pointer;
+
+    border-radius: 30px;
+    height: auto;
+    display: block;
+
+    width: 100%;
+
+    max-width: 750px;
+    max-height: 320px;
+  }
+
+  .background-icon {
+    position: absolute;
+
+    top: 20px;
+    right: 25px;
+
+    background-color: white;
+
+    width: 50px;
+    height: 50px;
+
+    border-radius: 999px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+
+    svg {
+      cursor: pointer;
+    }
+  }
+}

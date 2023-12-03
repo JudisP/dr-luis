@@ -1,6 +1,5 @@
 import Slide from "@/components/Slide";
 import {
-  Button,
   Col,
   Container,
   ModalBody,
@@ -10,8 +9,6 @@ import {
 
 import { AiOutlineArrowRight, AiOutlineClockCircle } from "react-icons/ai";
 import { FaLocationDot } from "react-icons/fa6";
-
-import BallBackground from "@/Components/BallBackground";
 
 import { BsTelephone, BsWhatsapp } from "react-icons/bs";
 import { LuMail } from "react-icons/lu";
@@ -23,7 +20,6 @@ import ModalConvenio from "@/Components/Modal";
 import { useState } from "react";
 import BallBackgroundBig from "@/Components/BallBackgroundBig";
 import { FaUserMd } from "react-icons/fa";
-import Maps from "@/Components/Maps";
 import ListaPerguntas from "@/Components/ListaPerguntas";
 import {
   listaPerguntasColuna1,
@@ -37,6 +33,7 @@ import {
   scrollTop,
 } from "@/utils/helpers";
 import { Link } from "react-router-dom";
+import MapsImg from "@/Components/MapsImg";
 
 const Home = () => {
   const [showModalConvenio, setShowModalConvenio] = useState(false);
@@ -368,7 +365,7 @@ const Home = () => {
 
       <div className="container-div-loc">
         <Container className="container-localizacao position-relative">
-          <Maps />
+          <MapsImg />
         </Container>
       </div>
     </div>
