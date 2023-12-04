@@ -17,3 +17,16 @@ export const abreGoogleMaps = () => {
 export const scrollTop = (lateral, cimaBaixo) => {
   window.scrollTo(lateral, cimaBaixo);
 }
+
+export const preLoadImages = (imageUrls) => {
+  const imagePromises = imageUrls.map((url) => {
+    return new Promise((resolve, reject) => {
+      const img = new Image();
+      img.onload = () => resolve();
+      img.onerror = (err) => reject(err);
+      img.src = url;
+    });
+  });
+
+  return Promise.all(imagePromises);
+}

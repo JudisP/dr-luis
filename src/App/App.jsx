@@ -1,21 +1,22 @@
 import { BrowserRouter } from "react-router-dom";
-import Router from "./Router";
 
 import "bootstrap/dist/css/bootstrap.css";
 import "@/scss/app.scss";
-
-import Topbar from "@/Layout/Topbar/Topbar";
-import Footer from "@/Layout/Footer/Footer";
 import MenuContextProvider from "@/context/MenuContext";
+import LoadedCodeContextProvider from "@/context/LoadedCodeContext";
+import AppContent from "./AppContent";
 
 function App() {
+  // const { imagesLoaded } = MenuContext(LoadedCodeContext);
   return (
     <MenuContextProvider>
-      <BrowserRouter>
-        <Topbar />
-        <Router />
-        <Footer />
-      </BrowserRouter>
+      <LoadedCodeContextProvider>
+        <BrowserRouter>
+          {/* {imagesLoaded && ( */}
+          <AppContent />
+          {/* )} */}
+        </BrowserRouter>
+      </LoadedCodeContextProvider>
     </MenuContextProvider>
   );
 }
