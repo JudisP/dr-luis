@@ -8,27 +8,60 @@ import Loading from "./Loading";
 
 function Imagem({ urlImg, descricaoImg }) {
   const [imagesLoad, setImagesLoad] = useState(false);
-  const { toggleImagesLoaded } = useContext(LoadedCodeContext);
+  const { toggleImagesLoaded, toggleImagesError, imagesError, resetContext } =
+    useContext(LoadedCodeContext);
 
-  console.log(urlImg);
 
   useEffect(() => {
-    const imageUrls = [{ urlImg }];
+    // const imageUrls = [urlImg];
+    // if (imagesLoad && resetNeeded) {
+    //   console.log("resetNeeded",resetNeeded);
+    //   console.log("Entrou no ResetNeed");
+    //   resetContext();
+    //   setResetNeeded(false);
+    //   console.log("vai sair do ResetNeed");
+    //   console.log("resetNeeded",resetNeeded);
+    // }
 
-    console.log("Antes do carregamento de imagens");
-    preLoadImages(imageUrls)
-      .then(() => {
-        // console.log("antes", imagesLoad);
-        setImagesLoad(true);
+    const loadImages = async () => {
+      try {
+        toggleImagesError("Carregando");
+        resetContext();
+        const imageUrls = [urlImg];
+        await preLoadImages(imageUrls);
         toggleImagesLoaded(true);
-        // console.log("depois", imagesLoad);
-      })
-      .catch((error) => {
-        console.error("Erro ao carregar imagens:", error);
-        toggleImagesLoaded(false);
-      });
-    console.log("Após o carregamento de imagens");
-  }, [urlImg, imagesLoad, toggleImagesLoaded]);
+        setImagesLoad(true);
+      } catch (error) {
+        toggleImagesError("Carregado");
+        toggleImagesLoaded(true);
+      }
+    };
+    
+    console.log("antes !imagesLoad");
+    if (!imagesLoad) {
+      console.log("dentro !imagesLoad");
+      loadImages();
+      console.log("depois !imagesLoad");
+    }
+    
+    // preLoadImages(imageUrls)
+    // .then(() => {
+    //   setImagesLoad(true);
+    //   toggleImagesLoaded(true);
+    //   // resetContext();
+    //   })
+    //   .catch(() => {
+    //     toggleImagesError("Carregado");
+    //     toggleImagesLoaded(true);
+    //   });
+  }, [
+    urlImg,
+    toggleImagesLoaded,
+    toggleImagesError,
+    setImagesLoad, 
+    imagesLoad,
+    resetContext
+  ]);
 
   return (
     <>
