@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 import { LoadedCodeContext } from "@/context/LoadedCodeContext";
 import { IoImageOutline } from "react-icons/io5";
 import { useContext } from "react";
+import Loading from "./Loading";
 
 function Imagem({ urlImg, descricaoImg }) {
   const [imagesLoad, setImagesLoad] = useState(false);
@@ -33,11 +34,15 @@ function Imagem({ urlImg, descricaoImg }) {
     <>
       {imagesLoad ? (
         <img src={urlImg} alt={descricaoImg} />
+      ) : imagesError === "Carregando" ? (
+        <Loading />
       ) : (
-        <div className="imagem-error">
-          <IoImageOutline />
-          <h1>Imagem não carregada corretamente</h1>
-        </div>
+        imagesError === "Carregado" && (
+          <div className="imagem-error">
+            <IoImageOutline />
+            <h1>Imagem não carregada corretamente</h1>
+          </div>
+        )
       )}
     </>
   );
