@@ -4,14 +4,30 @@ export const LoadedCodeContext = createContext();
 
 function LoadedCodeContextProvider({ children }) {
   const [imagesLoaded, setImagesLoaded] = useState(false);
+  const [imagesError, setImagesError] = useState("Carregando");
 
+  const toggleImagesError = (value) => {
+    setImagesError(value);
+  };
   const toggleImagesLoaded = (value) => {
-    console.log("imagesLoaded", imagesLoaded);
     setImagesLoaded(value);
   };
 
+  const resetContext = () => {
+    setImagesLoaded(false);
+    setImagesError("Carregando");
+  };
+
   return (
-    <LoadedCodeContext.Provider value={{ imagesLoaded, toggleImagesLoaded }}>
+    <LoadedCodeContext.Provider
+      value={{
+        imagesLoaded,
+        toggleImagesLoaded,
+        toggleImagesError,
+        imagesError,
+        resetContext
+      }}
+    >
       {children}
     </LoadedCodeContext.Provider>
   );
