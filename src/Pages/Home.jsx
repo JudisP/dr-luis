@@ -34,9 +34,12 @@ import {
 } from "@/utils/helpers";
 import { Link } from "react-router-dom";
 import MapsImg from "@/Components/MapsImg";
+import { useContext } from "react";
+import { LoadedCodeContext } from "@/context/LoadedCodeContext";
 
 const Home = () => {
   const [showModalConvenio, setShowModalConvenio] = useState(false);
+  const { imagesLoaded } = useContext(LoadedCodeContext);
 
   const toggle = () => {
     setShowModalConvenio((prev) => !prev);
@@ -46,6 +49,8 @@ const Home = () => {
     <div className="pagina-home position-relative">
       <Slide />
 
+      {imagesLoaded ? (
+        <>
       <Container className="conteiner-boas-vindas">
         <Row className="row-boas-vindas">
           <Col className="apresentacao">
@@ -368,6 +373,10 @@ const Home = () => {
           <MapsImg />
         </Container>
       </div>
+      </>
+      ) : (
+        <></>
+      )}
     </div>
   );
 };

@@ -8,6 +8,7 @@ import { Link, useNavigate } from "react-router-dom";
 //import { scrollTop } from "@/utils/helpers";
 import { Button } from "reactstrap";
 import  { useCallback } from "react";
+import Imagem from "./Imagem";
 
 const Slide = () => {
   const navigate = useNavigate();
@@ -34,7 +35,8 @@ const Slide = () => {
         className="slide"
       >
         <SwiperSlide>
-          <img src="https://drive.google.com/uc?export=view&id=1N0xkSbV4KUTj1kTzqF9Cn-EnODle-xSF"/>
+          <Imagem urlImg="https://drive.google.com/uc?export=view&id=1N0xkSbV4KUTj1kTzqF9Cn-EnODle-xSF" />
+          {/* <img src="https://drive.google.com/uc?export=view&id=1N0xkSbV4KUTj1kTzqF9Cn-EnODle-xSF"/> */}
         </SwiperSlide>
         <SwiperSlide>
           <img src="https://drive.google.com/uc?export=view&id=1uaYaOXDG30lb18Lv-YE-U6AjoQ77qtWX" />

@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect, useContext } from "react";
 import { Col, Container, Row } from "reactstrap";
 
 import { RxDoubleArrowRight } from "react-icons/rx";
@@ -6,7 +6,11 @@ import { AiOutlineCheck } from "react-icons/ai";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import { abreWhatsapp } from "@/utils/helpers";
 
+import { LoadedCodeContext } from "@/context/LoadedCodeContext";
+import Imagem from "@/Components/Imagem";
+
 const Procedimentos = () => {
+  const { imagesLoaded } = useContext(LoadedCodeContext);
   const checkupRef = useRef();
 
   useEffect(() => {
@@ -22,9 +26,11 @@ const Procedimentos = () => {
   return (
     <div className="pagina-procedimentos">
       <div className="imagem-estatica">
-        <img src="https://drive.google.com/uc?export=view&id=10MD-cpGc1gEeEZCVOlnuQiaBjm3WmW2F" />
+        <Imagem urlImg="https://drive.google.com/uc?export=view&id=10MD-cpGc1gEeEZCVOlnuQiaBjm3WmW2F" />
+        {/* <img src="https://drive.google.com/uc?export=view&id=10MD-cpGc1gEeEZCVOlnuQiaBjm3WmW2F" /> */}
       </div>
 
+      {imagesLoaded ? (
       <Container className="container-procedimentos">
         <Col className="coluna-procedimentos">
           <Row className="procedimento" id="estetica">
@@ -167,6 +173,9 @@ const Procedimentos = () => {
           </Row>
         </Col>
       </Container>
+      ) : (
+        <></>
+      )}
     </div>
   );
 };
