@@ -34,27 +34,27 @@ const Topbar = () => {
         </div>
 
         <div className="contorno-navlink">
-          <NavLink to="/" title="Home">
+          <NavLink to="/dr-luis/" title="Home">
             HOME
           </NavLink>
         </div>
         <div className="contorno-navlink">
-          <NavLink to="/dr-luis" title="DR.Luis Fernando Bastos">
+          <NavLink to="/dr-luis/dr-luis-fernando" title="DR.Luis Fernando Bastos">
             DR.LUIS FERNANDO BASTOS
           </NavLink>
         </div>
         <div className="contorno-navlink">
-          <NavLink to="/procedimentos" title="Procedimentos">
+          <NavLink to="/dr-luis/procedimentos" title="Procedimentos">
             PROCEDIMENTOS
           </NavLink>
         </div>
         <div className="contorno-navlink">
-          <NavLink to="/blog" title="Blog">
+          <NavLink to="/dr-luis/blog" title="Blog">
             BLOG
           </NavLink>
         </div>
         <div className="contorno-navlink">
-          <NavLink to="/agendamento" title="Agendamento">
+          <NavLink to="/dr-luis/agendamento" title="Agendamento">
             AGENDAMENTO
           </NavLink>
         </div>

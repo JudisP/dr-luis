@@ -9,12 +9,12 @@ import Agendamento from '@/Pages/Agendamento';
 const Router = () => {
   return (
     <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/dr-luis" element={<Drluis />} />
-      <Route path="/procedimentos" element={<Procedimentos />} />
-      <Route path="/blog" element={<Blog />} />
-      <Route path="/agendamento" element={<Agendamento />} />
-      <Route path="*" element={<div>Página não encontrada</div>} />
+      <Route path="/dr-luis/" element={<Home />} />
+      <Route path="/dr-luis/dr-luis-fernando" element={<Drluis />} />
+      <Route path="/dr-luis/procedimentos" element={<Procedimentos />} />
+      <Route path="/dr-luis/blog" element={<Blog />} />
+      <Route path="/dr-luis/agendamento" element={<Agendamento />} />
+      <Route path="*" element={<div className='h-100 w-100'>Página não encontrada</div>} />
     </Routes>
   )
 };
