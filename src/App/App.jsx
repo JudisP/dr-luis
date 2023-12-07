@@ -6,7 +6,7 @@ import MenuContextProvider from "@/context/MenuContext";
 import LoadedCodeContextProvider from "@/context/LoadedCodeContext";
 import Topbar from "@/Layout/Topbar/Topbar";
 import Router from "./Router";
-import Footer from "@/Layout/Footer/Footer";
+import Footer from "@/Layout/footer/Footer";
 
 function App() {
   // const { imagesLoaded } = MenuContext(LoadedCodeContext);
