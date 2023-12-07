@@ -13,19 +13,19 @@ const MobileNav = () => {
       
       <div className={`mobile-nav ${open ? "open" : "close"}`}>
 
-        <NavLink to="/" onClick={toggle}>
+        <NavLink to="/dr-luis/" onClick={toggle}>
           HOME
         </NavLink>
-        <NavLink to="/dr-luis" onClick={toggle}>
+        <NavLink to="/dr-luis/dr-luis-fernando" onClick={toggle}>
           DR. LUIS FERNANDO BASTOS
         </NavLink>
-        <NavLink to="/procedimentos" onClick={toggle}>
+        <NavLink to="/dr-luis/procedimentos" onClick={toggle}>
           PROCEDIMENTOS
         </NavLink>
-        <NavLink to="/blog" onClick={toggle}>
+        <NavLink to="/dr-luis/blog" onClick={toggle}>
           BLOG
         </NavLink>
-        <NavLink to="/agendamento" onClick={toggle}>
+        <NavLink to="/dr-luis/agendamento" onClick={toggle}>
           AGENDAMENTO
         </NavLink>
       </div>
