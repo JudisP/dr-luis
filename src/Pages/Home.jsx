@@ -1,4 +1,4 @@
-import Slide from "@/components/Slide";
+import Slide from "@/Components/Slide";
 import {
   Col,
   Container,
@@ -15,7 +15,7 @@ import { LuMail } from "react-icons/lu";
 
 import { TfiLocationPin } from "react-icons/tfi";
 
-import setaDireita from "@/shared/icons/seta-direita.svg";
+// import setaDireita from "@/shared/icons/seta-direita.svg";
 import ModalConvenio from "@/Components/Modal";
 import { useState } from "react";
 import BallBackgroundBig from "@/Components/BallBackgroundBig";
