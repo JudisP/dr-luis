@@ -20,7 +20,7 @@ import {
   abreWhatsapp,
 } from "@/utils/helpers";
 import MapsImg from "@/Components/MapsImg";
-import Imagem from "@/Components/Imagem";
+import ImagemLoad from "@/Components/ImagemLoad";
 
 import { LoadedCodeContext } from "@/context/LoadedCodeContext";
 
@@ -29,12 +29,12 @@ const Agendamento = () => {
   return (
     <div className="pagina-agendamento">
       <div className="imagem-estatica">
-        <Imagem
+        <ImagemLoad
+
           urlImg={
-            "https://drive.google.com/uc?export=view&id=1LqJPrYmRVEW0tCMc78two0R_OIEhV7"
+            "https://drive.google.com/uc?export=view&id=1LqJPrYmRVEW0tCMc78two0R_OIEhV7iv"
           }
         />
-        {/* 1LqJPrYmRVEW0tCMc78two0R_OIEhV7iv */}
       </div>
 
       {imagesLoaded ? (

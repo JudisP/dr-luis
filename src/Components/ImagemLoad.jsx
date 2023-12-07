@@ -6,22 +6,12 @@ import { IoImageOutline } from "react-icons/io5";
 import { useContext } from "react";
 import Loading from "./Loading";
 
-function Imagem({ urlImg, descricaoImg }) {
+function ImagemLoad({ urlImg, descricaoImg }) {
   const [imagesLoad, setImagesLoad] = useState(false);
   const { toggleImagesLoaded, toggleImagesError, imagesError, resetContext } =
     useContext(LoadedCodeContext);
 
-
   useEffect(() => {
-    // const imageUrls = [urlImg];
-    // if (imagesLoad && resetNeeded) {
-    //   console.log("resetNeeded",resetNeeded);
-    //   console.log("Entrou no ResetNeed");
-    //   resetContext();
-    //   setResetNeeded(false);
-    //   console.log("vai sair do ResetNeed");
-    //   console.log("resetNeeded",resetNeeded);
-    // }
 
     const loadImages = async () => {
       try {
@@ -31,49 +21,34 @@ function Imagem({ urlImg, descricaoImg }) {
         await preLoadImages(imageUrls);
         toggleImagesLoaded(true);
         setImagesLoad(true);
-      } catch (error) {
         toggleImagesError("Carregado");
+      } catch (error) {
+        toggleImagesError("Erro");
         toggleImagesLoaded(true);
         setImagesLoad(true);
       }
     };
-    
-    console.log("antes !imagesLoad");
+
     if (!imagesLoad) {
-      console.log("dentro !imagesLoad");
       loadImages();
-      console.log("depois !imagesLoad");
     }
-    
-    // preLoadImages(imageUrls)
-    // .then(() => {
-    //   setImagesLoad(true);
-    //   toggleImagesLoaded(true);
-    //   // resetContext();
-    //   })
-    //   .catch(() => {
-    //     toggleImagesError("Carregado");
-    //     toggleImagesLoaded(true);
-    //   });
   }, [
     urlImg,
     toggleImagesLoaded,
     toggleImagesError,
-    setImagesLoad, 
+    setImagesLoad,
     imagesLoad,
-    resetContext
+    resetContext,
   ]);
-
-  console.log("teste lógico", imagesError == false);
 
   return (
     <>
-      {imagesLoad && !imagesError ? (
+      {imagesLoad && imagesError === "Carregado" ? (
         <img src={urlImg} alt={descricaoImg} />
       ) : imagesError === "Carregando" ? (
         <Loading />
       ) : (
-        imagesError === "Carregado" && (
+        imagesError === "Erro" && (
           <div className="imagem-error">
             <IoImageOutline />
             <h1>Imagem não carregada corretamente</h1>
@@ -84,9 +59,9 @@ function Imagem({ urlImg, descricaoImg }) {
   );
 }
 
-Imagem.propTypes = {
+ImagemLoad.propTypes = {
   urlImg: PropTypes.string.isRequired,
   descricaoImg: PropTypes.string,
 };
 
-export default Imagem;
+export default ImagemLoad;

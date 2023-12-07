@@ -10,14 +10,15 @@ import MapsImg from "@/Components/MapsImg";
 import React, { useContext } from "react";
 
 import { LoadedCodeContext } from "@/context/LoadedCodeContext";
-import Imagem from "@/Components/Imagem";
+import ImagemLoad from "@/Components/ImagemLoad";
 
 const Drluis = () => {
   const { imagesLoaded } = useContext(LoadedCodeContext);
   return (
     <div className="pagina-drluis">
       <div className="imagem-estatica">
-        <Imagem urlImg="https://drive.google.com/uc?export=view&id=1Wo8ovVwyFe_SRSAO65IfRUIX06r7UDUc" />
+        <ImagemLoad
+ urlImg="https://drive.google.com/uc?export=view&id=1Wo8ovVwyFe_SRSAO65IfRUIX06r7UDUc" />
         {/* <img src="https://drive.google.com/uc?export=view&id=1Wo8ovVwyFe_SRSAO65IfRUIX06r7UDUc" /> */}
       </div>
 

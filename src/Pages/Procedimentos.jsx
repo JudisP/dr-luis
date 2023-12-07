@@ -7,7 +7,7 @@ import { AiOutlineArrowRight } from "react-icons/ai";
 import { abreWhatsapp } from "@/utils/helpers";
 
 import { LoadedCodeContext } from "@/context/LoadedCodeContext";
-import Imagem from "@/Components/Imagem";
+import ImagemLoad from "@/Components/ImagemLoad";
 
 const Procedimentos = () => {
   const { imagesLoaded } = useContext(LoadedCodeContext);
@@ -26,8 +26,8 @@ const Procedimentos = () => {
   return (
     <div className="pagina-procedimentos">
       <div className="imagem-estatica">
-        <Imagem urlImg="https://drive.google.com/uc?export=view&id=10MD-cpGc1gEeEZCVOlnuQiaBjm3WmW2F" />
-        {/* <img src="https://drive.google.com/uc?export=view&id=10MD-cpGc1gEeEZCVOlnuQiaBjm3WmW2F" /> */}
+        <ImagemLoad
+ urlImg="https://drive.google.com/uc?export=view&id=10MD-cpGc1gEeEZCVOlnuQiaBjm3WmW2F" />
       </div>
 
       {imagesLoaded ? (
