@@ -329,7 +329,7 @@
     .perguntas {
       display: flex;
       justify-content: space-around;
-      gap: 20px;
+      gap: 10px;
 
       // .pergunta-resposta {
       // .pergunta .pergunta:hover img {
@@ -353,10 +353,12 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      width: 100vw;
-
+      
       img {
+        height: 100%;
         width: 100%;
+        overflow: hidden;
+        object-fit: cover;
       }
 
       .conteudo {
@@ -401,6 +403,7 @@
 
     h3 {
       font-weight: 700;
+      text-align: center;
     }
   }
 
@@ -440,7 +443,7 @@
     justify-content: center;
     gap: 40px;
 
-    height: 300px;
+    height: 500px;
 
     margin-top: 70px;
     margin-bottom: 50px;

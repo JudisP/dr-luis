@@ -126,6 +126,34 @@
             }
             
         }
+        .container-banner-beleza {
+            height: 360px;
+            
+
+            .background-banner {
+                
+                img {
+                  height: 360px;
+                  overflow: hidden;
+                  object-fit: cover;
+                }
+                
+                .conteudo {
+                    h3 {
+                        font-size: 20px;
+                        text-align: center;
+                    }
+            
+                    h5 {
+                      font-weight: 700;
+                    }
+            
+                    button {
+                      font-weight: 700;
+                    }
+                  }
+            }
+        }
     }   
 }
 
