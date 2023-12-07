@@ -112,7 +112,7 @@ const Home = () => {
                   src="https://drive.google.com/uc?export=view&id=1f4idcX3jpIU1F4bqMJ9GZ0z-Lm8xQmI7"
                 />
               </div>
-              <BallBackgroundBig />
+              {/* <BallBackgroundBig /> */}
             </div>
           </Col>
         </Row>
