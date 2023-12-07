@@ -34,6 +34,7 @@ function Imagem({ urlImg, descricaoImg }) {
       } catch (error) {
         toggleImagesError("Carregado");
         toggleImagesLoaded(true);
+        setImagesLoad(true);
       }
     };
     
@@ -63,9 +64,11 @@ function Imagem({ urlImg, descricaoImg }) {
     resetContext
   ]);
 
+  console.log("teste lógico", imagesError == false);
+
   return (
     <>
-      {imagesLoad ? (
+      {imagesLoad && !imagesError ? (
         <img src={urlImg} alt={descricaoImg} />
       ) : imagesError === "Carregando" ? (
         <Loading />
