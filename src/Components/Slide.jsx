@@ -14,7 +14,7 @@ const Slide = () => {
   const navigate = useNavigate();
 
   const redirecionaPagina = useCallback(() => {
-    navigate('/procedimentos#checkup');
+    navigate('/dr-luis/procedimentos#checkup');
   }, [navigate]);
 
   return (
