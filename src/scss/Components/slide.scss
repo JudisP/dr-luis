@@ -6,7 +6,7 @@
 
   .slide {
     box-sizing: content-box;
-    border-radius: 0 0 100px 100px;
+    border-radius: 0 0 60px 60px;
     position: relative;
 
     .swiper-slide {
@@ -21,6 +21,11 @@
         max-width: 100vw;
         max-height: 100vh;
         object-fit: cover;
+      
+        @media (max-width: 600px){
+          height: 50vh;
+        }
+      
       }
 
       .slide-conteudo {
@@ -97,3 +102,5 @@
     }
   }
 }
+
+

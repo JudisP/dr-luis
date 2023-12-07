@@ -18,7 +18,7 @@ import { TfiLocationPin } from "react-icons/tfi";
 // import setaDireita from "@/shared/icons/seta-direita.svg";
 import ModalConvenio from "@/Components/Modal";
 import { useState } from "react";
-import BallBackgroundBig from "@/Components/BallBackgroundBig";
+// import BallBackgroundBig from "@/Components/BallBackgroundBig";
 import { FaUserMd } from "react-icons/fa";
 import ListaPerguntas from "@/Components/ListaPerguntas";
 import {
@@ -60,7 +60,7 @@ const Home = () => {
             </div>
             <div className="linha"></div>
             <span className="texto descricao">
-              Atendimento seguro e inovação que proporcionam os melhores
+              &nbsp;&nbsp;&nbsp;Atendimento seguro e inovação que proporcionam os melhores
               serviços na área de Cirurgia de varizes. O Melhor em recursos da
               tecnologia aplicada aos tratamentos de doenças das artérias, veias
               e vasos linfáticos.
