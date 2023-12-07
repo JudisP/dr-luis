@@ -1,12 +1,12 @@
 @media (max-width: $screen-xl) {
   .container-drluis {
-    gap: 280px;
 
     .feedbacks {
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;
       justify-content: center;
+      margin-top: 180px;
 
       .titulo-subtitulo {
         span {
