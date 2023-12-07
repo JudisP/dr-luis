@@ -85,7 +85,7 @@ const Home = () => {
                 </div>
               </div>
             </Row>
-            <Link to="/procedimentos" onClick={() => scrollTop(0, 0)}>
+            <Link to="/dr-luis/procedimentos" onClick={() => scrollTop(0, 0)}>
               <button className="button button--primary">
                 Procedimentos <AiOutlineArrowRight />
               </button>
@@ -138,7 +138,7 @@ const Home = () => {
                 vascular do Hospital de Base do Distrito Federal.
               </h3>
             </div>
-            <Link to="/dr-luis" onClick={() => scrollTop(0, 0)}>
+            <Link to="/dr-luis/dr-luis-fernando" onClick={() => scrollTop(0, 0)}>
               <button className="button button--conteudo--text-white">
                 Saiba mais <AiOutlineArrowRight />
               </button>

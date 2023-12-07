@@ -42,7 +42,7 @@ const Slide = () => {
           <img src="https://drive.google.com/uc?export=view&id=1uaYaOXDG30lb18Lv-YE-U6AjoQ77qtWX" />
           <div className="slide-conteudo">
             <h1 className="slide-text">ESTÉTICA</h1>
-            <Link to="/procedimentos#estetica">
+            <Link to="/dr-luis/procedimentos#estetica">
               <Button className="button-slide button--primary">
                 Saiba Mais
               </Button>
@@ -53,7 +53,7 @@ const Slide = () => {
           <img src="https://drive.google.com/uc?export=view&id=1PNN_JJ41bj8dIK07NAy6NSMKT5uQXLhv" />
           <div className="slide-conteudo">
             <h1 className="slide-text">EXAMES</h1>
-            <Link to="/procedimentos#exames" >
+            <Link to="/dr-luis/procedimentos#exames" >
               <Button className="button-slide button--primary">
                 Saiba Mais
               </Button>
