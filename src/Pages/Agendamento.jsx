@@ -92,11 +92,11 @@ const Agendamento = () => {
                     onClick={abreNumeroTelefone}
                   >
                     <BsTelephone />
-                    <span>(61)2099-2889</span>
+                    <span>(61) 2099-2889</span>
                   </div>
                   <div className="informacao cursor" onClick={abreWhatsapp}>
                     <BsWhatsapp />
-                    <span>(61)99935-5005</span>
+                    <span>(61) 99935-5005</span>
                   </div>
                   <div className="informacao cursor" onClick={abreEmail}>
                     <LuMail />
