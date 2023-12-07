@@ -30,11 +30,10 @@ const Agendamento = () => {
     <div className="pagina-agendamento">
       <div className="imagem-estatica">
         <Imagem
-          src={
-            "https://drive.google.com/uc?export=view&id=1cfJbfJLpDbMcs99lfzemRlykV0I-jS7B"
+          urlImg={
+            "https://drive.google.com/uc?export=view&id=1LqJPrYmRVEW0tCMc78two0R_OIEhV7iv"
           }
         />
-        {/* <img src="https://drive.google.com/uc?export=view&id=1cfJbfJLpDbMcs99lfzemRlykV0I-jS7B" /> */}
       </div>
 
       {imagesLoaded ? (
