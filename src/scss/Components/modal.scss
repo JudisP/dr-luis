@@ -1,12 +1,12 @@
 .modal-convenio {
   .modal-content {
+    max-height: 80vh;
+    overflow: hidden;
+    overflow-y: auto;
 
     @media (max-width: $screen-lg) {
       width: 90vw;
-      height: 80vh;
-      overflow: hidden;
       margin: 0 auto;
-      overflow-y: auto;
      }
 
     // max-width: 800px;
@@ -20,11 +20,18 @@
       position: relative;
       height: 100px;
 
+      @media (max-width: $screen-sm){
+        align-items: end;
+      }
       .modal-title {
         h3 {
           font-weight: 700;
           color: $color-gold;
           text-align: center;
+
+          @media (max-width: $screen-sm){
+            font-size: 1.2rem;
+          }
         }
         .linha {
           content: "";
