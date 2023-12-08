@@ -1,13 +1,13 @@
 export const listaPerguntasColuna1 = [
   {
-    pergunta: "Como é feito a cirurgia na Clínica Vascular?",
+    pergunta: "Como é feita a cirurgia na Clínica Vascular?",
     resposta:
       "Na cirurgia de varizes, são feitos pequenos cortes, quase imperceptíveis, sem necessidade de pontos, e que após 60-90 dias, não terá nenhuma cicatriz residual, desde que o paciente siga as instruções. Além disso, já na alta o paciente sairá andando, com apenas algumas mínimas limitações para algumas atividades mais intensas, para as quais deverá se respeitado o tempo determinado. Por exemplo, a depender da técnica utilizada durante o ato cirúrgico, uma cirurgia para retirada de safena, o tempo de recuperação para voltar a vida normal é de 3 dias. Diferente do que muitos ainda pensam, a cirurgia de varizes mudou bastante nos últimos anos. Hoje ela é feita com anestesia local e sedação, alta hospitalar no mesmo dia e recuperação para as atividades diárias, inclusive atividades físicas, entre 3 a 15 dias.",
   },
   {
     pergunta: "Como é o Pós Operatório da cirurgia de varizes?",
     resposta:
-      "A pessoa que faz cirurgia de varizes recebe nos dias subseqüentes à cirurgia medicamentos para dor e às vezes anti-inflamatórios. Também é recomendado repouso com as pernas para cima, com retorno gradual à caminhada, de acordo com as orientações do médico que realizou a cirurgia. Alguns médicos também indicam a utilização de meias elásticas de compressão. É muito importante que a pessoa siga as recomendações do seu cirurgião porque cada caso é um caso e para cada caso há uma recomendação.",
+      "A pessoa que faz cirurgia de varizes recebe nos dias subseqüentes à cirurgia medicamentos para dor e às vezes anti-inflamatórios. Também é recomendado repouso com as pernas para cima, com retorno gradual à caminhada, de acordo com as orientações do médico que realizou a cirurgia. Alguns médicos também indicam a utilização de meias elásticas de compressão. É muito importante que a pessoa siga as recomendações do seu cirurgião, porque cada caso é um caso e para cada caso há uma recomendação.",
   },
   {
     pergunta: "Qual deve ser o intervalo entre cada aplicação?",

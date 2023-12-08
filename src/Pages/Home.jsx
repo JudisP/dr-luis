@@ -129,7 +129,7 @@ const Home = () => {
                 <div className="descricao">
                   <h3>
                     Dr. Luís Fernando de Carvalho Bastos é cirurgião na nossa
-                    Clínica vascular, formado em medicina pela Escola de
+                    Clínica Vascular, formado em medicina pela Escola de
                     Ciências Médicas de Alagoas. É membro da Sociedade
                     Brasileira de Angiologia e Cirurgia de Varizes e membro do
                     serviço de cirurgia vascular do Hospital de Base do Distrito
