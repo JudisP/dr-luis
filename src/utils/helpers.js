@@ -1,10 +1,10 @@
 export const abreNumeroTelefone = () => {
-  window.location.href = "tel:+55123456789";
+  window.location.href = "tel:20992889";
 };
 
 export const abreWhatsapp = () => {
   window.open(
-    "https://api.whatsapp.com/send?phone=5561998719320&text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20os%20serviços%20do%20Dr.%20Luis%20Fernando!",
+    "https://api.whatsapp.com/send?phone=5561999355005&text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20os%20serviços%20do%20Dr.%20Luis%20Fernando!",
     "_blank"
   );
 };
