@@ -235,8 +235,6 @@
       background-color: $color-gold;
       display: flex;
 
-      width: 92vw;
-
       border-bottom-right-radius: 100px;
 
       margin-top: 50px;
@@ -283,6 +281,7 @@
         justify-content: center;
         flex-direction: column;
         width: 100%;
+        padding: 50px;
 
         font-weight: 700;
         color: $color-white;
