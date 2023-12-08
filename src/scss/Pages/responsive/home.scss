@@ -1,216 +1,196 @@
 @media (max-width: $screen-xl) {
-
-    .pagina-home {
-        .conteiner-boas-vindas {
-            .row-boas-vindas {
-
-                .apresentacao {
-
-                    text-align: justify;
-                }
-
-                .row {
-                    display: flex;
-                    justify-content: start;
-
-                }
-
-                .imagens,
-                .images-container {
-                    display: none;
-                }
-
-            }
+  .pagina-home {
+    .conteiner-boas-vindas {
+      .row-boas-vindas {
+        .apresentacao {
+          text-align: justify;
         }
 
-        .container-apresentacao {
-
-            .coluna-texto {
-                padding: 40px;
-
-
-                .titulo {
-                    h2 {
-                        font-size: 1.5rem;
-                    }
-                }
-
-                .descricao {
-                    h3 {
-                        margin: 20px 0;
-                        font-size: 1.1rem;
-                    }
-                }
-            }
-
-            .coluna-img img {
-                width: 100%;
-                min-height: 5rem;
-            }
-
-            .container-bolinhas-small {
-                display: none;
-            }
+        .row {
+          display: flex;
+          justify-content: start;
         }
 
-        .container-servicos {
-            .background-banner.resp {
-                flex-direction: column;
-                width: auto;
-                border-bottom-right-radius: 30px;
-
-                .numero {
-                    padding: 15px;
-                }
-
-            }
-
+        .imagens,
+        .images-container {
+          display: none;
         }
-
-        .container-perguntas-frequentes {
-            .titulo {
-                
-                h3 {
-                    font-size: 1rem;                    
-                }
-            }
-          
-
-            .perguntas {
-                display: grid;
-                grid-template-columns: 1fr;
-            }
-
-        }
-
-
+      }
     }
+
+    .container-apresentacao {
+      .coluna-texto {
+        padding: 40px;
+
+        .titulo {
+          h2 {
+            font-size: 1.5rem;
+          }
+        }
+
+        .descricao {
+          h3 {
+            margin: 20px 0;
+            font-size: 1.1rem;
+          }
+        }
+      }
+
+      .coluna-img img {
+        width: 100%;
+        min-height: 5rem;
+      }
+
+      .container-bolinhas-small {
+        display: none;
+      }
+    }
+
+    .container-servicos {
+      .titulo {
+        .texto {
+          text-align: left;
+        }
+      }
+
+      .background-banner.resp {
+        flex-direction: column;
+        width: auto;
+        border-bottom-right-radius: 30px;
+
+        .numero {
+          padding: 15px;
+          height: 300px;
+        }
+      }
+    }
+
+    .container-perguntas-frequentes {
+      .titulo {
+        h3 {
+          font-size: 1rem;
+        }
+      }
+
+      .perguntas {
+        display: grid;
+        grid-template-columns: 1fr;
+      }
+    }
+  }
 }
 
 @media (max-width: $screen-md) {
-    .pagina-home {
-        .container-perguntas-frequentes {
-            .perguntas {
-                display: flex;
-                flex-direction: column;
-            }
+  .pagina-home {
+    .container-perguntas-frequentes {
+      .perguntas {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+
+    .container-apresentacao {
+      .coluna-texto {
+        width: 100%;
+        padding: 20px;
+
+        .titulo {
+          h2 {
+            font-size: 1.2rem;
+          }
         }
 
-        .container-apresentacao {
-            .coluna-texto {
-                width: 100%;
-                padding: 20px;
-
-
-                .titulo {
-                    h2 {
-                        font-size: 1.2rem;
-                    }
-                }
-
-                .descricao {
-                    h3 {
-                        margin: 20px 0;
-                        font-size: 1rem;
-                    }
-                }
-            }
-
-            .coluna-img.col {
-                display: none;
-
-                img {
-                    display: none;
-                    
-                }
-            }
-            
+        .descricao {
+          h3 {
+            margin: 20px 0;
+            font-size: 1rem;
+          }
         }
-        .container-banner-beleza {
-            height: 360px;
-            
+      }
 
-            .background-banner {
-                
-                img {
-                  height: 360px;
-                  overflow: hidden;
-                  object-fit: cover;
-                }
-                
-                .conteudo {
-                    h3 {
-                        font-size: 20px;
-                        text-align: center;
-                    }
-            
-                    h5 {
-                      font-weight: 700;
-                    }
-            
-                    button {
-                      font-weight: 700;
-                    }
-                  }
-            }
+      .coluna-img.col {
+        display: none;
+
+        img {
+          display: none;
         }
-    }   
+      }
+    }
+    .container-banner-beleza {
+      height: 360px;
+
+      .background-banner {
+        img {
+          height: 360px;
+          overflow: hidden;
+          object-fit: cover;
+        }
+
+        .conteudo {
+          h3 {
+            font-size: 20px;
+            text-align: center;
+          }
+
+          h5 {
+            font-weight: 700;
+          }
+
+          button {
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: $screen-sm) {
-    .pagina-home{
-        .conteiner-boas-vindas{
+  .pagina-home {
+    .conteiner-boas-vindas {
+      .apresentacao {
+        margin: 20px;
+        align-items: center;
 
-            .apresentacao {
-                margin: 20px;
-                align-items: center;
-                
-                
-                
-                .texto.descricao {
-                    width: 100% !important;
-                }         
-
-                h4 {
-                    font-size: .9rem;
-                }
-
-                .background-icon {
-                    width: 50px !important;
-                    height: 50px !important;
-                }
-            }
-        }
-            
-        .container-servicos {
-            h3 {
-                font-size: 1.1rem;
-            }
-        }
-        
-        .container-perguntas-frequentes {
-            .linha {
-                display: none;
-            }
+        .texto.descricao {
+          width: 100% !important;
         }
 
-        .container-perguntas-frequentes {
-            .titulo {
-                
-                h3 {
-                    font-size: .9rem;                    
-                }
-            }
-          
-
-            .perguntas {
-                display: grid;
-                grid-template-columns: 1fr;
-                width: 350px;
-            }
-
+        h4 {
+          font-size: 0.9rem;
         }
 
+        .background-icon {
+          width: 50px !important;
+          height: 50px !important;
+        }
+      }
     }
-}
 
+    .container-servicos {
+      h3 {
+        font-size: 1.1rem;
+      }
+    }
+
+    .container-perguntas-frequentes {
+      .linha {
+        display: none;
+      }
+    }
+
+    .container-perguntas-frequentes {
+      .titulo {
+        h3 {
+          font-size: 0.9rem;
+        }
+      }
+
+      .perguntas {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 350px;
+      }
+    }
+  }
+}

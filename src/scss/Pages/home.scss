@@ -174,7 +174,6 @@
         .descricao {
           color: $color-white;
           margin: 20px 0;
-          
         }
 
         button {
@@ -253,7 +252,6 @@
         justify-content: center;
         align-items: center;
         height: 100%;
-
 
         img {
           max-width: 310px;
@@ -353,7 +351,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      
+
       img {
         height: 100%;
         width: 100%;
@@ -483,5 +481,13 @@
   to {
     max-height: 500px;
     opacity: 1;
+  }
+}
+
+@media (min-width: $screen-sm) {
+  .container-banner-beleza {
+    .background-banner {
+      width: 100vw;
+    }
   }
 }
