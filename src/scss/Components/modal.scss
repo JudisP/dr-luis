@@ -1,5 +1,11 @@
 .modal-convenio {
   .modal-content {
+
+    @media (max-width: $screen-lg) {
+      width: 90vw;
+      margin: 0 auto;
+     }
+
     // max-width: 800px;
     .modal-header {
       display: flex;
@@ -32,10 +38,8 @@
           position: absolute;
           top: 10px;
           right: 10px;
-
-          /* Tipografia */
-
-          //   border-radius: 999px;
+          
+          
           border-color: $color-gold;
           line-height: 1.5;
 
@@ -50,17 +54,27 @@
 
     .modal-body {
       display: flex;
+      flex-wrap: wrap;
+
       flex-direction: row;
       gap: 40px;
       padding-bottom: 50px;
       padding-top: 50px;
+      
+      @media (max-width: 400px) {
+        text-align: center;      
+      }
 
       .col {
         display: flex;
         flex-direction: column;
         gap: 10px;
         font-size: .9rem;
-
+        
+        @media (max-width: $screen-lg) {
+          font-size: .8rem;
+        }
+         
         span {
           white-space: nowrap;
 
@@ -76,3 +90,4 @@
   --bs-modal-width: 900px;
   height: 1000px;
 }
+
