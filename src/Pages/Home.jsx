@@ -205,7 +205,7 @@ const Home = () => {
                   <BsTelephone />
                   AGENDE AGORA
                 </span>
-                <span>(61) 99999-9999</span>
+                <span>(61) 99935-5005</span>
               </div>
             </div>
           </div>

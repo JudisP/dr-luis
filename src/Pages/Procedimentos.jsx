@@ -155,7 +155,7 @@ const Procedimentos = () => {
             <Col className="conteudo-coluna">
               <Row className="conteudo-titulo">
                 <RxDoubleArrowRight />
-                <h3>Checkup Vascular</h3>
+                <h3>Cirurgia Vascular</h3>
               </Row>
               <Row className="conteudo-texto conteudo-ultimo">
                 <p className="pb-3">
