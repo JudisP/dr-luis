@@ -12,7 +12,7 @@ export const listaPerguntasColuna1 = [
   {
     pergunta: "Qual deve ser o intervalo entre cada aplicação?",
     resposta:
-      "A quantidade exata vai depender das condições das varizes de cada paciente. Mas, em geral, são necessárias de três a cinco sessões para a obtenção do resultado desejado. É preciso fazer um intervalo de aproximadamente 15 dias entre elas. Cada aplicação tem duração de cerca de 20 minutos.",
+      "A quantidade exata vai depender das condições das varizes de cada paciente. Mas, em geral, são necessárias de três a cinco sessões para a obtenção do resultado desejado. É preciso fazer um intervalo de aproximadamente 15 dias entre elas. Cada aplicação tem duração de cerca de 30 minutos.",
   },
   {
     pergunta: "Qual o exame responsável para detectar trombose?",
