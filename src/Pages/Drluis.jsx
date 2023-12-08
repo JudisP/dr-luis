@@ -127,7 +127,7 @@ const Drluis = () => {
                 <div className="linha"></div>
                 <span>
                   Confira alguns depoimentos de pacientes atendidos pelo Dr.
-                  Luís Fernando Bastos
+                  Luis Fernando Bastos:
                 </span>
               </div>
 
