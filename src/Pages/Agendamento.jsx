@@ -100,7 +100,7 @@ const Agendamento = () => {
                   </div>
                   <div className="informacao cursor" onClick={abreEmail}>
                     <LuMail />
-                    <span>cirurgia.vascularclinica@gmail.com</span>
+                    <span>drluis.site@gmail.com</span>
                   </div>
                   <div className="informacao">
                     <AiOutlineClockCircle />

@@ -11,7 +11,7 @@ export const abreWhatsapp = () => {
 
 export const abreEmail = () => {
   window.location.href =
-    "mailto:cirurgia.vascularclinica@gmail.com?subject=Agendar Consulta&body=Olá, gostaria de saber mais sobre os serviços do Dr. Luis Fernando Angiologista! %0D%0A %0D%0A Me chamo [escreva seu nome completo], possuo o convênio [escreva seu convênio], meu número para contato é (DDD) [escreva seu número de contato]. %0D%0A %0D%0A Aguardo retorno! %0D%0A %0D%0A[SE POSSÍVEL ANEXE UMA FOTO LEGÍVEL DA SUA CARTEIRA DO CONVÊNIO]";
+    "mailto:drluis.site@gmail.com?subject=Agendar Consulta&body=Olá, gostaria de saber mais sobre os serviços do Dr. Luis Fernando Angiologista! %0D%0A %0D%0A Me chamo [escreva seu nome completo], possuo o convênio [escreva seu convênio], meu número para contato é (DDD) [escreva seu número de contato]. %0D%0A %0D%0A Aguardo retorno! %0D%0A %0D%0A[SE POSSÍVEL ANEXE UMA FOTO LEGÍVEL DA SUA CARTEIRA DO CONVÊNIO]";
 };
 
 export const abreGoogleMaps = () => {
