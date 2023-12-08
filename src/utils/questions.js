@@ -65,7 +65,7 @@ export const listaPerguntasColuna2 = [
   {
     pergunta: "Após o procedimento, as varizes somem definitivamente?",
     resposta:
-      "Sim, depois de tratados tanto os vasinhos quanto as varizes não reaparecerão. No entanto, outras varizes e outros vasinhos podem surgir com o passar do tempo. Dependerá de vários fatores, principalmente se o paciente tem histórico familiar de varizes. No entanto, algumas medidas podem ser tomadas para prevenção, como manter uma atividade física regular, manter o peso adequado e evitar ficar imóvel em pé ou sentado por muito tempo.",
+      "Sim, depois de tratados tanto os vasinhos quanto as varizes não reaparecerão. No entanto, outras varizes e outros vasinhos podem surgir com o passar do tempo. Dependerá de vários fatores, principalmente se o paciente tem histórico familiar de varizes. No entanto, algumas medidas podem ser tomadas para prevenção, como manter uma atividade física regular, manter o peso adequado e evitar ficar imóvel em, pé ou sentado por muito tempo.",
   },
   {
     pergunta: "É necessário repouso após o procedimento?",
