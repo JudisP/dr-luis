@@ -30,7 +30,7 @@ const Footer = () => {
                         <nav className="links contacts">
                             <a className="link" title="Telefone" onClick={abreNumeroTelefone}><BsTelephone />(61)2099-2889</a>
                             <a className="link" title="Whatsapp" onClick={abreWhatsapp}><BsWhatsapp />(61)99935-5005</a>
-                            <a className="email link" title="Email" onClick={abreEmail}><LuMail />drluis.site@gmail.coms</a>
+                            <a className="email link" title="Email" onClick={abreEmail}><LuMail />drluis.site@gmail.com</a>
                             <a title="Cnpj"><FaRegBuilding />CNPJ:25.1234.359/0001-48</a>
                         </nav>
                     </div>
