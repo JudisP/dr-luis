@@ -161,7 +161,7 @@ const SlideHistory = () => {
           <BsStarFill />
         </Row>
         <span className="conteudo-texto">
-          O doutor Luís Fernando é um médico excelente!! Muito capacitado e
+          O doutor Luis Fernando é um médico excelente!! Muito capacitado e
           atencioso!!! Grata 🙏🏻🙌🙌
         </span>
         <span className="paciente">BENITA FIGUEREIDO FERREIRA LOUREIRO</span>
