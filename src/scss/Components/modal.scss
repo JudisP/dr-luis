@@ -3,7 +3,10 @@
 
     @media (max-width: $screen-lg) {
       width: 90vw;
+      height: 80vh;
+      overflow: hidden;
       margin: 0 auto;
+      overflow-y: auto;
      }
 
     // max-width: 800px;
@@ -68,7 +71,7 @@
       .col {
         display: flex;
         flex-direction: column;
-        gap: 10px;
+        gap: 8px;
         font-size: .9rem;
         
         @media (max-width: $screen-lg) {
