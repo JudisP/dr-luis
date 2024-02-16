@@ -2,27 +2,17 @@ export const listaPerguntasColuna1 = [
   {
     pergunta: "Como é feita a cirurgia na Clínica Vascular?",
     resposta:
-      "Na cirurgia de varizes, são feitos pequenos cortes, quase imperceptíveis, sem necessidade de pontos, e que após 60-90 dias, não terá nenhuma cicatriz residual, desde que o paciente siga as instruções. Além disso, já na alta o paciente sairá andando, com apenas algumas mínimas limitações para algumas atividades mais intensas, para as quais deverá se respeitado o tempo determinado. Por exemplo, a depender da técnica utilizada durante o ato cirúrgico, uma cirurgia para retirada de safena, o tempo de recuperação para voltar a vida normal é de 3 dias. Diferente do que muitos ainda pensam, a cirurgia de varizes mudou bastante nos últimos anos. Hoje ela é feita com anestesia local e sedação, alta hospitalar no mesmo dia e recuperação para as atividades diárias, inclusive atividades físicas, entre 3 a 15 dias.",
+      "Na cirurgia de varizes, são feitos pequenos cortes, quase imperceptíveis, sem necessidade de pontos, e que após 60-90 dias, não terá nenhuma cicatriz residual, desde que o paciente siga as instruções. Além disso, já na alta o paciente sairá andando, com apenas algumas mínimas limitações para algumas atividades mais intensas, para as quais deverá se respeitado o tempo determinado.",
   },
   {
     pergunta: "Como é o Pós Operatório da cirurgia de varizes?",
     resposta:
-      "A pessoa que faz cirurgia de varizes recebe nos dias subseqüentes à cirurgia medicamentos para dor e às vezes anti-inflamatórios. Também é recomendado repouso com as pernas para cima, com retorno gradual à caminhada, de acordo com as orientações do médico que realizou a cirurgia. Alguns médicos também indicam a utilização de meias elásticas de compressão. É muito importante que a pessoa siga as recomendações do seu cirurgião, porque cada caso é um caso e para cada caso há uma recomendação.",
-  },
-  {
-    pergunta: "Qual deve ser o intervalo entre cada aplicação?",
-    resposta:
-      "A quantidade exata vai depender das condições das varizes de cada paciente. Mas, em geral, são necessárias de três a cinco sessões para a obtenção do resultado desejado. É preciso fazer um intervalo de aproximadamente 15 dias entre elas. Cada aplicação tem duração de cerca de 30 minutos.",
+      "A pessoa submetida à cirurgia de varizes recebe, nos dias seguintes ao procedimento, medicamentos para alívio da dor e, ocasionalmente, anti-inflamatórios. Recomenda-se repouso com as pernas elevadas, seguido por um retorno gradual à caminhada, conforme orientações do médico responsável pela cirurgia. O uso de meias elásticas de compressão é também indicado. É fundamental que a pessoa siga as recomendações do cirurgião para garantir uma recuperação adequada.",
   },
   {
     pergunta: "Qual o exame responsável para detectar trombose?",
     resposta:
-      "O ultrassom com Doppler é um exame bastante usado para diagnosticar doenças que acometem os vasos sanguíneos, em especial a trombose. Ele é um teste que usa ondas sonoras de alta frequência para medir a quantidade de fluxo sanguíneo através de suas artérias e veias, geralmente aquelas que fornecem sangue para seus braços e pernas.",
-  },
-  {
-    pergunta: "Quanto custa os tratamentos para varizes?",
-    resposta:
-      "Para definir tratamento e seus valores é necessário passar por uma consulta com o médico vascular da clínica. A consulta tem duração aproximada de 1 hora, na qual realizam-se exames complementares com ecodoppler para avaliar as veias safenas, varizes e o risco de trombose. A partir daí, é definido quais serão as técnicas utilizadas, número de visitas e valores.",
+      "O ultrassom com Doppler é um exame bastante usado para diagnosticar doenças que acometem os vasos sanguíneos, em especial a trombose.",
   },
   {
     pergunta: "Posso fazer exercícios físicos após o procedimento?",
@@ -33,6 +23,11 @@ export const listaPerguntasColuna1 = [
     pergunta: "O tratamento para varizes é doloroso?",
     resposta:
       "O tratamento de varizes pode provocar um certo desconforto. No entanto, trata-se de um incômodo tolerável e que desaparece em poucos instantes. Na Clínica Vascular dispomos de músicas e resfriador de pele para tornar o tratamento o mais confortável possível.",
+  },
+  {
+    pergunta: "É necessário repouso após o procedimento?",
+    resposta:
+      "O período de repouso varia de acordo com o tipo de tratamento realizado. Procedimentos como laser transdérmico, espuma e escleroterapia (aplicação) geralmente não exigem repouso. Entretanto, para tratamentos realizados em ambiente cirúrgico hospitalar, a necessidade de repouso dependerá do tipo específico de procedimento e da tecnologia utilizada.",
   },
 ];
 
@@ -45,7 +40,7 @@ export const listaPerguntasColuna2 = [
   {
     pergunta: "O uso de salto alto pode causar varizes?",
     resposta:
-      "A resposta é NÃO. Diferente do que muito se especula, o salto alto pode ser um inimigo ortopédico, mas não vascular. As varizes são causadas por problemas de circulação e perda do tonificação dos vasos, e também por pré-disposição genética, portanto, o salto não é o causador desta doença.",
+      "Não, o salto alto não causa varizes como muitas pessoas pensam. Varizes são principalmente causadas por problemas de circulação, perda de tonificação nos vasos e fatores genéticos. O salto alto não é o vilão nesse caso. No entanto, usar salto por muito tempo pode enfraquecer o músculo da panturrilha, que atua como uma bomba de retorno, ajudando na drenagem dos membros.",
   },
   {
     pergunta: "Cremes podem melhorar as varizes?",
@@ -65,11 +60,6 @@ export const listaPerguntasColuna2 = [
   {
     pergunta: "Após o procedimento, as varizes somem definitivamente?",
     resposta:
-      "Sim, depois de tratados tanto os vasinhos quanto as varizes não reaparecerão. No entanto, outras varizes e outros vasinhos podem surgir com o passar do tempo. Dependerá de vários fatores, principalmente se o paciente tem histórico familiar de varizes. No entanto, algumas medidas podem ser tomadas para prevenção, como manter uma atividade física regular, manter o peso adequado e evitar ficar imóvel, em pé ou sentado por muito tempo.",
-  },
-  {
-    pergunta: "É necessário repouso após o procedimento?",
-    resposta:
-      "O repouso depende do tipo de tratamento realizado. Laser transdérmico, espuma e escleroterapia (aplicação) não necessitam de repouso. Já o tratamento de veia safena por endolaser é recomendado 2 a 3 dias de repouso.",
+      "Sim, depois que tratamos os vasinhos e varizes, eles desaparecem. Mas, com o tempo, podem surgir novos. Isso depende de fatores, especialmente se na família há histórico de varizes. A prevenção é possível com medidas como manter uma atividade física regular, manter o peso adequado e evitar ficar parado em pé ou sentado por muito tempo.",
   },
 ];
