@@ -7,6 +7,7 @@ import LoadedCodeContextProvider from "@/context/LoadedCodeContext";
 import Topbar from "@/Layout/Topbar/Topbar";
 import Router from "./Router";
 import Footer from "@/Layout/footer/Footer";
+import WhatsappButton from "@/Components/WhatsappButton";
 
 function App() {
   // const { imagesLoaded } = MenuContext(LoadedCodeContext);
@@ -16,6 +17,7 @@ function App() {
         <BrowserRouter>
           <Topbar />
           <Router />
+          <WhatsappButton />
           <Footer />
         </BrowserRouter>
       </LoadedCodeContextProvider>

@@ -1,0 +1,42 @@
+/* Estilos opcionais para o botão */
+.botao-whatsapp {
+  position: fixed;
+  bottom: 20px; /* Ajuste a distância do fundo conforme necessário */
+  right: 20px;
+
+  width: 60px;
+  height: 60px;
+
+  display: grid;
+  justify-content: center;
+  align-content: center;
+
+  z-index: 1;
+
+//   align-items: center;
+//   justify-content: center;
+
+  background-color: #25d366;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 999px;
+  cursor: pointer;
+
+  svg {
+    width: 30px;
+    height: 35px;
+
+    color: $color-white;
+  }
+}
+
+.botao-whatsapp:hover {
+  background-color: #075e54;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: 0.3s;
+}
