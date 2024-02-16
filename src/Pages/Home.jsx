@@ -102,11 +102,11 @@ const Home = () => {
                   <div className="imagens-sobrepostas">
                     <img
                       className="img-comprida"
-                      src="https://drive.google.com/uc?export=view&id=1UmBMifzbFqA2z7Nh2KO-Uo81hrxrpebw"
+                      src="https://firebasestorage.googleapis.com/v0/b/site-drluis.appspot.com/o/ImagensEstaticasSite%2FPagina-Home%2FApresentacao-Clinica%2Fimagem-comprida.png?alt=media&token=2a73e1da-2c3a-428f-b27a-7f7ca0cf29df"
                     />
                     <img
                       className="img-quadrada"
-                      src="https://drive.google.com/uc?export=view&id=1f4idcX3jpIU1F4bqMJ9GZ0z-Lm8xQmI7"
+                      src="https://firebasestorage.googleapis.com/v0/b/site-drluis.appspot.com/o/ImagensEstaticasSite%2FPagina-Home%2FApresentacao-Clinica%2Fimagem-quadrada.png?alt=media&token=f8d7a5b4-870a-42f5-9312-009a52cb3071"
                     />
                   </div>
                   {/* <BallBackgroundBig /> */}
@@ -118,7 +118,7 @@ const Home = () => {
           <div className="container-apresentacao">
             <div className="background-elemento">
               <Col className="coluna-img col">
-                <img src="https://drive.google.com/uc?export=view&id=1fik2-3DJ_4j-cu2RqdMt7EEGhpTMoxV9" />
+                <img src="https://firebasestorage.googleapis.com/v0/b/site-drluis.appspot.com/o/ImagensEstaticasSite%2FPagina-Home%2FBanner-Dr%2Fapresentacao-dr.png?alt=media&token=1f65c76f-c6c0-45b1-b62f-fe838ddca7fa" />
               </Col>
               <Col className="coluna-texto">
                 <div className="titulo">
@@ -159,16 +159,17 @@ const Home = () => {
               </div>
               <div className="linha"></div>
               <span className="texto">
-                Trabalho com um equipamento inovador, o {" "}
-                <strong>VeinViewer</strong>. Através dele uma luz infravermelha, juntamente com
-                tecnologias avançadas, é utilizada para exibir uma imagem
-                periférica das veias diretamente na superfície da pele.
+                Trabalho com um equipamento inovador, o{" "}
+                <strong>VeinViewer</strong>. Através dele uma luz infravermelha,
+                juntamente com tecnologias avançadas, é utilizada para exibir
+                uma imagem periférica das veias diretamente na superfície da
+                pele.
               </span>
             </div>
 
             <div className="background-banner resp">
               <div className="elemento">
-                <img src="https://drive.google.com/uc?export=view&id=1LSttYQ1OReYa1eeqCQ2PUPly95m7JE8H" />
+                <img src="https://firebasestorage.googleapis.com/v0/b/site-drluis.appspot.com/o/ImagensEstaticasSite%2FPagina-Home%2FBanner-Servico%2Festetica-vascular.png?alt=media&token=0aa13103-bf0d-498e-9ed5-aa668f7ce2d8" />
                 <div className="conteudo">
                   <h3>ESTÉTICA VASCULAR</h3>
                   <span>
@@ -179,7 +180,7 @@ const Home = () => {
                 </div>
               </div>
               <div className="elemento">
-                <img src="https://drive.google.com/uc?export=view&id=1pWdustBp3eSQ9P-hovUbSix9NXJ-XLf_" />
+                <img src="https://firebasestorage.googleapis.com/v0/b/site-drluis.appspot.com/o/ImagensEstaticasSite%2FPagina-Home%2FBanner-Servico%2Feco-doppler.png?alt=media&token=1257d94b-4446-476f-b157-bde60bf0d021" />
                 <div className="conteudo">
                   <h3>ECO-DOPPLER</h3>
                   <span>
@@ -190,7 +191,7 @@ const Home = () => {
                 </div>
               </div>
               <div className="elemento">
-                <img src="https://drive.google.com/uc?export=view&id=1dTYBjQyb9YpVIFm4UOCWvGjS1EUm6E6e" />
+                <img src="https://firebasestorage.googleapis.com/v0/b/site-drluis.appspot.com/o/ImagensEstaticasSite%2FPagina-Home%2FBanner-Servico%2Fcheck-up.png?alt=media&token=5790ac88-3541-4831-a016-eb9fc4e3fdde" />
                 <div className="conteudo">
                   <h3>CHECK-UP</h3>
                   <span>
@@ -238,9 +239,9 @@ const Home = () => {
             </div>
           </Container>
 
-          <Container className="container-banner-beleza">
+          <div className="container-banner-beleza">
             <div className="background-banner">
-              <img src="https://drive.google.com/uc?export=view&id=1PPhIz_avqATxIF3sbadRzJYs593OfHgs" />
+                <img src="https://firebasestorage.googleapis.com/v0/b/site-drluis.appspot.com/o/ImagensEstaticasSite%2FPagina-Home%2FBanner-Exalte-Beleza%2Fimagem-exalte-beleza.png?alt=media&token=f647e77c-1f00-4825-a7ad-76edd440ba11" />
 
               <div className="conteudo">
                 <h3>EXALTE A BELEZA DAS SUAS PERNAS</h3>
@@ -253,7 +254,7 @@ const Home = () => {
                 </button>
               </div>
             </div>
-          </Container>
+          </div>
 
           <Container className="container-podemos-ajudar">
             <span>FALE CONOSCO</span>

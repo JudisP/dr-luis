@@ -32,7 +32,7 @@ const Agendamento = () => {
         <ImagemLoad
 
           urlImg={
-            "https://drive.google.com/uc?export=view&id=1LqJPrYmRVEW0tCMc78two0R_OIEhV7iv"
+            "https://firebasestorage.googleapis.com/v0/b/site-drluis.appspot.com/o/ImagensEstaticasSite%2FPagina-Agendamento%2FSlide%2FImagem.png?alt=media&token=484ad820-c871-46d0-9a9b-4f9a1501e72e"
           }
         />
       </div>

@@ -5,7 +5,7 @@ const MapsImg = () => {
   return (
     <div className="container-maps">
       <img
-        src="https://drive.google.com/uc?export=view&id=1g8MrXlPhSJmmA7k__kBAUvPt9m5qgLTV"
+        src="https://firebasestorage.googleapis.com/v0/b/sitedrluis.appspot.com/o/localiza%C3%A7%C3%A3o.png?alt=media&token=2bcb3755-c82f-4d4c-85bd-910a7a718716"
         alt="Maps"
         onClick={abreGoogleMaps}
       />

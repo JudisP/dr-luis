@@ -17,8 +17,7 @@ const Drluis = () => {
   return (
     <div className="pagina-drluis">
       <div className="imagem-estatica">
-        <ImagemLoad
- urlImg="https://drive.google.com/uc?export=view&id=1Wo8ovVwyFe_SRSAO65IfRUIX06r7UDUc" />
+        <ImagemLoad urlImg="https://firebasestorage.googleapis.com/v0/b/site-drluis.appspot.com/o/ImagensEstaticasSite%2FPagina-Drluis%2FSlide%2FImagem.png?alt=media&token=88ff7dff-1356-4cd7-bd4f-bb7a0c5cfa57" />
         {/* <img src="https://drive.google.com/uc?export=view&id=1Wo8ovVwyFe_SRSAO65IfRUIX06r7UDUc" /> */}
       </div>
 

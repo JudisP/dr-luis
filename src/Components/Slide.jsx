@@ -35,11 +35,11 @@ const Slide = () => {
         className="slide"
       >
         <SwiperSlide>
-          <ImagemLoad urlImg="https://drive.google.com/uc?export=view&id=1N0xkSbV4KUTj1kTzqF9Cn-EnODle-xSF" />
+          <ImagemLoad urlImg="https://firebasestorage.googleapis.com/v0/b/site-drluis.appspot.com/o/ImagensEstaticasSite%2FPagina-Home%2FSlide%2FImagem1.png?alt=media&token=f23862ed-09d0-4221-abd7-57bcf81827af" />
           {/* <img src="https://drive.google.com/uc?export=view&id=1N0xkSbV4KUTj1kTzqF9Cn-EnODle-xSF"/> */}
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://drive.google.com/uc?export=view&id=1uaYaOXDG30lb18Lv-YE-U6AjoQ77qtWX" />
+          <img src="https://firebasestorage.googleapis.com/v0/b/site-drluis.appspot.com/o/ImagensEstaticasSite%2FPagina-Home%2FSlide%2FImagem2.png?alt=media&token=73a5d13c-c758-4441-bceb-1310a6e1e2ff" />
           <div className="slide-conteudo">
             <h1 className="slide-text">ESTÉTICA</h1>
             <Link to="/dr-luis/procedimentos#estetica">
@@ -50,7 +50,7 @@ const Slide = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://drive.google.com/uc?export=view&id=1PNN_JJ41bj8dIK07NAy6NSMKT5uQXLhv" />
+          <img src="https://firebasestorage.googleapis.com/v0/b/site-drluis.appspot.com/o/ImagensEstaticasSite%2FPagina-Home%2FSlide%2FImagem3.png?alt=media&token=088f9d59-b002-4f17-ba50-0a7b7a2743bc" />
           <div className="slide-conteudo">
             <h1 className="slide-text">EXAMES</h1>
             <Link to="/dr-luis/procedimentos#exames" >
@@ -61,7 +61,7 @@ const Slide = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://drive.google.com/uc?export=view&id=1QRkRVozwLDIHuoWJ9aJhQjJjoj6MquwS" />
+          <img src="https://firebasestorage.googleapis.com/v0/b/site-drluis.appspot.com/o/ImagensEstaticasSite%2FPagina-Home%2FSlide%2FImagem4.png?alt=media&token=37bf03a9-7000-4db3-8bea-2e5c64da3b10" />
           <div className="slide-conteudo">
             <h1 className="slide-text">CHECK-UP</h1>
             <a onClick={redirecionaPagina} >

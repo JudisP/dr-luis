@@ -14,7 +14,7 @@ const Blog = () => {
         <ImagemLoad
 
           urlImg={
-            "https://drive.google.com/uc?export=view&id=18pbLTshjPpe7ImoKg6wPUedB302jXozJ"
+            "https://firebasestorage.googleapis.com/v0/b/site-drluis.appspot.com/o/ImagensEstaticasSite%2FPagina-Blog%2FSlide%2FImagem.png?alt=media&token=670f4ce9-4022-4502-8657-2261314b5eb7"
           }
           descricaoImg={"Imagem Pricipal do Slide"}
         />
