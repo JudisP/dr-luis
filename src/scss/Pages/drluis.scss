@@ -63,7 +63,7 @@
     );
     backdrop-filter: blur(2px);
 
-    width: 100vw;
+    width: 100%;
     height: 25rem;
 
     display: flex;
@@ -193,4 +193,8 @@
       margin-bottom: 10px;
     }
   }
+}
+
+.container-formacao {
+  width: 100%;
 }

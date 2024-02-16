@@ -42,84 +42,85 @@ const Drluis = () => {
                 <span>Cirurgião Vascular - CRM/DF 11.886</span>
               </Row>
             </Row>
+          </Container>
 
-            <div className="position-relative">
-              <Row className="backdrop-formacao">
-                <div className="formacao-titulos-cargos">
-                  <h3>FORMAÇÃO, TÍTULOS E CARGOS</h3>
-                  <div className="informacoes">
-                    <div className="informacao">
-                      <span className="background-arrow">
-                        <RxDoubleArrowRight />
-                      </span>
-                      <span className="informacao-texto">
-                        Formado em medicina pela Escola de Ciências Médicas de
-                        Alagoas.
-                      </span>
-                    </div>
+          <div className="container-drluis container-formacao position-relative">
+            <Row className="backdrop-formacao">
+              <div className="formacao-titulos-cargos">
+                <h3>FORMAÇÃO, TÍTULOS E CARGOS</h3>
+                <div className="informacoes">
+                  <div className="informacao">
+                    <span className="background-arrow">
+                      <RxDoubleArrowRight />
+                    </span>
+                    <span className="informacao-texto">
+                      Formado em medicina pela Escola de Ciências Médicas de
+                      Alagoas.
+                    </span>
+                  </div>
 
-                    <div className="informacao">
-                      <span className="background-arrow">
-                        <RxDoubleArrowRight />
-                      </span>
-                      <span className="informacao-texto">
-                        Título de especialista em Cirurgia Geral – Ministério da
-                        Educação (MEC).
-                      </span>
-                    </div>
+                  <div className="informacao">
+                    <span className="background-arrow">
+                      <RxDoubleArrowRight />
+                    </span>
+                    <span className="informacao-texto">
+                      Título de especialista em Cirurgia Geral – Ministério da
+                      Educação (MEC).
+                    </span>
+                  </div>
 
-                    <div className="informacao">
-                      <span className="background-arrow">
-                        <RxDoubleArrowRight />
-                      </span>
-                      <span className="informacao-texto">
-                        Título de especialista em Cirurgia Vascular – Ministério
-                        da Educação (MEC).
-                      </span>
-                    </div>
+                  <div className="informacao">
+                    <span className="background-arrow">
+                      <RxDoubleArrowRight />
+                    </span>
+                    <span className="informacao-texto">
+                      Título de especialista em Cirurgia Vascular – Ministério
+                      da Educação (MEC).
+                    </span>
+                  </div>
 
-                    <div className="informacao">
-                      <span className="background-arrow">
-                        <RxDoubleArrowRight />
-                      </span>
-                      <span className="informacao-texto">
-                        Título de especialista em Cirurgia Vascular AMB – SBACV
-                      </span>
-                    </div>
+                  <div className="informacao">
+                    <span className="background-arrow">
+                      <RxDoubleArrowRight />
+                    </span>
+                    <span className="informacao-texto">
+                      Título de especialista em Cirurgia Vascular AMB – SBACV
+                    </span>
+                  </div>
 
-                    <div className="informacao">
-                      <span className="background-arrow">
-                        <RxDoubleArrowRight />
-                      </span>
-                      <span className="informacao-texto">
-                        Membro da Sociedade Brasileira de Angiologia e Cirurgia
-                        Vascular.
-                      </span>
-                    </div>
+                  <div className="informacao">
+                    <span className="background-arrow">
+                      <RxDoubleArrowRight />
+                    </span>
+                    <span className="informacao-texto">
+                      Membro da Sociedade Brasileira de Angiologia e Cirurgia
+                      Vascular.
+                    </span>
+                  </div>
 
-                    <div className="informacao">
-                      <span className="background-arrow">
-                        <RxDoubleArrowRight />
-                      </span>
-                      <span className="informacao-texto">
-                        Certificado de área de atuação Ecografia Vascular com
-                        Doppler CBR- AMB – SBACV
-                      </span>
-                    </div>
+                  <div className="informacao">
+                    <span className="background-arrow">
+                      <RxDoubleArrowRight />
+                    </span>
+                    <span className="informacao-texto">
+                      Certificado de área de atuação Ecografia Vascular com
+                      Doppler CBR- AMB – SBACV
+                    </span>
+                  </div>
 
-                    <div className="informacao">
-                      <span className="background-arrow">
-                        <RxDoubleArrowRight />
-                      </span>
-                      <span className="informacao-texto">
-                        Membro do Colégio Brasileiro de Radiologia.
-                      </span>
-                    </div>
+                  <div className="informacao">
+                    <span className="background-arrow">
+                      <RxDoubleArrowRight />
+                    </span>
+                    <span className="informacao-texto">
+                      Membro do Colégio Brasileiro de Radiologia.
+                    </span>
                   </div>
                 </div>
-              </Row>
-            </div>
-
+              </div>
+            </Row>
+          </div>
+          <Container className="container-drluis position-relative">
             <Row className="feedbacks">
               <div className="titulo-subtitulo">
                 <h3>HISTÓRIAS FELIZES</h3>
