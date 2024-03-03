@@ -157,6 +157,10 @@
         padding: 10px;
         margin: 50px;
 
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+
         .titulo {
           h2 {
             font-weight: 700;

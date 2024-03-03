@@ -22,7 +22,7 @@ export const listaPerguntasColuna1 = [
   {
     pergunta: "O tratamento para varizes é doloroso?",
     resposta:
-      "O tratamento de varizes pode provocar um certo desconforto. No entanto, trata-se de um incômodo tolerável e que desaparece em poucos instantes. Na Clínica Vascular dispomos de músicas e resfriador de pele para tornar o tratamento o mais confortável possível.",
+      "O tratamento de varizes pode provocar um certo desconforto. No entanto, trata-se de um incômodo tolerável e que desaparece em poucos instantes. Na Clínica Vascular dispomos de métodos para diminuir a dor como o resfriamento da pele.",
   },
   {
     pergunta: "É necessário repouso após o procedimento?",

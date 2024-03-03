@@ -54,10 +54,10 @@ const Home = () => {
                 </div>
                 <div className="linha"></div>
                 <span className="texto descricao">
-                  &nbsp;&nbsp;&nbsp;Atendimento seguro e inovação que
-                  proporcionam os melhores serviços na área de Cirurgia de
-                  varizes. O Melhor em recursos da tecnologia aplicada aos
-                  tratamentos de doenças das artérias, veias e vasos linfáticos.
+                  &nbsp;&nbsp;&nbsp;Atendimento seguro e inovações que se
+                  destacam na área de Cirurgia Vascular. Oferecemos o melhor em
+                  recursos da tecnologia aplicada aos tratamentos de doenças
+                  vasculares.
                 </span>
                 <Row className="dr-horario">
                   <div className="row">
@@ -121,20 +121,21 @@ const Home = () => {
                 <img src="https://firebasestorage.googleapis.com/v0/b/site-drluis.appspot.com/o/ImagensEstaticasSite%2FPagina-Home%2FBanner-Dr%2Fapresentacao-dr.png?alt=media&token=1f65c76f-c6c0-45b1-b62f-fe838ddca7fa" />
               </Col>
               <Col className="coluna-texto">
-                <div className="titulo">
-                  <h2>Dr. Luis Fernando Bastos</h2>
-                  <h2>Angiologista</h2>
-                  <div className="linha"></div>
-                </div>
-                <div className="descricao">
-                  <h3>
-                    Dr. Luis Fernando de Carvalho Bastos é cirurgião na nossa
-                    Clínica Vascular, formado em medicina pela Escola de
-                    Ciências Médicas de Alagoas. É membro da Sociedade
-                    Brasileira de Angiologia e Cirurgia de Varizes e membro do
-                    serviço de cirurgia vascular do Hospital de Base do Distrito
-                    Federal.
-                  </h3>
+                <div>
+                  <div className="titulo">
+                    <h2>Dr. Luis Fernando Bastos</h2>
+                    <h2>Angiologista</h2>
+                    <div className="linha mb-5"></div>
+                  </div>
+                  <div className="descricao mb-5">
+                    <h3>
+                      Dr. Luís Fernando de Carvalho Bastos é cirurgião com mais
+                      de 20 anos de atuação em Brasília. Membro da Sociedade
+                      Brasileira de Angiologia e Cirurgia Vascular, integra
+                      também o serviço de Cirurgia Vascular do Hospital de Base
+                      do Distrito Federal.
+                    </h3>
+                  </div>
                 </div>
                 <Link
                   to="/dr-luis/dr-luis-fernando"
@@ -241,7 +242,7 @@ const Home = () => {
 
           <div className="container-banner-beleza">
             <div className="background-banner">
-                <img src="https://firebasestorage.googleapis.com/v0/b/site-drluis.appspot.com/o/ImagensEstaticasSite%2FPagina-Home%2FBanner-Exalte-Beleza%2Fimagem-exalte-beleza.png?alt=media&token=f647e77c-1f00-4825-a7ad-76edd440ba11" />
+              <img src="https://firebasestorage.googleapis.com/v0/b/site-drluis.appspot.com/o/ImagensEstaticasSite%2FPagina-Home%2FBanner-Exalte-Beleza%2Fimagem-exalte-beleza.png?alt=media&token=f647e77c-1f00-4825-a7ad-76edd440ba11" />
 
               <div className="conteudo">
                 <h3>EXALTE A BELEZA DAS SUAS PERNAS</h3>
@@ -257,6 +258,7 @@ const Home = () => {
           </div>
 
           <Container className="container-podemos-ajudar">
+            <div className="elipse"></div>
             <span>FALE CONOSCO</span>
             <h3>Como podemos te ajudar hoje?</h3>
             <button className="button button--primary" onClick={abreGoogleMaps}>
